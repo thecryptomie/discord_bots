@@ -20,7 +20,22 @@ _AT_DF = pd.read_csv(
     header=0,
     index_col=None
 )
+_HOLDERS_DF = pd.read_csv(
+    os.path.expanduser('~/discord_bots/holder_data/alien_tourism.csv'),
+    header=0,
+    index_col=None
+)
 
+
+_HOLDERS_DF = pd.merge(
+    _HOLDERS_DF,
+    _AT_DF,
+    on='asa',
+    how='inner',
+    suffixes=['','_1']
+)
+# Drop repeat columns
+_HOLDERS_DF = _HOLDERS_DF.drop(columns=['name_1','unit_name_1'])
 attributes = [
     'Background',
     'Eyes',
@@ -63,12 +78,264 @@ def compute_trait_rarities(arc69, attributes, burn=True):
     else:
         return trait_rarities
 
+
 @bot.event
 async def on_ready():
     print(f'We have logged in as {bot.user}')
 
+async def holder_traits(df):
+    nontrait_cols = ['name', 'asa', 'rank', 'rarity_score', 'unit_name']
+    trait_cols = [
+        col for col in _AT_DF.columns if col not in nontrait_cols
+    ]
+    trait_data = defaultdict(list)
+    for col in trait_cols:
+        trait_data[col]
+        for val in df[col]:
+            if val == 'none':
+                continue
+            trait_data[col].append(val)
+
+    trait_counts = {}
+    for key, val in trait_data.items():
+        trait_counts[key] = Counter(val)
+
+    return trait_counts
+#
+# @bot.command(name='register')
+# async def register(ctx, wallet):
+
+async def wallet_info_help(ctx):
+    msg = 'Alien Tourism Bot Help: **$at_list**\n'
+    msg += ('This bot is will return statistics on the Alien Tourism NFTS' 
+           ' provided wallet. All statistics included listed NFTs. \n')
+    msg += (
+            'Stats reported:\n '
+            'Number of NFTs held\n'
+            'Top five rarest Tourists\n'
+            '')
+
+@bot.command(name='wallet_info')
+async def wallet_info(ctx, *args):
+    wallet = args[0]
+
+    df = _HOLDERS_DF.groupby('address').get_group(wallet)
+    await ctx.author.send(
+        (f'{wallet[:4]}...{wallet[-4:]} holds {len(df)} '
+         'Tourists'
+         )
+    )
+    # top_five = '**Top 5 Tourist by Rank**'.center(25, '-') +'\n'
+    top_five = f"{'**Top 5 Tourist by Rank**'.center(50, '-')}\n"
+    df = df.sort_values(by='rank', ascending=True)
+    j=0
+    for i, row in df.iterrows():
+        if j == 5:
+            break
+        else:
+            top_five += f"{j + 1:0.0f}) {row['name']} (Rank {row['rank']:0.0f})\n"
+        j+=1
+    await ctx.author.send(top_five)
+
+    nontrait_cols = ['name', 'asa', 'rank', 'rarity_score', 'unit_name']
+    trait_cols = [
+        col for col in _AT_DF.columns if col not in nontrait_cols
+    ]
+    trait_data = defaultdict(list)
+    for col in trait_cols:
+        trait_data[col]
+        for val in df[col]:
+            if val == 'none':
+                continue
+            trait_data[col].append(val)
+    trait_counts = {}
+    for key, val in trait_data.items():
+        trait_counts[key] = Counter(val)
+
+    msg = f"{'**Most Collected Traits**'.center(50,'-')}\n"
+    for key, val in trait_counts.items():
+        mc = val.most_common(1)[0]
+        msg += f"**{key.capitalize()}**: {mc[0]} ({mc[1]:0.0f}x)\n"
+
+    await ctx.author.send(msg)
+
+    # return trait_counts
+
+async def at_list_help(ctx):
+    """Help function for at_list
+
+    Parameters
+    ----------
+    ctx
+
+    Returns
+    -------
+
+    """
+    msg = 'Alien Tourism Bot Help: **$at_list**\n'
+    msg += (
+        'This bot is designed to generate a list of tourists with the'
+        ' specified traits. The inputs are a series of trait/value pairs '
+        'and the number of the tourist you want to keep (e.g. 69 for Tour69). '
+        'This list can then be copy and pasted into'
+        ' **$burn_list** command to see how burning affects the rarity of '
+        'the tourist you want to keep.'
+    )
+    await ctx.author.send(msg)
+
+    msg = ''
+    msg += 'Usage:\n'
+    msg += '**$at_list <trait1> <value1> <trait2> <value2> <tourist_to_keep>\n**'
+    msg += 'Examples\n' + f"{'-' * 15}\n"
+    msg += '**$at_list hat "viking helmet" jacket "illuminated leather" 2657\n**'
+    msg += (
+        'This will generate a list of tourists with either a viking helmet'
+        ' for a hat or an illuminated leather jacket. The last tourists in'
+        ' the list will be Tour2657'
+    )
+    await ctx.author.send(msg)
+
+@bot.command(name='at_list')
+async def at_list(ctx, *args):
+    """Generate a list of tourist with the given traits
+
+    Parameters
+    ----------
+    ctx
+    tourist
+
+    Returns
+    -------
+
+    """
+    if args[0] == 'help':
+        await at_list_help(ctx)
+        return
+    elif len(args[:-1]) % 2 != 0:
+        traits = args[::2]
+        values = args[1::2]
+        keep = None
+        # await ctx.author.send('Invalid number of arguments. Check $at_list help for more')
+        # return
+    else:
+        traits = args[::2]
+        values = args[1::2]
+        # try:
+        #     int(args[-1])
+        # except Exception as e:
+        #     keep = None
+        # else:
+        if 'tour' in args[-1].lower():
+            keep = args[-1]
+        else:
+            keep = 'Tour'+args[-1]
+    trait_cuts = []
+    for i, (t, v) in enumerate(zip(traits, values)):
+        trait_cuts.append(_AT_DF[_AT_DF[t.lower()] == v.lower()])
+
+    trait_cut = pd.concat(trait_cuts, axis=0)
+    tourists = list(trait_cut['unit_name'].unique())
+    # make the tourist we want to keep be at the end
+    if keep is not None:
+        tourists.remove(keep)
+        tourists.append(keep)
+    tourist_list = " ".join(tourists)
+    await ctx.author.send(tourist_list)
+
+
+async def wallet_list_help(ctx):
+    """Help function for at_list
+
+    Parameters
+    ----------
+    ctx
+
+    Returns
+    -------
+
+    """
+    msg = 'Alien Tourism Bot Help: **$wallet_list**\n'
+    msg += (
+        'This bot is designed to generate a list of tourists with the'
+        ' specified traits from the user provided wallet. '
+        'The inputs are a series of trait/value pairs '
+        'and the number of the tourist you want to keep (e.g. 69 for Tour69). '
+        'This list can then be copy and pasted into'
+        ' **$burn_list** command to see how burning affects the rarity of '
+        'the tourist you want to keep. The **<tourist_to_keep>** argument is '
+        'optional. This is useful if you are interested in seeing what traits'
+        ' are still held in the creators wallet.'
+    )
+    await ctx.author.send(msg)
+
+    msg = ''
+    msg += 'Usage:\n'
+    msg += '**$wallet_list <trait1> <value1> <trait2> <value2> <tourist_to_keep> <wallet_address>\n**'
+    msg += 'Examples\n' + f"{'-' * 15}\n"
+    msg += '**$wallet_list hat "viking helmet" UWVYY2WRT7CCRPWNYUUKQ6HCO7JYTGH6TNQIJIJV6X2PG74UML2HGU5BAA\n**'
+    msg += (
+        'This will generate a list of tourists with a viking helmet hat held'
+        'in the provided wallet (the creators address).\n'
+    )
+    msg += '**$wallet_list hat "viking helmet" 950 UWVYY2WRT7CCRPWNYUUKQ6HCO7JYTGH6TNQIJIJV6X2PG74UML2HGU5BAA\n**'
+    msg += (
+        'This will generate a list of tourists with a viking helmet hat held '
+        'in the provided wallet (the creators address). The last tourist in this'
+        ' list will be Tour950.'
+    )
+
+    await ctx.author.send(msg)
+
+
+@bot.command(name='wallet_list')
+async def wallet_list(ctx, *args):
+    """Generate a list of tourist with the given traits
+
+    Parameters
+    ----------
+    ctx
+    tourist
+
+    Returns
+    -------
+
+    """
+    print(args)
+    if args[0] == 'help':
+        await wallet_list_help(ctx)
+        return
+    elif len(args[:-2]) % 2 != 0:
+        traits = args[:-1:2]
+        values = args[1:-1:2]
+        keep = None
+        wallet = args[-1]
+    else:
+        traits = args[:-2:2]
+        values = args[1:-2:2]
+        if 'tour' in args[-2].lower():
+            keep = args[-2]
+        else:
+            keep = 'Tour'+args[-2]
+        wallet = args[-1]
+    wallet_cut = _HOLDERS_DF[_HOLDERS_DF['address'] == wallet]
+    trait_cuts = []
+    for i, (t, v) in enumerate(zip(traits, values)):
+        trait_cuts.append(wallet_cut[wallet_cut[t.lower()] == v.lower()])
+
+    trait_cut = pd.concat(trait_cuts, axis=0)
+    tourists = list(trait_cut['unit_name'].unique())
+    # make the tourist we want to keep be at the end
+    if keep is not None:
+        tourists.remove(keep)
+        tourists.append(keep)
+    tourist_list = " ".join(tourists)
+    await ctx.author.send(tourist_list)
+
+
 @bot.command(name='at_info')
 async def at_info(ctx, tourist):
+    if tourist == 'help':
+        await at_info_help(ctx)
     if 'Tour' not in tourist:
         tourist = f'Tour{tourist}'
     tourist = _AT_DF[_AT_DF.unit_name == tourist].iloc[0]
@@ -83,26 +350,54 @@ async def at_info(ctx, tourist):
         else:
             msg += f"**{l}**: {tourist[col]}\n"
 
-    await ctx.send(msg)
+    await ctx.author.send(msg)
     msg = f"{'**Traits**'.center(50,'-')}\n"
     for col in trait_cols:
         trait_rarirty = _AT_TRAIT_RARITIES[col][tourist[col]]
-        # if tourist[col] == 'None':
-        #     continue
+        if tourist[col] == 'none':
+            continue
         msg += f"**{col.capitalize()}**: {tourist[col]} ({trait_rarirty:0.2%})\n"
+    await ctx.author.send(msg)
 
-    await ctx.send(msg)
+async def at_info_help(ctx):
+    """Help function for at_list
+
+    Parameters
+    ----------
+    ctx
+
+    Returns
+    -------
+
+    """
+    msg = 'Alien Tourism Bot Help: **$at_info**\n'
+    msg += (
+        'This returns information (rank, rarity score, traits)'
+        ' about the provided tourists.'
+    )
+    await ctx.author.send(msg)
+
+    msg = ''
+    msg += 'Usage:\n'
+    msg += '**$at_info <tourist_number>\n**'
+    msg += 'Examples\n' + f"{'-' * 15}\n"
+    msg += '**$at_info 2657\n**'
+    msg += (
+        'This will return information about Tour2657.'
+    )
+    await ctx.author.send(msg)
 
 async def burn_help(ctx):
-    msg = 'Alien Tourism Bot Help\n'
-    msg += ('This bot is designed to burn tourist '
-            'with a specific value for a given trait. If the value for the given'
-            'trait contains a space, then it will need to be enclosed with double quotes.\n')
+    msg = 'Alien Tourism Bot Help: **$burn**\n'
+    msg += ('This bot is designed to mimic the burning of tourists '
+            'with a specific value for a given trait. '
+            'If the value for the given trait contains a space, '
+            'then it will need to be enclosed with double quotes.\n')
     msg += ('Given a trait, e.g. Single Outfit, '
-            'and a specific value, e.g. Tree hawaiian, and a number, this bot'
-            'will burn all Tourist with the Tree hawaiian value for Single'
-            ' Outfit while keeping the tourist matching the number provided.')
-    await ctx.send(msg)
+            'and a specific value, e.g. Tree hawaiian, and a number, it'
+            'will burn all Tourists with the Tree hawaiian value for Single'
+            ' Outfit, while keeping the tourist matching the number provided.')
+    await ctx.author.send(msg)
     msg = ''
     msg += 'Usage:\n'
     msg += '**$burn <trait> <value> <tourist_to_keep>\n**'
@@ -113,7 +408,7 @@ async def burn_help(ctx):
             'Note the use of double quotes.\n')
     msg += '**$burn skin gecko 3247\n**'
     msg += 'This will burn all of the gecko skins with the exception of Tour 3247'
-    await ctx.send(msg)
+    await ctx.author.send(msg)
 
 @bot.command(name='burn')
 async def burn(ctx, *args):
@@ -134,7 +429,7 @@ async def burn(ctx, *args):
 
     keep = _AT_DF[_AT_DF['unit_name'] == tourist_to_keep]
     if keep.empty:
-        await ctx.send(
+        await ctx.author.send(
             (f'**{tourist_to_keep} not found.** '
              'Double check the input name.')
         )
@@ -142,7 +437,7 @@ async def burn(ctx, *args):
     try:
         keep_value = keep[trait].iloc[0]
     except KeyError as e:
-        await ctx.send(
+        await ctx.author.send(
             (f"**Trait {trait} does not exist.** "
              f"Double check the input trait."
              )
@@ -150,7 +445,7 @@ async def burn(ctx, *args):
         return
     else:
         if keep_value.lower() != value.lower():
-            await ctx.send(
+            await ctx.author.send(
                 (f'**{tourist_to_keep} does not have desired trait value.** '
                  'Double check the input trait value.')
             )
@@ -158,15 +453,15 @@ async def burn(ctx, *args):
 
     trait_cut = _AT_DF[_AT_DF[trait] == value]
     if trait_cut.empty:
-        await ctx.send(
+        await ctx.author.send(
             (f'**Tourists with {trait}={value} not found.** '
             'Double check the input trait.')
         )
         return
 
     msg = f"Burning {value} {trait.lower()}"
-    await ctx.send(msg)
-    await ctx.send(f'Keeping Tourist: {tourist_to_keep}')
+    await ctx.author.send(msg)
+    await ctx.author.send(f'Keeping Tourist: {tourist_to_keep}')
     aliens_to_burn = trait_cut.drop(index=keep.index)
 
     burn_df = _AT_DF.drop(index=aliens_to_burn.index)
@@ -187,12 +482,12 @@ async def burn(ctx, *args):
                f'{trait.lower()} {value.lower()} '
                f'plus {random_burn} extra tourists\n'
                f'\N{FIRE}\N{FIRE}\N{FIRE}\N{FIRE}')
-        await ctx.send(msg)
+        await ctx.author.send(msg)
     else:
         msg = (f'\N{FIRE}\N{FIRE}\N{FIRE}\N{FIRE}\n'
                f'Burned {aliens_to_burn.shape[0]} Tourists with trait'
                f'\n\N{FIRE}\N{FIRE}\N{FIRE}\N{FIRE}')
-        await ctx.send(msg)
+        await ctx.author.send(msg)
 
     nontrait_cols = ['name', 'asa', 'rank', 'rarity_score', 'unit_name']
     trait_cols = [
@@ -206,17 +501,17 @@ async def burn(ctx, *args):
             msg += f"**{l}**: {tourist_before[col]:0.2f}\n"
         else:
             msg += f"**{l}**: {tourist_before[col]}\n"
-    await ctx.send(msg)
+    await ctx.author.send(msg)
 
-    top_ten_before = '**Top 10 Tourist Before Burn**\n'
-    j=0
-    for i, row in _AT_DF.iterrows():
-        if j == 10:
-            break
-        else:
-            top_ten_before += f"{j + 1:0.0f}) {row['name']}\n"
-        j+=1
-    await ctx.send(top_ten_before)
+    # top_ten_before = '**Top 10 Tourist Before Burn**\n'
+    # j=0
+    # for i, row in _AT_DF.iterrows():
+    #     if j == 10:
+    #         break
+    #     else:
+    #         top_ten_before += f"{j + 1:0.0f}) {row['name']}\n"
+    #     j+=1
+    # await ctx.author.send(top_ten_before)
 
 
     msg = f"{'**After Burn**'.center(50,'-')}\n"
@@ -227,26 +522,26 @@ async def burn(ctx, *args):
         else:
             msg += f"**{l}**: {tourist_after[col]}\n"
 
-    await ctx.send(msg)
+    await ctx.author.send(msg)
 
-    top_ten_after = '**Top 10 Tourist After Burn**\n'
-    burn_df = burn_df.sort_values(by='rank', ascending=True)
-    j=0
-    for i, row in burn_df.iterrows():
-        if j == 10:
-            break
-        else:
-            top_ten_after += f"{j + 1:0.0f}) {row['name']}\n"
-        j+=1
-    await ctx.send(top_ten_after)
+    # top_ten_after = '**Top 10 Tourist After Burn**\n'
+    # burn_df = burn_df.sort_values(by='rank', ascending=True)
+    # j=0
+    # for i, row in burn_df.iterrows():
+    #     if j == 10:
+    #         break
+    #     else:
+    #         top_ten_after += f"{j + 1:0.0f}) {row['name']}\n"
+    #     j+=1
+    # await ctx.author.send(top_ten_after)
 
 
 async def burn_list_help(ctx):
-    msg = 'Alien Tourism Bot Help\n'
+    msg = 'Alien Tourism Bot Help: **$burn_list**\n'
     msg += 'This bot is designed to burn a list of tourist specified by the user.\n'
     msg += 'The list should be a set of space-separated numbers.\n'
     msg += 'The final number in the list corresponds to the alien you want to keep.'
-    await ctx.send(msg)
+    await ctx.author.send(msg)
     msg = ''
     msg += 'Usage:\n'
     msg += '**$burn_list <N1> <N2> <N3> ... <N>\n**'
@@ -255,7 +550,7 @@ async def burn_list_help(ctx):
     msg += 'This will burn Tour1, Tour2, Tour3, Tour4, Tour5, while keeping Tour6\n'
     msg += '**$burn_list 844 1371 2412 3932 2232\n**'
     msg += 'This will burn Tour844, Tour1371, Tour2412, Tour3932, while keeping Tour2232.'
-    await ctx.send(msg)
+    await ctx.author.send(msg)
     return ctx
 
 @bot.command(name='burn_list')
@@ -263,9 +558,18 @@ async def burn_list(ctx, *args):
     if args[0] == 'help':
         await burn_list_help(ctx)
         return
+    burn_list = []
+    for val in args[:-1]:
+        if 'tour' in val.lower():
+            burn_list.append(val.capitalize())
+        else:
+            burn_list.append(f'Tour{val}')
+    # burn_list = [f'Tour{val}' for val in args[:-1]]
+    if 'tour' not in args[-1].lower():
+        tourist_to_keep = f'Tour{args[-1]}'
+    else:
+        tourist_to_keep = args[-1].capitalize()
 
-    burn_list = [f'Tour{val}' for val in args[:-1]]
-    tourist_to_keep = f'Tour{args[-1]}'
     keep = _AT_DF[_AT_DF['unit_name'] == tourist_to_keep]
     random_burn = 0
     for i, tourist in enumerate(burn_list):
@@ -277,7 +581,7 @@ async def burn_list(ctx, *args):
             )
 
     if tourist_to_keep in burn_list:
-        await ctx.send(
+        await ctx.author.send(
             'You burnt the tourist you want to keep! Check your list'
         )
         return
@@ -298,13 +602,11 @@ async def burn_list(ctx, *args):
                f'Burned {aliens_to_burn.shape[0]} tourists'
                f'plus {random_burn} extra tourists\n'
                f'\N{FIRE}\N{FIRE}\N{FIRE}\N{FIRE}')
-        await ctx.send(msg)
+        await ctx.author.send(msg)
     else:
         msg = ('Burning Tourists\n'+"\n".join(burn_list) +
                '\n\N{FIRE}\N{FIRE}\N{FIRE}\N{FIRE}')
-        await ctx.send(msg)
-
-
+        await ctx.author.send(msg)
 
     nontrait_cols = ['name', 'asa', 'rank', 'rarity_score', 'unit_name']
     trait_cols = [
@@ -318,7 +620,7 @@ async def burn_list(ctx, *args):
             msg += f"**{l}**: {tourist_before[col]:0.2f}\n"
         else:
             msg += f"**{l}**: {tourist_before[col]}\n"
-    await ctx.send(msg)
+    await ctx.author.send(msg)
 
 
     msg = f"{'**After Burn**'.center(50,'-')}\n"
@@ -328,7 +630,7 @@ async def burn_list(ctx, *args):
             msg += f"**{l}**: {tourist_after[col]:0.2f}\n"
         else:
             msg += f"**{l}**: {tourist_after[col]}\n"
-    await ctx.send(msg)
+    await ctx.author.send(msg)
 
 
 

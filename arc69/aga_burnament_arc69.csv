@@ -1,0 +1,1001 @@
+unit_name,asa,background,fur,skin,eyes,posture,clothing,hats,item,accessories,rarity_score,rank,name
+AGA105,380192131,Grey and Green,Gold,Blue,Silver,"Arm down, smiling",Orange Spacesuit,Dark Blue Backwards Cap,,Black Eyepatch,450.36962312103526,1,AlgorillaArmy#105
+AGA301,425969752,Light Pink and Red,Zebra,Pink,Normal,Arm up,Orange Spacesuit,Pink Dreads,Blue Selfiestick,,442.5571821188477,2,AlgorillaArmy#301
+AGA20,546498574,Bright Pink and Light Blue,Purple,Gold,Green,Arm up,Orange Spacesuit,,Spear,Yellow Shutter Shades,380.9074303207837,3,AlgorillaArmy#20
+AGA234,409038042,Grey and Silver Radial,Blue Zebra,Silver,Pink,Arm down,Leather Belt,Gold Crown,,Gold Algo Necklace,361.956937161888,4,AlgorillaArmy#234
+AGA822,545151891,Brown and Gold Radial,Normal,Normal,Red,Arm down,Teal Vneck,Purple Dreads,,Green Lasers,341.47223952160107,5,AlgorillaArmy#822
+AGA30,377726544,Bright Pink and Light Blue,Silver,Gold,Pink,Arm down,Gold Suit,Gold Dreads,,Aviators,336.9725854839063,6,AlgorillaArmy#30
+AGA373,544998143,Light Pink and Red,Green,Red,Normal,Arm up,Orange Spacesuit,,Gold Selfiestick,,332.5562210948689,7,AlgorillaArmy#373
+AGA106,384634771,Grey and Silver Radial,Rainbow,Normal,Blue,Arm up,White Spacesuit,Gold Crown,Yellow Cocktail,,328.8961276627676,8,AlgorillaArmy#106
+AGA99,546562626,Orange and Green,Zebra,Gold,Normal,Arm up,Orange Sports Bra,Bright Red Beanie Hat,Red Cocktail,Anderson Glasses,324.64068485805905,9,AlgorillaArmy#99
+AGA310,449448493,Purple and Light Green and White Radial,Normal,Purple,Silver,"Arm up, smiling",Banana Shirt,Robot Head,Red Cocktail,,322.48005316208975,10,AlgorillaArmy#310
+AGA123,384664832,White and Pink,Red,Red,Purple,Arm up,Gold Suit,Pink Dreads,Pink Gold Selfiestick,Aviators,317.5153671663568,11,AlgorillaArmy#123
+AGA34,377731865,Light Pink and Red,Normal,Purple,Green,"Arm up, smiling",Leather Belt,Robot Head,Purple Cocktail,Gold Algo Necklace,316.383595931064,12,AlgorillaArmy#34
+AGA181,384744644,White and Pink,Normal,Silver,Normal,"Arm up, smiling",Leather Belt,Green Backwards Cap,Gold Bar,Blue Lasers,314.54081160731977,13,AlgorillaArmy#181
+AGA603,545081699,White and Purple,Blue Lava,Gold,Normal,Arm down,Pink Vneck,Gold Dreads,,Aviators,314.12476904977683,14,AlgorillaArmy#603
+AGA348,449557369,Light Grey and Yellow,Normal,Normal,Black,"Arm up, smiling",Suit Red Tie,Yellow Beanie,Blue Selfiestick,Gold Algo Necklace,311.3864476934843,15,AlgorillaArmy#348
+AGA455,545039562,White and Orange,Blue Lava,Silver,Red,Arm down,,Silver Dreads,,,306.61847100806096,16,AlgorillaArmy#455
+AGA23,377715609,Sky Blue and White,Normal,Yellow,Purple,"Arm up, smiling",Gold Suit,Normal Dreads,Gold Selfiestick,White Shudder Shades,306.0985190359904,17,AlgorillaArmy#23
+AGA309,449445820,Light Pink and Red,Blue Zebra,Yellow,Normal,Arm down,White Tanktop,Yellow Dreads,,Gold Algo Necklace,304.5358583006985,18,AlgorillaArmy#309
+AGA750,545143862,Brown and Gold Radial,Blue,Normal,Silver,"Arm up, smiling",Banana Shirt,Gold Tophat,Spear,Blue Shutter Shades,303.70393546487225,19,AlgorillaArmy#750
+AGA78,378927995,Light Pink and Red,Rainbow,Red,Purple,"Arm up, smiling",White Spacesuit,Green Afro,Blue Selfiestick,,297.6677621608234,20,AlgorillaArmy#78
+AGA205,387121078,Grey and Green,Zebra,Red,Yellow,Arm down,Gold Suit,,,Morpheus Glasses,292.08146580403496,21,AlgorillaArmy#205
+AGA130,384674390,Purple and Light Green,Rainbow,Blue,Green,Arm up,Suit Purple Tie,Green Dreads,Banana,,289.0697998478709,22,AlgorillaArmy#130
+AGA195,384765400,Orange and Green,Normal,Pink,Normal,Arm up,Orange Sports Bra,Unicorn Horn,Blue Selfiestick,Silver Algo Necklace,288.2875677191382,23,AlgorillaArmy#195
+AGA911,545198956,Light Green and Mid Green,Red,Silver,Blue,Arm up,Orange Sports Bra,,Gold Bar,Morpheus Glasses,285.7490875336885,24,AlgorillaArmy#911
+AGA87,379124416,Orange and Green,Blue,Blue,Blue,"Arm up, smiling",,Silver Dreads,Gold Bar,White Shudder Shades,281.0339605441842,25,AlgorillaArmy#87
+AGA405,437840166,Sky Blue and White,Blue Zebra,Purple,Pink,Arm down,Yellow Tanktop,Light Blue Backwards Cap,,Yellow Lasers,280.7187183383992,26,AlgorillaArmy#405
+AGA240,409070304,Purple and Light Green,Blue Zebra,Silver,Green,Arm down,Light Blue Tanktop,Gold Tophat,,Blue Shutter Shades,276.2470119677109,27,AlgorillaArmy#240
+AGA308,426025539,Light Blue and Deep Blue,Blue Zebra,Red,Yellow,Arm down,Black Sports Bra,Bright Red Beanie Hat,,Morpheus Glasses,275.70049811948803,28,AlgorillaArmy#308
+AGA157,384704044,Purple and Light Green,Silver,Green,Yellow,"Arm up, smiling",Suit Purple Tie,Gold Dreads,Claymore,Morpheus Glasses,274.64605022932454,29,AlgorillaArmy#157
+AGA551,545075221,Brown and Gold Radial,Normal,Blue,Normal,Arm up,Pink Sports Bra,Rainbow Afro,Red Selfiestick,Gold Algo Necklace,274.49021582109987,30,AlgorillaArmy#551
+AGA103,380017016,Brown and Gold Radial,Purple,Green,Blue,"Arm up, smiling",Suit Red Tie,Brown Tophat,Red Cocktail,Red Clown Nose,272.9658054758861,31,AlgorillaArmy#103
+AGA504,545069493,Grey and Silver Radial,Red Zebra,Blue,Black,Arm down,Black Vneck,Light Blue Backwards Cap,,,272.1066907899024,32,AlgorillaArmy#504
+AGA104,380018088,Bright Pink and Purple,Red,Yellow,Red,Arm down,Orange Sports Bra,Robot Head,,,272.04665804013507,33,AlgorillaArmy#104
+AGA764,545145129,Light Pink and Red,Normal,Silver,Normal,Arm up,Orange Sports Bra,Normal Dreads,Yellow Cocktail,Yellow Lasers,271.8819487331616,34,AlgorillaArmy#764
+AGA412,545027515,Bright Pink and Purple,Normal,Pink,Silver,Arm up,Pink Sports Bra,Blue Dreads,Plunger,Anderson Glasses,271.3694078660589,35,AlgorillaArmy#412
+AGA197,384767240,White and Orange,Blue Lava,Purple,Purple,Arm down,,Silver Crown,,Black Eyepatch,270.9998992608075,36,AlgorillaArmy#197
+AGA809,545150349,Bright Pink and Purple,Yellow,Normal,Pink,Arm up,Yellow Tanktop,Silver Crown,Spear,Green Lasers,268.78026550315707,37,AlgorillaArmy#809
+AGA148,384694585,Light Grey and Yellow,Yellow,Pink,Normal,"Arm down, smiling",,Silver Dreads,,Green Lasers,268.75929011130506,38,AlgorillaArmy#148
+AGA49,377753179,Grey and Green,Normal,Red,Normal,Arm up,Black Sports Bra,Silver Dreads,Pink Gold Selfiestick,White Shudder Shades,268.7169552652306,39,AlgorillaArmy#49
+AGA202,384770971,Light Blue and Deep Blue,Zebra,Normal,Blue,Arm up,White Tanktop,Silver Dreads,Gold Selfiestick,Yellow Shutter Shades,268.4055612394836,40,AlgorillaArmy#202
+AGA299,410694029,Sky Blue and White,Silver,Normal,Normal,"Arm up, smiling",White Spacesuit,,Gold Bar,Black Eyepatch,267.8629492635667,41,AlgorillaArmy#299
+AGA306,426009797,Grey and Green,Blue Lava,Purple,Normal,Arm down,Purple Hawaiian Shirt,Blue Dreads,,White Shudder Shades,267.36951748780035,42,AlgorillaArmy#306
+AGA307,426016590,Sky Blue and White,Blue Lava,Normal,Purple,Arm down,,Gold Dreads,,Blue Shutter Shades,265.55059023362725,43,AlgorillaArmy#307
+AGA985,545208432,Bright Pink and Purple,Red,Normal,Yellow,"Arm up, smiling",Light Blue Tanktop,Green Banana Hat,Cutlass,Silver Algo Necklace,265.25191888579934,44,AlgorillaArmy#985
+AGA1,377671420,Grey and Green,Purple,Gold,Normal,Arm up,Purple Hawaiian Shirt,Purple Dreads,Microphone,,263.77306122946374,45,AlgorillaArmy#1
+AGA519,545071303,White and Pink,Lava,Green,Green,Arm up,Pink Sports Bra,Red Backwards Cap,Plunger,Yellow Shutter Shades,263.0848627739514,46,AlgorillaArmy#519
+AGA117,384654600,White and Orange,Blue,Pink,Pink,Arm up,White Spacesuit,Silver Crown,Microphone,Yellow Shutter Shades,260.6742637403685,47,AlgorillaArmy#117
+AGA7,377682722,Light Grey and Yellow,Rainbow,Gold,Normal,Arm down,,Gold Crown,,Morpheus Glasses,260.49459276781823,48,AlgorillaArmy#7
+AGA450,545038038,Purple and Light Green,Lava,Normal,Normal,Arm up,Suit Red Tie,Rainbow Afro,Red Cocktail,,258.94997405343537,49,AlgorillaArmy#450
+AGA91,379147413,Light Blue and Deep Blue,Purple,Green,Green,Arm up,Gold Suit,Green Fishing Hat,Banana,,255.71160209762655,50,AlgorillaArmy#91
+AGA905,545197359,Purple and Light Green and White Radial,Normal,Normal,Pink,Arm up,Orange Hawaiian Shirt,Green Banana Hat,Microphone,Aviators,254.83982317713213,51,AlgorillaArmy#905
+AGA535,545073559,Purple and Light Green and White Radial,Normal,Normal,Purple,Arm up,Banana Shirt,Yellow Dreads,Red Cocktail,White Shudder Shades,254.627383242274,52,AlgorillaArmy#535
+AGA206,387122163,White and Pink,Lava,Normal,Normal,Arm up,White Spacesuit,Red Backwards Cap,Purple Cocktail,Red Clown Nose,253.91913887554136,53,AlgorillaArmy#206
+AGA302,425980490,White and Purple,Lava,Green,Normal,Arm down,,Unicorn Horn,,Yellow Lasers,253.4414224352689,54,AlgorillaArmy#302
+AGA999,545210401,Bright Pink and Light Blue,Red,Pink,Red,"Arm up, smiling",Banana Shirt,Unicorn Horn,Gold Selfiestick,Yellow Shutter Shades,251.7695526897667,55,AlgorillaArmy#999
+AGA22,377714386,Bright Pink and Purple,Gold,Gold,Silver,"Arm up, smiling",,Gold Dreads,Green Cocktail,Anderson Glasses,251.61933592219685,56,AlgorillaArmy#22
+AGA166,384720320,Purple and Light Green,Blue,Blue,Normal,Arm up,Purple Hawaiian Shirt,,Cutlass,Gold Algo Necklace,250.82581381930072,57,AlgorillaArmy#166
+AGA63,378875356,Grey and Silver Radial,Blue,Yellow,Normal,"Arm up, smiling",,Red Backwards Cap,Plunger,Blue Lasers,249.6766079363213,58,AlgorillaArmy#63
+AGA50,377754400,Light Blue and Deep Blue,Red,Normal,Normal,Arm down,Red Vneck,Red Dreads,,Green Lasers,248.069938865504,59,AlgorillaArmy#50
+AGA88,379128557,Bright Pink and Light Blue,Normal,Green,Silver,"Arm up, smiling",White Tanktop,Green Beanie,Red Selfiestick,Green Lasers,247.1807357220013,60,AlgorillaArmy#88
+AGA451,545038294,Purple and Light Green,Blue Zebra,Red,Yellow,Arm down,,Purple Dreads,,,245.7837814930321,61,AlgorillaArmy#451
+AGA915,545199949,Light Green and Mid Green,Normal,Pink,Normal,Arm up,Green Tanktop,Rainbow Afro,Red Selfiestick,Blue Lasers,244.5680124206356,62,AlgorillaArmy#915
+AGA955,545204829,Light Green and Mid Green,Red,Yellow,Blue,"Arm down, smiling",Teal Vneck,Robot Head,,Blue Shutter Shades,243.76062388850767,63,AlgorillaArmy#955
+AGA116,384652743,Sky Blue and White,Silver,Blue,Pink,"Arm down, smiling",Blue Vneck,Robot Head,,Morpheus Glasses,243.29551789278676,64,AlgorillaArmy#116
+AGA355,449578238,Purple and Light Green and White Radial,Gold,Yellow,Normal,"Arm down, smiling",Yellow Vneck,Silver Crown,,Neo Glasses,243.16023998501555,65,AlgorillaArmy#355
+AGA377,544998961,Grey and Green,Lava,Pink,Black,"Arm up, smiling",,Yellow Backwards Cap,Yellow Cocktail,,242.9105820190724,66,AlgorillaArmy#377
+AGA990,545209265,Light Grey and Yellow,Blue,Normal,Silver,Arm down,Orange Sports Bra,Red Dreads,,Morpheus Glasses,242.4938952147429,67,AlgorillaArmy#990
+AGA327,449491859,Light Green and Mid Green,Normal,Red,Blue,Arm up,Black Sports Bra,Blue Beanie,Microphone,Neo Glasses,242.1726780062388,68,AlgorillaArmy#327
+AGA25,377717992,Purple and Light Green,Purple,Green,Green,"Arm up, smiling",Orange Hawaiian Shirt,Yellow Banana Hat,Red Selfiestick,Blue Lasers,242.06740898471676,69,AlgorillaArmy#25
+AGA351,449566529,White and Pink,Red,Blue,Normal,Arm up,Green Tanktop,Unicorn Horn,Oar,Blue Shutter Shades,240.65966268880783,70,AlgorillaArmy#351
+AGA452,545038647,Purple and Light Green,Red Zebra,Blue,Normal,Arm down,Leather Belt,Unicorn Horn,,Yellow Shutter Shades,240.45318223583936,71,AlgorillaArmy#452
+AGA401,545002198,Purple and Light Green,Rainbow,Red,Yellow,"Arm down, smiling",Suit Purple Tie,White Fishing Hat,,,239.81148953701543,72,AlgorillaArmy#401
+AGA633,545091588,Bright Pink and Light Blue,Normal,Red,Normal,Arm up,Suit Purple Tie,Brown Tophat,Oar,Red Clown Nose,239.68073341436343,73,AlgorillaArmy#633
+AGA362,539411387,Light Grey and Yellow,Gold,Normal,Normal,Arm down,Pink Sports Bra,Green Banana Hat,,Yellow Shutter Shades,239.45726141894676,74,AlgorillaArmy#362
+AGA164,384713792,Orange and Green,Lava,Normal,Red,"Arm up, smiling",,Gold Tophat,Pink Gold Selfiestick,Silver Algo Necklace,239.2664555764436,75,AlgorillaArmy#164
+AGA304,395656202,Bright Pink and Light Blue,Red Zebra,Yellow,Green,Arm down,Red Vneck,Red Dreads,,Black Eyepatch,239.2540388912205,76,AlgorillaArmy#304
+AGA370,544997707,Orange and Green,Blue,Red,Red,Arm up,Suit Red Tie,Silver Crown,Claymore,Blue Shutter Shades,237.8761965947317,77,AlgorillaArmy#370
+AGA219,408994704,Bright Pink and Light Blue,Purple,Normal,Red,"Arm up, smiling",Leather Belt,Purple Dreads,Green Cocktail,Red Clown Nose,234.9616522681949,78,AlgorillaArmy#219
+AGA138,384684442,White and Orange,Normal,Green,Pink,Arm down,Banana Shirt,Black Tophat,,Gold Algo Necklace,234.47945952512865,79,AlgorillaArmy#138
+AGA667,545101239,Light Green and Mid Green,Purple,Blue,Normal,"Arm up, smiling",Suit Red Tie,Blue Fishing Hat,Cutlass,,233.9660614922131,80,AlgorillaArmy#667
+AGA286,425902114,Light Grey and Yellow,Red,Yellow,Normal,"Arm up, smiling",White Spacesuit,Green Fishing Hat,Microphone,Silver Algo Necklace,233.63320553641228,81,AlgorillaArmy#286
+AGA246,409088871,White and Pink,Gold,Blue,Normal,Arm up,White Tanktop,Yellow Beanie,Cutlass,Anderson Glasses,233.6117710171232,82,AlgorillaArmy#246
+AGA540,545074036,Purple and Light Green and White Radial,Pink,Normal,Normal,"Arm down, smiling",Light Blue Sports Bra,Dark Blue Backwards Cap,,Neo Glasses,232.22417312789605,83,AlgorillaArmy#540
+AGA268,425842047,Sky Blue and White,Gold,Purple,Blue,"Arm up, smiling",Red Tanktop,Silver Crown,Spear,Neo Glasses,231.4024397956726,84,AlgorillaArmy#268
+AGA9,377685288,Light Pink and Red,Lava,Normal,Purple,"Arm up, smiling",,,Gold Bar,White Shudder Shades,231.0758857223996,85,AlgorillaArmy#9
+AGA293,425945305,Light Blue and Deep Blue,Green,Pink,Purple,"Arm down, smiling",Gold Suit,,,,230.60096930028163,86,AlgorillaArmy#293
+AGA68,378886484,Sky Blue and White,Normal,Red,Normal,Arm up,Suit Purple Tie,Silver Crown,Claymore,Neo Glasses,230.2510326803149,87,AlgorillaArmy#68
+AGA84,378969698,Brown and Gold Radial,Normal,Normal,Blue,Arm down,White Spacesuit,Gold Crown,,,226.2499929791298,88,AlgorillaArmy#84
+AGA982,545208041,Bright Pink and Purple,Normal,Normal,Yellow,Arm down,Light Blue Sports Bra,Green Banana Hat,,Yellow Shutter Shades,225.9336907639584,89,AlgorillaArmy#982
+AGA492,545050216,Purple and Light Green and White Radial,Normal,Pink,Yellow,"Arm up, smiling",Suit Purple Tie,Red Backwards Cap,Claymore,,225.61047598559568,90,AlgorillaArmy#492
+AGA45,377748035,Light Grey and Yellow,Pink,Green,Black,Arm down,Banana Shirt,Rainbow Afro,,Morpheus Glasses,225.4357006072062,91,Algorilla#45
+AGA227,409016396,White and Purple,Normal,Normal,Normal,"Arm up, smiling",Light Blue Sports Bra,Green Afro,Oar,Yellow Shutter Shades,225.25138119647485,92,AlgorillaArmy#227
+AGA102,379829265,White and Pink,Silver,Normal,Red,"Arm up, smiling",Yellow Tanktop,Gold Crown,Spear,Aviators,224.3659187753641,93,AlgorillaArmy#102
+AGA919,545200655,Light Pink and Red,Pink,Purple,Pink,"Arm up, smiling",Green Tanktop,,Purple Cocktail,Gold Algo Necklace,223.7344721162633,94,AlgorillaArmy#919
+AGA380,544999527,Orange and Green,Normal,Normal,Normal,"Arm down, smiling",White Spacesuit,Green Banana Hat,,Neo Glasses,222.59262448080332,95,AlgorillaArmy#380
+AGA609,545083523,Light Grey and Yellow,Rainbow,Normal,Yellow,"Arm up, smiling",,Green Backwards Cap,Claymore,,222.49884188950563,96,AlgorillaArmy#609
+AGA10,377691767,Orange and Green,Gold,Normal,Green,Arm up,Blue Hawaiian Shirt,Unicorn Horn,Banana,,221.9059560788313,97,AlgorillaArmy#10
+AGA245,409085945,Sky Blue and White,Normal,Yellow,Normal,"Arm up, smiling",White Tanktop,Robot Head,Oar,,220.224498762221,98,AlgorillaArmy#245
+AGA978,545207626,Light Grey and Yellow,Purple,Green,Red,"Arm down, smiling",Black Sports Bra,Dark Blue Backwards Cap,,Morpheus Glasses,219.6227210517793,99,AlgorillaArmy#978
+AGA462,545041266,Grey and Silver Radial,Purple,Normal,Normal,Arm up,Pink Sports Bra,Yellow Beanie,Plunger,Aviators,218.71284471894296,100,AlgorillaArmy#462
+AGA146,384692357,Grey and Silver Radial,Normal,Yellow,Pink,"Arm up, smiling",Suit Red Tie,Yellow Banana Hat,Green Cocktail,Black Eyepatch,216.9048342611166,101,AlgorillaArmy#146
+AGA218,408992604,Grey and Silver Radial,Yellow,Green,Blue,Arm up,Suit Red Tie,Light Blue Backwards Cap,Banana,Aviators,215.17273322105584,102,AlgorillaArmy#218
+AGA733,545141885,Light Grey and Yellow,Pink,Normal,Bloodshot,"Arm up, smiling",Black Sports Bra,Bright Red Beanie Hat,Red Selfiestick,White Shudder Shades,214.94990823993552,103,AlgorillaArmy#733
+AGA159,384708605,Bright Pink and Light Blue,Normal,Gold,Bloodshot,Arm down,Black Sports Bra,Green Afro,,Morpheus Glasses,214.76493715445133,104,AlgorillaArmy#159
+AGA141,384687630,Light Pink and Red,Silver,Green,Pink,"Arm down, smiling",Teal Vneck,Green Dreads,,Anderson Glasses,214.18302653485068,105,AlgorillaArmy#141
+AGA661,545099878,Light Blue and Deep Blue,Blue,Pink,Pink,Arm up,Green Tanktop,Unicorn Horn,Green Cocktail,,213.83092573736704,106,AlgorillaArmy#661
+AGA263,425837211,Bright Pink and Light Blue,Normal,Normal,Yellow,Arm up,Light Blue Sports Bra,Black Tophat,Blue Selfiestick,Blue Shutter Shades,212.44729862240436,107,AlgorillaArmy#263
+AGA19,377710781,Light Green and Mid Green,Rainbow,Yellow,Normal,Arm up,,Blue Dreads,Gold Selfiestick,,211.58735845552565,108,AlgorillaArmy#19
+AGA964,545206149,Light Green and Mid Green,Green,Purple,Normal,Arm up,Leather Belt,Yellow Backwards Cap,Plunger,,210.84948828830767,109,AlgorillaArmy#964
+AGA500,545052095,White and Orange,Lava,Red,Red,"Arm down, smiling",Yellow Tanktop,,,Blue Lasers,210.75229061595644,110,AlgorillaArmy#500
+AGA305,426002880,Light Green and Mid Green,Red Zebra,Normal,Normal,Arm down,,Gold Crown,,Morpheus Glasses,210.45796273118816,111,AlgorillaArmy#305
+AGA298,425968134,White and Purple,Normal,Gold,Normal,"Arm up, smiling",Yellow Tanktop,Gold Tophat,Yellow Cocktail,Aviators,210.36021740732428,112,AlgorillaArmy#298
+AGA651,545097105,Light Blue and Deep Blue,Red,Normal,Normal,Arm up,Purple Hawaiian Shirt,Purple Dreads,Pink Gold Selfiestick,Aviators,210.16066696472728,113,AlgorillaArmy#651
+AGA453,545038872,Light Grey and Yellow,Blue Zebra,Gold,Normal,Arm down,Light Blue Tanktop,Yellow Beanie,,Morpheus Glasses,209.0782554819157,114,AlgorillaArmy#453
+AGA785,545147490,White and Pink,Gold,Red,Normal,"Arm up, smiling",Green Tanktop,Yellow Dreads,Banana,,208.1256613816266,115,AlgorillaArmy#785
+AGA844,545183261,Brown and Gold Radial,Purple,Silver,Yellow,"Arm up, smiling",Orange Hawaiian Shirt,Blue Dreads,Claymore,,206.93429371626175,116,AlgorillaArmy#844
+AGA249,409097277,Grey and Silver Radial,Normal,Pink,Blue,Arm down,Teal Vneck,Green Banana Hat,,Yellow Shutter Shades,206.813418460358,117,AlgorillaArmy#249
+AGA472,545044161,White and Pink,Normal,Normal,Yellow,Arm down,Green Vneck,Robot Head,,,206.4740884555188,118,AlgorillaArmy#472
+AGA454,545039243,Sky Blue and White,Red Zebra,Pink,Green,Arm down,,Gold Crown,,,205.63325944245645,119,AlgorillaArmy#454
+AGA730,545141600,White and Orange,Silver,Silver,Green,"Arm up, smiling",Red Tanktop,Brown Tophat,Oar,Blue Shutter Shades,205.60318726678852,120,AlgorillaArmy#730
+AGA873,545189791,Light Green and Mid Green,Blue,Blue,Blue,Arm up,Green Tanktop,Gold Tophat,Blue Selfiestick,,205.2414397197006,121,AlgorillaArmy#873
+AGA786,545147635,Light Grey and Yellow,Normal,Blue,Purple,"Arm down, smiling",Black Sports Bra,Yellow Backwards Cap,,,204.8974291211021,122,AlgorillaArmy#786
+AGA274,425872244,Light Grey and Yellow,Blue,Red,Green,"Arm up, smiling",Suit Red Tie,Blue Dreads,Red Selfiestick,Yellow Shutter Shades,204.48249278364412,123,AlgorillaArmy#274
+AGA144,384690162,Light Blue and Deep Blue,Normal,Yellow,Pink,"Arm down, smiling",Pink Vneck,Purple Dreads,,Blue Shutter Shades,203.98589174594724,124,AlgorillaArmy#144
+AGA369,539444068,Sky Blue and White,Pink,Red,Red,"Arm up, smiling",Leather Belt,Gold Tophat,Pink Gold Selfiestick,Yellow Shutter Shades,203.90127323273276,125,AlgorillaArmy#369
+AGA60,378873149,Brown and Gold Radial,Yellow,Purple,Yellow,Arm up,,Yellow Dreads,Gold Selfiestick,Morpheus Glasses,203.89532340588596,126,AlgorillaArmy#60
+AGA16,377699124,Light Pink and Red,Blue,Blue,Blue,Arm up,Orange Hawaiian Shirt,Yellow Banana Hat,Plunger,Yellow Shutter Shades,203.8413144693279,127,AlgorillaArmy#16
+AGA47,377750647,Grey and Green,Blue,Red,Normal,Arm up,White Tanktop,,Cutlass,Yellow Lasers,203.73184771196128,128,AlgorillaArmy#47
+AGA192,384761488,White and Orange,Green,Gold,Bloodshot,"Arm down, smiling",Pink Sports Bra,Dark Blue Backwards Cap,,Blue Shutter Shades,203.6744460027906,129,AlgorillaArmy#192
+AGA90,379141728,Bright Pink and Light Blue,Normal,Green,Black,"Arm up, smiling",Orange Hawaiian Shirt,Normal Dreads,Spear,,203.2248654150542,130,AlgorillaArmy#90
+AGA483,545047405,White and Orange,Normal,Purple,Bloodshot,Arm up,Red Tanktop,Yellow Dreads,Microphone,,203.1206161973397,131,AlgorillaArmy#483
+AGA575,545078015,Light Grey and Yellow,Blue,Green,Red,"Arm down, smiling",Suit Purple Tie,Pink Dreads,,Aviators,202.7687561946379,132,AlgorillaArmy#575
+AGA954,545204738,Purple and Light Green and White Radial,Silver,Red,Pink,Arm down,Teal Vneck,Green Afro,,Yellow Shutter Shades,202.51075136716125,133,AlgorillaArmy#954
+AGA765,545145248,Light Pink and Red,Blue,Green,Blue,"Arm down, smiling",Red Tanktop,Green Backwards Cap,,Blue Lasers,202.0917461454655,134,AlgorillaArmy#765
+AGA755,545144250,White and Purple,Silver,Red,Black,"Arm up, smiling",,Green Afro,Purple Cocktail,Blue Shutter Shades,201.7842109133027,135,AlgorillaArmy#755
+AGA684,545106023,Purple and Light Green and White Radial,Yellow,Blue,Normal,"Arm up, smiling",Green Tanktop,Blue Fishing Hat,Plunger,,201.61309986214297,136,AlgorillaArmy#684
+AGA876,545190441,White and Pink,Pink,Pink,Red,"Arm up, smiling",,Silver Dreads,Banana,Morpheus Glasses,201.24308512521523,137,AlgorillaArmy#876
+AGA417,545028643,Grey and Green,Red,Normal,Black,Arm up,Purple Hawaiian Shirt,Green Fishing Hat,Claymore,,201.0830035230166,138,AlgorillaArmy#417
+AGA888,545193517,Sky Blue and White,Purple,Blue,Normal,"Arm up, smiling",Orange Hawaiian Shirt,Light Blue Backwards Cap,Plunger,,200.89587426053515,139,AlgorillaArmy#888
+AGA634,545091840,Sky Blue and White,Gold,Purple,Blue,"Arm up, smiling",White Tanktop,Red Dreads,Banana,Black Eyepatch,200.7928313651256,140,AlgorillaArmy#634
+AGA676,545103701,White and Purple,Yellow,Yellow,Red,Arm up,Light Blue Tanktop,,Gold Bar,Neo Glasses,200.7180111924776,141,AlgorillaArmy#676
+AGA833,545155550,Brown and Gold Radial,Normal,Normal,Blue,Arm up,Red Tanktop,,Purple Cocktail,Blue Lasers,200.62164260609856,142,AlgorillaArmy#833
+AGA214,408982312,Bright Pink and Purple,Normal,Yellow,Normal,Arm down,Black Vneck,Purple Dreads,,White Shudder Shades,200.49485461389776,143,AlgorillaArmy#214
+AGA501,383709602,Light Blue and Deep Blue,Blue Lava,Blue,Green,Arm down,White Tanktop,,,Blue Shutter Shades,199.9064651173643,144,AlgorillaArmy#501
+AGA602,545081598,Purple and Light Green,Red Zebra,Green,Normal,Arm down,Pink Vneck,Green Dreads,,,199.50928068285387,145,AlgorillaArmy#602
+AGA725,545141127,Orange and Green,Red,Yellow,Yellow,Arm down,Black Vneck,Purple Dreads,,,199.2187681145657,146,AlgorillaArmy#725
+AGA904,545197153,Light Grey and Yellow,Yellow,Normal,Normal,Arm up,Yellow Tanktop,Green Beanie,Pink Gold Selfiestick,Gold Algo Necklace,198.26795585901465,147,AlgorillaArmy#904
+AGA772,545146210,Bright Pink and Purple,Normal,Yellow,Normal,"Arm down, smiling",Green Vneck,Green Banana Hat,,Anderson Glasses,197.15002827580275,148,AlgorillaArmy#772
+AGA546,545074656,White and Pink,Normal,Pink,Silver,"Arm down, smiling",Yellow Vneck,Red Dreads,,Blue Shutter Shades,196.84674534630312,149,AlgorillaArmy#546
+AGA742,545142771,Bright Pink and Light Blue,Normal,Normal,Normal,Arm up,Orange Hawaiian Shirt,Dark Blue Backwards Cap,Cutlass,,196.82440337267872,150,AlgorillaArmy#742
+AGA422,545030147,Light Blue and Deep Blue,Red,Yellow,Blue,Arm down,Light Blue Tanktop,Silver Dreads,,Silver Algo Necklace,195.87096861301185,151,AlgorillaArmy#422
+AGA447,545037356,Light Pink and Red,Lava,Pink,Blue,"Arm down, smiling",Pink Vneck,,,Yellow Lasers,195.73247982486544,152,AlgorillaArmy#447
+AGA663,545100360,Orange and Green,Red,Normal,Green,Arm up,Blue Hawaiian Shirt,,Blue Selfiestick,Green Lasers,195.44947605092275,153,AlgorillaArmy#663
+AGA789,545147890,White and Orange,Red,Red,Normal,Arm down,Blue Vneck,Unicorn Horn,,Neo Glasses,195.41348784480917,154,AlgorillaArmy#789
+AGA172,384732758,Purple and Light Green and White Radial,Normal,Normal,Pink,Arm up,White Spacesuit,,Banana,Silver Algo Necklace,195.09494707940303,155,AlgorillaArmy#172
+AGA387,545000271,White and Purple,Green,Blue,Normal,Arm up,Purple Hawaiian Shirt,Bright Red Beanie Hat,Plunger,Yellow Shutter Shades,194.80453486312783,156,AlgorillaArmy#387
+AGA604,545082039,Brown and Gold Radial,Red Zebra,Normal,Normal,Arm down,Black Vneck,Red Backwards Cap,,,194.3179383220907,157,AlgorillaArmy#604
+AGA189,384756706,Light Grey and Yellow,Purple,Pink,Bloodshot,"Arm down, smiling",Teal Vneck,Dark Blue Backwards Cap,,Yellow Shutter Shades,193.4965861063795,158,AlgorillaArmy#189
+AGA115,384650236,Bright Pink and Light Blue,Blue,Blue,Normal,Arm up,Green Tanktop,,Yellow Cocktail,Gold Algo Necklace,192.30542834953087,159,AlgorillaArmy#115
+AGA58,378862455,Purple and Light Green,Green,Gold,Purple,"Arm up, smiling",,,Cutlass,Morpheus Glasses,192.00946813948497,160,AlgorillaArmy#58
+AGA505,545069587,Light Green and Mid Green,Blue Lava,Gold,Normal,Arm down,,,,,191.5234381362862,161,AlgorillaArmy#505
+AGA248,409095914,Grey and Silver Radial,Green,Purple,Yellow,Arm up,Blue Hawaiian Shirt,,Green Cocktail,Gold Algo Necklace,191.34773454149047,162,AlgorillaArmy#248
+AGA101,379799957,Brown and Gold Radial,Silver,Blue,Yellow,Arm up,,White Fishing Hat,Pink Gold Selfiestick,Yellow Lasers,191.1178415460704,163,AlgorillaArmy#101
+AGA237,409061996,Light Blue and Deep Blue,Gold,Red,Blue,Arm up,Orange Hawaiian Shirt,Yellow Banana Hat,Green Cocktail,White Shudder Shades,189.9570942548399,164,AlgorillaArmy#237
+AGA658,545098933,White and Pink,Normal,Silver,Normal,Arm up,Pink Sports Bra,Blue Fishing Hat,Claymore,Aviators,189.8819151720884,165,AlgorillaArmy#658
+AGA499,545051890,White and Pink,Zebra,Gold,Normal,"Arm up, smiling",Red Tanktop,,Green Cocktail,Red Clown Nose,189.76049791933087,166,AlgorillaArmy#499
+AGA850,545184569,Purple and Light Green,Green,Normal,Normal,"Arm up, smiling",,Pink Dreads,Cutlass,,189.43874886479085,167,AlgorillaArmy#850
+AGA652,545097405,Brown and Gold Radial,Normal,Normal,Black,Arm up,White Tanktop,,Claymore,White Shudder Shades,189.10475658216575,168,AlgorillaArmy#652
+AGA175,384736455,White and Pink,Normal,Normal,Normal,Arm down,Yellow Tanktop,Robot Head,,Black Eyepatch,188.23878784828696,169,AlgorillaArmy#175
+AGA341,449529365,Light Blue and Deep Blue,Red,Silver,Blue,Arm up,Light Blue Tanktop,Blue Dreads,Spear,Black Eyepatch,188.091939297149,170,AlgorillaArmy#341
+AGA637,545092953,Light Pink and Red,Purple,Blue,Yellow,Arm down,Black Sports Bra,White Fishing Hat,,White Shudder Shades,188.0125612234945,171,AlgorillaArmy#637
+AGA180,384743353,Light Blue and Deep Blue,Normal,Gold,Green,Arm up,Red Tanktop,Green Dreads,Red Selfiestick,Red Clown Nose,187.71847479403837,172,AlgorillaArmy#180
+AGA107,384636194,Light Green and Mid Green,Purple,Purple,Bloodshot,Arm up,Yellow Tanktop,Gold Crown,Banana,,187.59758297258296,173,AlgorillaArmy#107
+AGA81,378936537,Orange and Green,Lava,Red,Yellow,"Arm down, smiling",Light Blue Tanktop,Green Dreads,,Neo Glasses,187.44159010156216,174,AlgorillaArmy#81
+AGA758,545144570,Bright Pink and Purple,Yellow,Yellow,Normal,Arm up,White Tanktop,,Blue Selfiestick,Green Lasers,187.42208005986785,175,AlgorillaArmy#758
+AGA996,545209938,Purple and Light Green,Red,Purple,Red,"Arm up, smiling",Leather Belt,Bright Red Beanie Hat,Oar,Anderson Glasses,187.39823177336865,176,AlgorillaArmy#996
+AGA532,545073140,Light Pink and Red,Red,Yellow,Green,Arm up,Green Tanktop,Light Blue Backwards Cap,Red Cocktail,,187.24835484670555,177,AlgorillaArmy#532
+AGA666,545100984,Light Pink and Red,Blue,Normal,Bloodshot,"Arm up, smiling",Green Tanktop,Light Blue Backwards Cap,Purple Cocktail,Yellow Shutter Shades,187.04623982292085,178,AlgorillaArmy#666
+AGA224,409006170,Light Blue and Deep Blue,Red Zebra,Pink,Normal,Arm down,,Pink Dreads,,Morpheus Glasses,186.97945627927317,179,AlgorillaArmy#224
+AGA767,545145556,Purple and Light Green,Purple,Blue,Black,Arm up,Pink Sports Bra,,Green Cocktail,,186.7733683667732,180,AlgorillaArmy#767
+AGA66,378881197,Grey and Green,Rainbow,Yellow,Green,"Arm up, smiling",,,Pink Gold Selfiestick,Red Clown Nose,186.67436506146183,181,AlgorillaArmy#66
+AGA861,545187129,Bright Pink and Light Blue,Pink,Pink,Bloodshot,Arm up,Orange Sports Bra,,Blue Selfiestick,,186.52186410081143,182,AlgorillaArmy#861
+AGA280,425878148,White and Pink,Red,Red,Blue,Arm down,White Tanktop,Green Backwards Cap,,Blue Lasers,186.3728956580943,183,AlgorillaArmy#280
+AGA702,545138613,Brown and Gold Radial,Normal,Yellow,Green,Arm up,Suit Red Tie,,Blue Selfiestick,Anderson Glasses,185.8708304319976,184,AlgorillaArmy#702
+AGA852,545185057,Light Pink and Red,Silver,Green,Normal,Arm up,Blue Hawaiian Shirt,,Spear,Yellow Lasers,185.55449844251496,185,AlgorillaArmy#852
+AGA760,545144757,Light Blue and Deep Blue,Red,Normal,Green,Arm down,Yellow Vneck,Red Dreads,,Red Clown Nose,184.61094010285416,186,AlgorillaArmy#760
+AGA913,545199422,Orange and Green,Yellow,Gold,Green,"Arm up, smiling",Orange Hawaiian Shirt,Light Blue Backwards Cap,Green Cocktail,Morpheus Glasses,183.88953340258377,187,AlgorillaArmy#913
+AGA511,545070361,Light Pink and Red,Normal,Red,Red,Arm up,Red Tanktop,,Yellow Cocktail,Blue Lasers,183.72982190265756,188,AlgorillaArmy#511
+AGA439,545035329,White and Orange,Normal,Normal,Pink,"Arm down, smiling",Red Vneck,Green Banana Hat,,,183.1488800233244,189,AlgorillaArmy#439
+AGA406,545404552,Sky Blue and White,Blue Zebra,Green,Yellow,Arm down,Pink Vneck,,,Blue Shutter Shades,183.00001426077588,190,AlgorillaArmy#406
+AGA486,545048588,Light Pink and Red,Normal,Normal,Bloodshot,"Arm up, smiling",Green Tanktop,Yellow Beanie,Plunger,,182.70986112216087,191,AlgorillaArmy#486
+AGA761,545144841,Light Green and Mid Green,Red,Normal,Normal,"Arm up, smiling",,Gold Tophat,Spear,,182.64319526251447,192,AlgorillaArmy#761
+AGA2,377673461,Purple and Light Green,Normal,Blue,Normal,Arm up,Leather Belt,Yellow Backwards Cap,Spear,Aviators,182.3071995497601,193,AlgorillaArmy#2
+AGA599,545081178,Brown and Gold Radial,Pink,Red,Red,Arm down,Light Blue Sports Bra,Blue Fishing Hat,,,182.21786578407895,194,AlgorillaArmy#599
+AGA221,408998603,Purple and Light Green,Purple,Red,Normal,"Arm down, smiling",Yellow Vneck,Blue Dreads,,Silver Algo Necklace,180.75709609849568,195,AlgorillaArmy#221
+AGA965,545206265,Orange and Green,Blue,Purple,Yellow,Arm down,Banana Shirt,Green Dreads,,Morpheus Glasses,180.55839625793072,196,AlgorillaArmy#965
+AGA403,545002463,Grey and Silver Radial,Red Zebra,Purple,Green,Arm down,,Pink Dreads,,,180.2236010649989,197,AlgorillaArmy#403
+AGA337,449519651,Light Pink and Red,Normal,Normal,Blue,Arm up,Light Blue Tanktop,,Pink Gold Selfiestick,Green Lasers,179.894908115062,198,AlgorillaArmy#337
+AGA762,545144925,Grey and Silver Radial,Normal,Pink,Black,"Arm up, smiling",Light Blue Tanktop,White Fishing Hat,Pink Gold Selfiestick,White Shudder Shades,179.7750614119331,199,AlgorillaArmy#762
+AGA868,545188673,Light Blue and Deep Blue,Green,Purple,Normal,Arm up,Yellow Tanktop,White Fishing Hat,Plunger,Yellow Shutter Shades,179.7146727450333,200,AlgorillaArmy#868
+AGA357,449586959,Grey and Silver Radial,Green,Green,Normal,"Arm down, smiling",Yellow Vneck,Yellow Dreads,,,179.69546208105098,201,AlgorillaArmy#357
+AGA55,378834150,Orange and Green,Normal,Normal,Normal,Arm up,White Spacesuit,Blue Beanie,Banana,White Shudder Shades,179.34727290927822,202,AlgorillaArmy#55
+AGA111,384642191,White and Orange,Pink,Normal,Blue,"Arm down, smiling",Suit Purple Tie,Green Dreads,,,179.17410723127833,203,AlgorillaArmy#111
+AGA628,545089946,Orange and Green,Yellow,Red,Blue,"Arm down, smiling",Orange Sports Bra,Green Beanie,,,178.64432027233278,204,AlgorillaArmy#628
+AGA42,377743199,Grey and Silver Radial,Red,Yellow,Bloodshot,"Arm down, smiling",Green Vneck,Yellow Dreads,,,178.07177133026445,205,AlgorillaArmy#42
+AGA143,384689410,Bright Pink and Light Blue,Purple,Normal,Yellow,"Arm down, smiling",Teal Vneck,Gold Dreads,,,177.01257702582677,206,AlgorillaArmy#143
+AGA61,378873816,Light Green and Mid Green,Purple,Green,Red,"Arm down, smiling",Suit Red Tie,Black Tophat,,,176.78099254967344,207,AlgorillaArmy#61
+AGA670,545102001,Light Green and Mid Green,Yellow,Normal,Pink,"Arm up, smiling",Suit Purple Tie,,Pink Gold Selfiestick,Red Clown Nose,176.75194779742003,208,AlgorillaArmy#670
+AGA797,545149079,Bright Pink and Light Blue,Normal,Blue,Normal,Arm down,,Bright Red Beanie Hat,,Green Lasers,176.5685499021793,209,AlgorillaArmy#797
+AGA605,545082447,Grey and Silver Radial,Silver,Silver,Normal,"Arm down, smiling",Purple Hawaiian Shirt,Light Blue Backwards Cap,,Anderson Glasses,176.4086480122586,210,AlgorillaArmy#605
+AGA434,545033914,White and Pink,Purple,Normal,Silver,Arm down,Blue Vneck,Green Dreads,,Yellow Shutter Shades,176.40392558567893,211,AlgorillaArmy#434
+AGA664,545100563,White and Orange,Red,Normal,Pink,Arm up,Banana Shirt,Green Fishing Hat,Purple Cocktail,Anderson Glasses,176.30153806698905,212,AlgorillaArmy#664
+AGA255,409118135,Brown and Gold Radial,Purple,Yellow,Green,Arm down,Pink Vneck,Yellow Banana Hat,,Anderson Glasses,176.07247353179667,213,AlgorillaArmy#255
+AGA67,378885528,Light Grey and Yellow,Silver,Green,Blue,"Arm down, smiling",White Tanktop,Green Banana Hat,,Morpheus Glasses,176.05330940654636,214,AlgorillaArmy#67
+AGA909,545198426,Grey and Green,Normal,Yellow,Blue,Arm down,Light Blue Tanktop,Yellow Backwards Cap,,Yellow Lasers,175.82155668112827,215,AlgorillaArmy#909
+AGA461,545040990,Purple and Light Green,Green,Blue,Normal,Arm down,Orange Sports Bra,Blue Fishing Hat,,Yellow Shutter Shades,175.7126516567995,216,AlgorillaArmy#461
+AGA708,545139189,Sky Blue and White,Blue,Normal,Purple,Arm up,Light Blue Sports Bra,,Purple Cocktail,,175.3578088578089,217,AlgorillaArmy#708
+AGA856,545186012,Grey and Silver Radial,Blue,Green,Silver,"Arm up, smiling",White Tanktop,Green Backwards Cap,Blue Selfiestick,Black Eyepatch,174.47694861491885,218,AlgorillaArmy#856
+AGA644,545095093,Purple and Light Green,Red,Blue,Pink,"Arm up, smiling",Pink Sports Bra,,Gold Selfiestick,Silver Algo Necklace,174.45729733376908,219,AlgorillaArmy#644
+AGA494,545050734,Bright Pink and Purple,Normal,Yellow,Silver,Arm up,,Pink Dreads,Purple Cocktail,Morpheus Glasses,173.68271691578553,220,AlgorillaArmy#494
+AGA379,544999400,Orange and Green,Green,Normal,Normal,"Arm up, smiling",,,Gold Bar,Black Eyepatch,173.6594959413863,221,AlgorillaArmy#379
+AGA398,545001652,Sky Blue and White,Gold,Green,Red,"Arm up, smiling",Green Tanktop,,Pink Gold Selfiestick,Anderson Glasses,173.60254944504993,222,AlgorillaArmy#398
+AGA343,449538018,Light Blue and Deep Blue,Normal,Yellow,Green,"Arm down, smiling",Light Blue Sports Bra,Blue Dreads,,,173.24852849681295,223,AlgorillaArmy#343
+AGA350,449562174,Grey and Silver Radial,Normal,Red,Bloodshot,"Arm down, smiling",Blue Hawaiian Shirt,Gold Crown,,White Shudder Shades,172.7388477782894,224,AlgorillaArmy#350
+AGA402,545002356,Bright Pink and Light Blue,Yellow,Yellow,Normal,Arm down,,Purple Dreads,,Morpheus Glasses,172.48728548340247,225,AlgorillaArmy#402
+AGA700,545138452,Orange and Green,Rainbow,Normal,Blue,"Arm down, smiling",Blue Vneck,,,Yellow Shutter Shades,172.2597089484497,226,AlgorillaArmy#700
+AGA389,545000451,White and Purple,Normal,Green,Silver,Arm up,,Light Blue Backwards Cap,Spear,,172.15867343589255,227,AlgorillaArmy#389
+AGA705,545138893,Bright Pink and Purple,Normal,Blue,Blue,Arm up,Black Sports Bra,,Banana,Silver Algo Necklace,171.83735730007413,228,AlgorillaArmy#705
+AGA707,545139063,Light Green and Mid Green,Red,Green,Bloodshot,"Arm up, smiling",Red Tanktop,Normal Dreads,Oar,Yellow Shutter Shades,171.77854238182115,229,AlgorillaArmy#707
+AGA853,545185378,Orange and Green,Purple,Normal,Blue,"Arm up, smiling",Suit Red Tie,White Fishing Hat,Yellow Cocktail,,171.75238435158678,230,AlgorillaArmy#853
+AGA689,545107355,Orange and Green,Pink,Blue,Green,"Arm down, smiling",White Tanktop,Green Banana Hat,,Anderson Glasses,171.70515072570277,231,AlgorillaArmy#689
+AGA242,409075445,Light Blue and Deep Blue,Pink,Red,Black,Arm down,Banana Shirt,,,Aviators,171.55704695321424,232,AlgorillaArmy#242
+AGA794,545148603,White and Purple,Red,Silver,Yellow,"Arm down, smiling",Green Vneck,Green Dreads,,,171.4689767999486,233,AlgorillaArmy#794
+AGA986,545208608,Light Grey and Yellow,Normal,Yellow,Black,Arm down,Green Vneck,,,Anderson Glasses,171.12530736663928,234,AlgorillaArmy#986
+AGA807,545150133,Brown and Gold Radial,Blue,Normal,Red,"Arm up, smiling",,Blue Beanie,Gold Selfiestick,Red Clown Nose,170.96228010508548,235,AlgorillaArmy#807
+AGA966,545206386,Sky Blue and White,Purple,Pink,Blue,"Arm down, smiling",Yellow Vneck,Green Afro,,Aviators,170.74398007390175,236,AlgorillaArmy#966
+AGA313,449454239,Sky Blue and White,Normal,Normal,Normal,Arm up,Leather Belt,Green Banana Hat,Purple Cocktail,,170.7060772543526,237,AlgorillaArmy#313
+AGA35,377733230,Bright Pink and Purple,Normal,Green,Green,"Arm down, smiling",Pink Vneck,,,Blue Lasers,170.4480255833849,238,AlgorillaArmy#35
+AGA655,545098189,Purple and Light Green,Green,Pink,Normal,Arm up,Red Tanktop,Yellow Banana Hat,Spear,Yellow Shutter Shades,169.89823476229802,239,AlgorillaArmy#655
+AGA14,377696632,White and Purple,Zebra,Gold,Normal,Arm down,,Yellow Banana Hat,,,169.7599384780497,240,AlgorillaArmy#14
+AGA201,384770337,Bright Pink and Light Blue,Red Zebra,Gold,Yellow,Arm down,Leather Belt,,,White Shudder Shades,169.5983159213773,241,AlgorillaArmy#201
+AGA162,384711587,White and Pink,Normal,Blue,Pink,Arm up,Purple Hawaiian Shirt,Yellow Banana Hat,Blue Selfiestick,Silver Algo Necklace,169.55971752243434,242,AlgorillaArmy#162
+AGA934,545202136,Sky Blue and White,Pink,Silver,Normal,"Arm down, smiling",Red Vneck,Green Afro,,Black Eyepatch,169.2340196499377,243,AlgorillaArmy#934
+AGA57,378837618,Purple and Light Green,Red,Pink,Blue,Arm up,Yellow Tanktop,Rainbow Afro,Purple Cocktail,Silver Algo Necklace,168.72237379800404,244,AlgorillaArmy#57
+AGA235,409046970,Orange and Green,Normal,Normal,Silver,"Arm up, smiling",Purple Hawaiian Shirt,Green Fishing Hat,Microphone,,168.64659081646226,245,AlgorillaArmy#235
+AGA92,379157301,Bright Pink and Purple,Pink,Normal,Bloodshot,Arm up,Orange Hawaiian Shirt,Pink Dreads,Gold Selfiestick,,168.6007754636103,246,AlgorillaArmy#92
+AGA569,545077294,Light Pink and Red,Red,Red,Normal,"Arm up, smiling",Light Blue Tanktop,Red Backwards Cap,Microphone,Black Eyepatch,168.30235182301686,247,AlgorillaArmy#569
+AGA79,378930177,Bright Pink and Light Blue,Purple,Pink,Normal,"Arm down, smiling",Pink Vneck,Red Dreads,,Red Clown Nose,167.54615862900252,248,AlgorillaArmy#79
+AGA83,378943007,Light Blue and Deep Blue,Blue,Red,Normal,"Arm up, smiling",White Tanktop,Unicorn Horn,Banana,,167.33530957635998,249,AlgorillaArmy#83
+AGA979,545207698,Sky Blue and White,Normal,Green,Normal,"Arm up, smiling",Leather Belt,,Cutlass,Neo Glasses,166.89996865397683,250,AlgorillaArmy#979
+AGA119,384657921,Orange and Green,Normal,Blue,Bloodshot,"Arm down, smiling",Yellow Vneck,Black Tophat,,Yellow Shutter Shades,166.84190549336307,251,AlgorillaArmy#119
+AGA278,425875471,Orange and Green,Silver,Blue,Green,Arm up,Purple Hawaiian Shirt,Green Dreads,Red Selfiestick,,166.83395724159132,252,AlgorillaArmy#278
+AGA404,545002569,White and Pink,Red Zebra,Purple,Pink,Arm down,,White Fishing Hat,,White Shudder Shades,166.73772348783913,253,AlgorillaArmy#404
+AGA200,384769598,Bright Pink and Purple,Blue Zebra,Gold,Yellow,Arm down,,,,Yellow Shutter Shades,166.43326027907193,254,AlgorillaArmy#200
+AGA258,425818570,Light Grey and Yellow,Blue,Pink,Normal,"Arm down, smiling",White Tanktop,Silver Dreads,,,166.30941698526934,255,AlgorillaArmy#258
+AGA570,545077409,Purple and Light Green and White Radial,Normal,Red,Normal,"Arm down, smiling",Red Vneck,Silver Crown,,Yellow Shutter Shades,166.28350281113674,256,AlgorillaArmy#570
+AGA216,408989132,White and Orange,Yellow,Purple,Normal,Arm up,Yellow Tanktop,Red Dreads,Purple Cocktail,Morpheus Glasses,166.1535262247841,257,AlgorillaArmy#216
+AGA606,545082728,Grey and Green,Lava,Normal,Yellow,"Arm up, smiling",Light Blue Tanktop,Blue Fishing Hat,Banana,Neo Glasses,165.91784526418462,258,AlgorillaArmy#606
+AGA354,449575149,Orange and Green,Silver,Silver,Blue,Arm up,Yellow Tanktop,Bright Red Beanie Hat,Red Selfiestick,Silver Algo Necklace,165.8250450553835,259,AlgorillaArmy#354
+AGA940,545203223,Orange and Green,Red,Silver,Normal,"Arm down, smiling",Green Vneck,Green Beanie,,Silver Algo Necklace,165.79266812496246,260,AlgorillaArmy#940
+AGA863,545187573,Light Green and Mid Green,Blue,Pink,Bloodshot,Arm up,Leather Belt,White Fishing Hat,Microphone,,165.60883589272336,261,AlgorillaArmy#863
+AGA449,545037828,White and Purple,Zebra,Blue,Purple,Arm down,Black Vneck,,,,165.52577674528598,262,AlgorillaArmy#449
+AGA648,545096241,Grey and Green,Normal,Normal,Normal,"Arm down, smiling",Blue Hawaiian Shirt,Unicorn Horn,,Aviators,165.45391266586927,263,AlgorillaArmy#648
+AGA567,545077066,Purple and Light Green,Normal,Normal,Bloodshot,"Arm up, smiling",Pink Sports Bra,Black Tophat,Pink Gold Selfiestick,,165.40912436321975,264,AlgorillaArmy#567
+AGA477,545045719,Bright Pink and Purple,Normal,Yellow,Blue,"Arm up, smiling",White Tanktop,Gold Tophat,Pink Gold Selfiestick,,165.09879145255704,265,AlgorillaArmy#477
+AGA367,539435832,Light Grey and Yellow,Normal,Purple,Normal,Arm down,Suit Purple Tie,Silver Crown,,,164.90394687625087,266,AlgorillaArmy#367
+AGA345,449546434,Sky Blue and White,Yellow,Yellow,Normal,"Arm up, smiling",Yellow Tanktop,Gold Dreads,Pink Gold Selfiestick,Neo Glasses,164.44377505306664,267,AlgorillaArmy#345
+AGA665,545100782,Orange and Green,Normal,Normal,Normal,Arm up,Banana Shirt,Rainbow Afro,Pink Gold Selfiestick,Aviators,163.86838536892142,268,AlgorillaArmy#665
+AGA160,384709600,Bright Pink and Purple,Normal,Red,Blue,Arm up,Orange Hawaiian Shirt,Red Backwards Cap,Banana,Yellow Lasers,163.718121463447,269,AlgorillaArmy#160
+AGA423,545030386,Bright Pink and Light Blue,Pink,Normal,Normal,Arm up,Blue Hawaiian Shirt,Green Fishing Hat,Oar,Red Clown Nose,163.46943045739846,270,AlgorillaArmy#423
+AGA831,545154970,Sky Blue and White,Normal,Normal,Normal,Arm up,Pink Sports Bra,Bright Red Beanie Hat,Spear,,163.18749329818098,271,AlgorillaArmy#831
+AGA526,545072255,Purple and Light Green and White Radial,Normal,Normal,Red,"Arm up, smiling",,Rainbow Afro,Gold Selfiestick,Blue Shutter Shades,162.8335943992119,272,AlgorillaArmy#526
+AGA77,378922707,Light Green and Mid Green,Rainbow,Red,Normal,Arm down,,Green Fishing Hat,,Blue Shutter Shades,162.7790040910779,273,AlgorillaArmy#77
+AGA932,545201811,White and Pink,Red,Normal,Normal,"Arm up, smiling",Leather Belt,Black Tophat,Gold Selfiestick,Neo Glasses,162.32515983578344,274,AlgorillaArmy#932
+AGA564,545076737,Light Green and Mid Green,Yellow,Green,Normal,Arm up,Red Tanktop,Gold Dreads,Banana,Morpheus Glasses,161.65833709727323,275,AlgorillaArmy#564
+AGA75,378916358,White and Purple,Gold,Pink,Bloodshot,"Arm up, smiling",Yellow Tanktop,,Purple Cocktail,Yellow Shutter Shades,161.54340932009032,276,AlgorillaArmy#75
+AGA72,378911088,Light Green and Mid Green,Green,Green,Blue,"Arm up, smiling",Green Tanktop,Green Backwards Cap,Blue Selfiestick,Aviators,161.39487597392213,277,AlgorillaArmy#72
+AGA12,377694139,Purple and Light Green,Green,Normal,Green,Arm down,Black Vneck,Rainbow Afro,,Black Eyepatch,161.361519721275,278,AlgorillaArmy#12
+AGA135,384681492,White and Pink,Lava,Red,Normal,Arm down,White Tanktop,Gold Dreads,,,161.34390065693037,279,AlgorillaArmy#135
+AGA948,545204097,White and Orange,Silver,Red,Red,Arm up,Purple Hawaiian Shirt,Bright Red Beanie Hat,Blue Selfiestick,White Shudder Shades,161.28604888669696,280,AlgorillaArmy#948
+AGA96,379202881,White and Orange,Normal,Yellow,Yellow,Arm up,White Tanktop,,Gold Bar,,160.89793181044257,281,AlgorillaArmy#96
+AGA185,384750093,Purple and Light Green,Yellow,Pink,Blue,Arm down,Banana Shirt,Black Tophat,,White Shudder Shades,160.81024405531008,282,AlgorillaArmy#185
+AGA635,545092234,Purple and Light Green,Pink,Red,Yellow,Arm down,Blue Hawaiian Shirt,Yellow Dreads,,Neo Glasses,160.6061101193721,283,AlgorillaArmy#635
+AGA428,545032274,Brown and Gold Radial,Red,Pink,Normal,"Arm down, smiling",Red Vneck,Blue Dreads,,,160.47717253486735,284,AlgorillaArmy#428
+AGA757,545144487,Bright Pink and Light Blue,Normal,Yellow,Green,"Arm down, smiling",Blue Vneck,Yellow Dreads,,Aviators,160.341061219955,285,AlgorillaArmy#757
+AGA595,545080657,Purple and Light Green and White Radial,Blue,Pink,Silver,Arm down,Pink Vneck,Green Fishing Hat,,,160.07342365168773,286,AlgorillaArmy#595
+AGA54,378832091,Light Blue and Deep Blue,Zebra,Green,Red,"Arm up, smiling",Yellow Tanktop,,Yellow Cocktail,White Shudder Shades,159.8658524626232,287,AlgorillaArmy#54
+AGA618,545086770,Light Pink and Red,Normal,Blue,Purple,Arm up,Yellow Tanktop,,Purple Cocktail,Yellow Lasers,159.79988236786232,288,AlgorillaArmy#618
+AGA427,545031623,Brown and Gold Radial,Green,Yellow,Red,"Arm down, smiling",Leather Belt,Normal Dreads,,Silver Algo Necklace,159.5487718256049,289,AlgorillaArmy#427
+AGA208,408964128,White and Pink,Green,Silver,Bloodshot,"Arm down, smiling",Leather Belt,Brown Tophat,,Neo Glasses,159.50068284859557,290,AlgorillaArmy#208
+AGA376,544998771,Grey and Silver Radial,Blue,Normal,Normal,Arm up,Banana Shirt,Yellow Beanie,Yellow Cocktail,Neo Glasses,159.47839780885715,291,AlgorillaArmy#376
+AGA970,545206754,White and Pink,Normal,Yellow,Purple,Arm up,Black Sports Bra,,Pink Gold Selfiestick,,159.38010636456232,292,AlgorillaArmy#970
+AGA228,409025272,Grey and Green,Green,Yellow,Normal,Arm up,Blue Hawaiian Shirt,Black Tophat,Red Cocktail,,159.27340967098863,293,AlgorillaArmy#228
+AGA860,545186925,Light Green and Mid Green,Pink,Blue,Green,"Arm up, smiling",Leather Belt,Red Dreads,Gold Selfiestick,,159.2674377231844,294,AlgorillaArmy#860
+AGA207,408961821,Bright Pink and Light Blue,Pink,Pink,Yellow,"Arm up, smiling",White Tanktop,Black Tophat,Red Selfiestick,Anderson Glasses,159.16138837413405,295,AlgorillaArmy#207
+AGA445,545036860,White and Pink,Gold,Normal,Blue,Arm down,Orange Hawaiian Shirt,Dark Blue Backwards Cap,,,159.05285099318402,296,AlgorillaArmy#445
+AGA503,545069321,Light Blue and Deep Blue,Blue Zebra,Red,Normal,Arm down,Blue Hawaiian Shirt,,,Yellow Shutter Shades,158.94229043696103,297,AlgorillaArmy#503
+AGA8,377684008,Grey and Silver Radial,Normal,Gold,Pink,Arm down,,Gold Crown,,,158.73168752978987,298,AlgorillaArmy#8
+AGA336,449516974,Bright Pink and Purple,Normal,Normal,Bloodshot,"Arm up, smiling",White Tanktop,Light Blue Backwards Cap,Claymore,,158.5750812446363,299,AlgorillaArmy#336
+AGA147,384693393,Brown and Gold Radial,Yellow,Yellow,Normal,Arm down,Banana Shirt,Yellow Banana Hat,,,158.5255658613055,300,AlgorillaArmy#147
+AGA3,377674603,Grey and Green,Green,Green,Yellow,"Arm down, smiling",Red Vneck,Pink Dreads,,,158.4594337484188,301,AlgorillaArmy#3
+AGA231,409030979,White and Purple,Pink,Normal,Yellow,Arm down,Light Blue Sports Bra,Blue Fishing Hat,,,158.40242344075125,302,AlgorillaArmy#231
+AGA814,545150789,Bright Pink and Purple,Pink,Green,Yellow,Arm down,Yellow Vneck,Green Backwards Cap,,Yellow Shutter Shades,158.3692634815225,303,AlgorillaArmy#814
+AGA161,384710503,Purple and Light Green,Yellow,Normal,Pink,Arm down,White Tanktop,Green Beanie,,Yellow Lasers,157.3962740576343,304,AlgorillaArmy#161
+AGA840,545182347,Light Pink and Red,Normal,Blue,Blue,Arm down,Teal Vneck,Green Backwards Cap,,Morpheus Glasses,157.27475274779096,305,AlgorillaArmy#840
+AGA858,545186483,Bright Pink and Purple,Green,Gold,Purple,Arm down,Orange Hawaiian Shirt,Light Blue Backwards Cap,,,157.27257421290724,306,AlgorillaArmy#858
+AGA474,545044764,Light Green and Mid Green,Red,Normal,Yellow,"Arm up, smiling",Orange Hawaiian Shirt,Blue Dreads,Green Cocktail,Silver Algo Necklace,157.23107489825784,307,AlgorillaArmy#474
+AGA639,545093479,White and Pink,Normal,Purple,Red,Arm up,,,Gold Bar,,157.06273974242043,308,AlgorillaArmy#639
+AGA620,545087499,Purple and Light Green and White Radial,Normal,Purple,Red,Arm down,White Tanktop,Rainbow Afro,,Anderson Glasses,156.73376621705182,309,AlgorillaArmy#620
+AGA521,545071599,White and Pink,Normal,Silver,Normal,Arm up,Green Tanktop,White Fishing Hat,Purple Cocktail,Morpheus Glasses,156.70825641690914,310,AlgorillaArmy#521
+AGA754,545144156,White and Orange,Normal,Normal,Blue,"Arm up, smiling",Light Blue Tanktop,Blue Fishing Hat,Blue Selfiestick,Yellow Lasers,156.52645345009995,311,AlgorillaArmy#754
+AGA323,449483459,Grey and Green,Red,Purple,Yellow,"Arm down, smiling",Black Vneck,Pink Dreads,,,156.44076273712355,312,AlgorillaArmy#323
+AGA132,384677514,Grey and Green,Normal,Gold,Green,Arm down,Yellow Vneck,Green Beanie,,,156.13851843217137,313,AlgorillaArmy#132
+AGA204,384773346,Grey and Silver Radial,Normal,Red,Black,Arm down,Leather Belt,Normal Dreads,,,156.067363126335,314,AlgorillaArmy#204
+AGA896,545195414,Bright Pink and Purple,Normal,Normal,Yellow,"Arm up, smiling",Purple Hawaiian Shirt,Silver Crown,Red Cocktail,,155.81491987425005,315,AlgorillaArmy#896
+AGA156,384703221,Light Grey and Yellow,Yellow,Red,Pink,"Arm up, smiling",Purple Hawaiian Shirt,Rainbow Afro,Yellow Cocktail,,155.44333675170077,316,AlgorillaArmy#156
+AGA927,545201380,Bright Pink and Light Blue,Normal,Yellow,Green,Arm up,Purple Hawaiian Shirt,Green Afro,Gold Selfiestick,White Shudder Shades,155.3720695514764,317,AlgorillaArmy#927
+AGA612,545084512,Light Blue and Deep Blue,Yellow,Pink,Blue,Arm up,White Tanktop,White Fishing Hat,Oar,Aviators,155.14162173435344,318,AlgorillaArmy#612
+AGA976,545207414,Grey and Silver Radial,Red,Green,Purple,"Arm up, smiling",,Bright Red Beanie Hat,Red Cocktail,White Shudder Shades,155.06945496557185,319,AlgorillaArmy#976
+AGA319,449473047,Light Green and Mid Green,Normal,Normal,Blue,"Arm up, smiling",Orange Sports Bra,,Yellow Cocktail,,153.94462594933697,320,AlgorillaArmy#319
+AGA983,545208148,Sky Blue and White,Blue,Green,Yellow,"Arm up, smiling",White Spacesuit,,Yellow Cocktail,,153.83360479365342,321,AlgorillaArmy#983
+AGA722,545140794,White and Orange,Blue,Green,Red,Arm up,Pink Sports Bra,,Yellow Cocktail,Black Eyepatch,153.74273708936363,322,AlgorillaArmy#722
+AGA220,408996446,Light Grey and Yellow,Normal,Yellow,Blue,"Arm up, smiling",Red Tanktop,Yellow Banana Hat,Claymore,,153.56736619019227,323,AlgorillaArmy#220
+AGA217,408990790,Bright Pink and Light Blue,Blue,Silver,Blue,"Arm up, smiling",Green Tanktop,Green Fishing Hat,Banana,Morpheus Glasses,153.53456690882928,324,AlgorillaArmy#217
+AGA746,545143221,Purple and Light Green,Silver,Silver,Blue,"Arm up, smiling",Yellow Tanktop,,Red Cocktail,Neo Glasses,153.49413955275776,325,AlgorillaArmy#746
+AGA203,384771653,Light Grey and Yellow,Purple,Green,Red,Arm up,,Rainbow Afro,Green Cocktail,Silver Algo Necklace,153.36045983626963,326,AlgorillaArmy#203
+AGA608,545083200,White and Pink,Zebra,Purple,Yellow,"Arm down, smiling",Orange Hawaiian Shirt,,,Morpheus Glasses,153.31900206328137,327,AlgorillaArmy#608
+AGA520,545071479,Grey and Green,Red,Blue,Blue,"Arm up, smiling",Green Tanktop,Bright Red Beanie Hat,Green Cocktail,Morpheus Glasses,153.26992088586084,328,AlgorillaArmy#520
+AGA400,545002033,White and Orange,Green,Blue,Bloodshot,Arm up,,Red Backwards Cap,Oar,Blue Shutter Shades,153.11285147429027,329,AlgorillaArmy#400
+AGA285,425895150,Light Green and Mid Green,Yellow,Normal,Purple,Arm up,Light Blue Tanktop,Silver Crown,Gold Selfiestick,,153.02670138002773,330,AlgorillaArmy#285
+AGA37,377736419,Light Grey and Yellow,Silver,Green,Bloodshot,Arm down,Green Vneck,Green Fishing Hat,,White Shudder Shades,152.8975793535216,331,AlgorillaArmy#37
+AGA838,545181826,Light Green and Mid Green,Normal,Purple,Yellow,"Arm down, smiling",Light Blue Sports Bra,,,Aviators,152.85785279952404,332,AlgorillaArmy#838
+AGA463,545041560,Bright Pink and Light Blue,Normal,Normal,Blue,Arm up,Yellow Tanktop,Green Dreads,Gold Selfiestick,Yellow Shutter Shades,152.7205056420341,333,AlgorillaArmy#463
+AGA771,545146136,White and Pink,Normal,Yellow,Pink,Arm up,,Brown Tophat,Gold Selfiestick,Black Eyepatch,152.55702655367764,334,AlgorillaArmy#771
+AGA587,545079743,Light Green and Mid Green,Normal,Normal,Yellow,Arm up,Yellow Tanktop,Pink Dreads,Red Cocktail,,152.53723286221768,335,AlgorillaArmy#587
+AGA443,545036307,Sky Blue and White,Normal,Blue,Yellow,Arm down,Blue Hawaiian Shirt,Gold Dreads,,Silver Algo Necklace,152.34473883384186,336,AlgorillaArmy#443
+AGA392,545000830,White and Purple,Gold,Normal,Silver,Arm up,Light Blue Tanktop,,Pink Gold Selfiestick,,152.29220952790746,337,AlgorillaArmy#392
+AGA46,377749597,Light Blue and Deep Blue,Normal,Silver,Yellow,Arm down,Green Vneck,Normal Dreads,,White Shudder Shades,152.27863602450955,338,AlgorillaArmy#46
+AGA548,545074819,Sky Blue and White,Yellow,Red,Yellow,Arm down,Blue Vneck,Pink Dreads,,Blue Shutter Shades,152.15618796786282,339,AlgorillaArmy#548
+AGA597,545080908,Light Grey and Yellow,Normal,Normal,Bloodshot,"Arm up, smiling",,Brown Tophat,Red Cocktail,Blue Shutter Shades,151.84997959537236,340,AlgorillaArmy#597
+AGA677,545104028,Grey and Silver Radial,Normal,Red,Red,Arm up,Orange Hawaiian Shirt,Blue Beanie,Gold Selfiestick,Blue Shutter Shades,151.82621939909131,341,AlgorillaArmy#677
+AGA469,545043224,Light Pink and Red,Normal,Blue,Silver,"Arm down, smiling",Light Blue Tanktop,Green Backwards Cap,,Red Clown Nose,151.6841071434781,342,AlgorillaArmy#469
+AGA311,449450717,Light Pink and Red,Silver,Normal,Yellow,Arm down,Yellow Tanktop,Gold Dreads,,White Shudder Shades,151.6758421061889,343,AlgorillaArmy#311
+AGA675,545103362,White and Purple,Normal,Blue,Bloodshot,Arm up,Orange Hawaiian Shirt,Yellow Backwards Cap,Banana,,151.59312535675753,344,AlgorillaArmy#675
+AGA607,545082979,Sky Blue and White,Lava,Normal,Green,Arm up,,White Fishing Hat,Green Cocktail,Blue Shutter Shades,151.58976714895985,345,AlgorillaArmy#607
+AGA174,384734704,Light Grey and Yellow,Green,Yellow,Green,"Arm up, smiling",Orange Hawaiian Shirt,Light Blue Backwards Cap,Red Selfiestick,,151.22215830490725,346,AlgorillaArmy#174
+AGA778,545146852,White and Pink,Red,Normal,Silver,"Arm up, smiling",Leather Belt,Green Beanie,Blue Selfiestick,,151.1068590536633,347,AlgorillaArmy#778
+AGA383,544999840,White and Pink,Purple,Red,Bloodshot,"Arm up, smiling",White Tanktop,Yellow Banana Hat,Blue Selfiestick,Blue Shutter Shades,151.0343499072331,348,AlgorillaArmy#383
+AGA839,545182145,Light Green and Mid Green,Normal,Pink,Green,Arm up,Leather Belt,Silver Crown,Pink Gold Selfiestick,Neo Glasses,150.99059343086986,349,AlgorillaArmy#839
+AGA925,545201204,Sky Blue and White,Yellow,Green,Green,Arm up,Red Tanktop,Bright Red Beanie Hat,Gold Selfiestick,Aviators,150.60454690648464,350,AlgorillaArmy#925
+AGA32,377729659,Sky Blue and White,Yellow,Normal,Red,Arm down,Black Vneck,Black Tophat,,White Shudder Shades,150.36902717856344,351,AlgorillaArmy#32
+AGA782,545147215,White and Orange,Normal,Green,Normal,"Arm up, smiling",Leather Belt,,Plunger,Aviators,150.25952151587526,352,AlgorillaArmy#782
+AGA448,545037564,Grey and Green,Zebra,Normal,Normal,Arm up,Light Blue Tanktop,Blue Fishing Hat,Banana,,150.2165840723289,353,AlgorillaArmy#448
+AGA335,451073768,Light Green and Mid Green,Yellow,Green,Purple,Arm up,Yellow Tanktop,Dark Blue Backwards Cap,Yellow Cocktail,,150.17206228012827,354,AlgorillaArmy#335
+AGA361,539408373,Brown and Gold Radial,Normal,Silver,Normal,Arm down,Blue Vneck,Rainbow Afro,,,150.13895643191262,355,AlgorillaArmy#361
+AGA108,384637644,Light Green and Mid Green,Green,Yellow,Green,Arm down,Green Vneck,Green Afro,,White Shudder Shades,149.95876289839467,356,AlgorillaArmy#108
+AGA498,545051667,Light Pink and Red,Zebra,Yellow,Normal,"Arm down, smiling",Blue Vneck,,,Yellow Shutter Shades,149.6801777634015,357,AlgorillaArmy#498
+AGA715,545139792,Bright Pink and Light Blue,Pink,Red,Yellow,"Arm down, smiling",Blue Vneck,Normal Dreads,,Red Clown Nose,149.38756304497758,358,AlgorillaArmy#715
+AGA381,544999631,Light Green and Mid Green,Red,Normal,Green,Arm up,Leather Belt,Green Dreads,Banana,Yellow Shutter Shades,149.31264443845666,359,AlgorillaArmy#381
+AGA736,545142128,White and Purple,Blue,Green,Red,"Arm up, smiling",Blue Hawaiian Shirt,Yellow Beanie,Purple Cocktail,Neo Glasses,149.21424987488234,360,AlgorillaArmy#736
+AGA112,384643281,Bright Pink and Purple,Normal,Yellow,Blue,Arm down,,Gold Tophat,,White Shudder Shades,149.18355504312663,361,AlgorillaArmy#112
+AGA296,425960151,Light Pink and Red,Purple,Red,Silver,Arm down,Red Tanktop,Rainbow Afro,,,149.10353151869293,362,AlgorillaArmy#296
+AGA93,379185950,Light Green and Mid Green,Purple,Purple,Blue,Arm up,White Tanktop,Silver Crown,Banana,Morpheus Glasses,149.01476509687143,363,AlgorillaArmy#93
+AGA432,545033200,White and Orange,Blue,Silver,Yellow,Arm down,Green Vneck,Blue Beanie,,,148.98924731090617,364,AlgorillaArmy#432
+AGA721,545140663,Grey and Silver Radial,Pink,Silver,Yellow,Arm down,Black Vneck,Green Fishing Hat,,Morpheus Glasses,148.94413153200492,365,AlgorillaArmy#721
+AGA921,545200819,Purple and Light Green and White Radial,Pink,Normal,Red,Arm down,Orange Hawaiian Shirt,Dark Blue Backwards Cap,,,148.89763873714386,366,AlgorillaArmy#921
+AGA525,545072131,Light Green and Mid Green,Red,Green,Normal,"Arm down, smiling",Teal Vneck,Silver Crown,,,148.66846041365525,367,AlgorillaArmy#525
+AGA100,379794576,Light Blue and Deep Blue,Blue,Yellow,Pink,Arm down,Red Vneck,Blue Dreads,,,148.4829356659727,368,AlgorillaArmy#100
+AGA962,545205874,Light Blue and Deep Blue,Blue,Yellow,Pink,Arm down,Red Vneck,Blue Dreads,,,148.4829356659727,369,AlgorillaArmy#962
+AGA899,545196156,Grey and Green,Normal,Blue,Purple,Arm down,Blue Vneck,Red Dreads,,Yellow Shutter Shades,148.41009278211715,370,AlgorillaArmy#899
+AGA819,545151363,White and Pink,Normal,Yellow,Blue,"Arm up, smiling",White Tanktop,Red Dreads,Gold Selfiestick,White Shudder Shades,148.24664754663738,371,AlgorillaArmy#819
+AGA120,384659127,Light Green and Mid Green,Yellow,Normal,Silver,Arm down,White Tanktop,Dark Blue Backwards Cap,,Blue Shutter Shades,148.22764618030374,372,AlgorillaArmy#120
+AGA18,377703933,Light Green and Mid Green,Pink,Pink,Green,"Arm up, smiling",Light Blue Tanktop,Green Dreads,Red Selfiestick,,148.1946078793221,373,AlgorillaArmy#18
+AGA359,449591576,Bright Pink and Purple,Normal,Yellow,Red,"Arm up, smiling",,Yellow Banana Hat,Red Cocktail,White Shudder Shades,148.06179231948843,374,AlgorillaArmy#359
+AGA601,545081470,Bright Pink and Purple,Normal,Normal,Yellow,"Arm up, smiling",,Dark Blue Backwards Cap,Microphone,,147.92888257644805,375,AlgorillaArmy#601
+AGA685,545106387,White and Pink,Normal,Pink,Black,"Arm down, smiling",,Green Beanie,,White Shudder Shades,147.85320522905215,376,AlgorillaArmy#685
+AGA365,539422255,Light Grey and Yellow,Gold,Green,Blue,Arm down,,Pink Dreads,,,147.6158061362223,377,AlgorillaArmy#365
+AGA86,379123534,Brown and Gold Radial,Normal,Yellow,Blue,"Arm down, smiling",,Yellow Backwards Cap,,Silver Algo Necklace,147.607315852728,378,AlgorillaArmy#86
+AGA489,545049287,White and Pink,Red,Normal,Blue,"Arm down, smiling",Yellow Vneck,Blue Fishing Hat,,Silver Algo Necklace,147.53059657726703,379,AlgorillaArmy#489
+AGA522,545071766,Grey and Silver Radial,Green,Blue,Blue,"Arm down, smiling",Yellow Tanktop,Green Fishing Hat,,Yellow Lasers,147.50057900441374,380,AlgorillaArmy#522
+AGA626,545089364,Purple and Light Green,Normal,Yellow,Bloodshot,Arm up,Red Tanktop,Yellow Banana Hat,Red Selfiestick,Blue Shutter Shades,147.33007339994435,381,AlgorillaArmy#626
+AGA946,545203895,Bright Pink and Light Blue,Purple,Silver,Bloodshot,"Arm down, smiling",Leather Belt,Green Fishing Hat,,Red Clown Nose,147.19568304359575,382,AlgorillaArmy#946
+AGA516,545070920,Light Grey and Yellow,Lava,Normal,Blue,Arm up,,,Microphone,,147.18818436465494,383,AlgorillaArmy#516
+AGA114,384648517,Light Blue and Deep Blue,Red,Gold,Normal,Arm up,Blue Hawaiian Shirt,Rainbow Afro,Banana,,147.154560419067,384,AlgorillaArmy#114
+AGA847,545183920,Light Green and Mid Green,Normal,Green,Yellow,Arm down,Pink Vneck,Yellow Backwards Cap,,Blue Shutter Shades,147.13830688352448,385,AlgorillaArmy#847
+AGA113,384644551,Light Green and Mid Green,Red,Yellow,Normal,"Arm down, smiling",White Tanktop,Green Beanie,,Yellow Lasers,146.84400144842522,386,AlgorillaArmy#113
+AGA28,377722721,Sky Blue and White,Normal,Green,Normal,Arm down,Suit Purple Tie,Green Afro,,,146.83503661984062,387,AlgorillaArmy#28
+AGA912,545199166,Light Pink and Red,Red,Silver,Red,"Arm down, smiling",Pink Vneck,Silver Crown,,,146.80889675749543,388,AlgorillaArmy#912
+AGA150,384696644,Light Blue and Deep Blue,Silver,Blue,Normal,"Arm up, smiling",Yellow Tanktop,Bright Red Beanie Hat,Spear,,146.68427074737457,389,AlgorillaArmy#150
+AGA975,545207331,Light Blue and Deep Blue,Green,Pink,Silver,"Arm down, smiling",Purple Hawaiian Shirt,Yellow Beanie,,White Shudder Shades,146.65778698753414,390,AlgorillaArmy#975
+AGA801,545149536,Bright Pink and Light Blue,Red,Red,Blue,"Arm down, smiling",Blue Vneck,Yellow Banana Hat,,Anderson Glasses,146.25766652460663,391,AlgorillaArmy#801
+AGA470,545043458,Bright Pink and Purple,Normal,Red,Yellow,Arm up,,Yellow Dreads,Red Selfiestick,White Shudder Shades,146.2557246881264,392,AlgorillaArmy#470
+AGA980,545207836,Light Pink and Red,Normal,Red,Normal,Arm down,Teal Vneck,Yellow Beanie,,Anderson Glasses,146.032687312667,393,AlgorillaArmy#980
+AGA538,545073866,Light Blue and Deep Blue,Normal,Green,Blue,"Arm down, smiling",Light Blue Sports Bra,Blue Fishing Hat,,,145.89662812503929,394,AlgorillaArmy#538
+AGA430,545032720,Light Green and Mid Green,Normal,Normal,Normal,Arm up,White Tanktop,Brown Tophat,Red Cocktail,White Shudder Shades,145.87908790887482,395,AlgorillaArmy#430
+AGA848,545184148,White and Pink,Normal,Yellow,Silver,"Arm up, smiling",,Bright Red Beanie Hat,Purple Cocktail,Aviators,145.08548821955486,396,AlgorillaArmy#848
+AGA438,545034996,Orange and Green,Normal,Blue,Blue,"Arm down, smiling",Yellow Vneck,Brown Tophat,,,145.04083834345872,397,AlgorillaArmy#438
+AGA536,545073705,Light Grey and Yellow,Red,Yellow,Bloodshot,Arm up,Yellow Tanktop,Yellow Beanie,Green Cocktail,Red Clown Nose,144.71533161198815,398,AlgorillaArmy#536
+AGA74,378913647,Light Blue and Deep Blue,Silver,Blue,Normal,"Arm up, smiling",Purple Hawaiian Shirt,Green Fishing Hat,Banana,Black Eyepatch,144.48736950025614,399,AlgorillaArmy#74
+AGA491,545049867,Light Blue and Deep Blue,Normal,Normal,Normal,Arm up,Orange Hawaiian Shirt,Black Tophat,Yellow Cocktail,Black Eyepatch,144.1719773684784,400,AlgorillaArmy#491
+AGA191,384759869,Sky Blue and White,Normal,Red,Bloodshot,"Arm down, smiling",Pink Vneck,Normal Dreads,,Silver Algo Necklace,144.07106851962908,401,AlgorillaArmy#191
+AGA806,545150030,Bright Pink and Purple,Red,Red,Green,"Arm down, smiling",Pink Sports Bra,Blue Dreads,,,144.02265284191398,402,AlgorillaArmy#806
+AGA774,545146424,White and Orange,Red,Normal,Red,"Arm up, smiling",Yellow Tanktop,Yellow Banana Hat,Blue Selfiestick,Blue Shutter Shades,143.96790210666734,403,AlgorillaArmy#774
+AGA660,545099494,Light Green and Mid Green,Blue,Red,Blue,"Arm up, smiling",Blue Hawaiian Shirt,Dark Blue Backwards Cap,Blue Selfiestick,,143.84957226678208,404,AlgorillaArmy#660
+AGA182,384745964,Light Blue and Deep Blue,Pink,Red,Green,"Arm down, smiling",Red Vneck,Brown Tophat,,,143.7705291785224,405,AlgorillaArmy#182
+AGA48,377752015,Grey and Green,Normal,Normal,Red,Arm down,Black Vneck,Green Beanie,,Silver Algo Necklace,143.157571098237,406,AlgorillaArmy#48
+AGA269,425851204,Purple and Light Green,Purple,Blue,Green,"Arm up, smiling",Leather Belt,Yellow Beanie,Pink Gold Selfiestick,Black Eyepatch,143.07673579699957,407,AlgorillaArmy#269
+AGA818,545151214,White and Orange,Pink,Normal,Blue,"Arm down, smiling",Yellow Vneck,Green Backwards Cap,,,142.96453793347374,408,AlgorillaArmy#818
+AGA478,545045951,Bright Pink and Light Blue,Normal,Pink,Blue,Arm down,Red Vneck,Green Beanie,,Aviators,142.64222144032377,409,AlgorillaArmy#478
+AGA265,425837459,White and Orange,Pink,Normal,Bloodshot,Arm down,Yellow Tanktop,Green Dreads,,Aviators,142.56093867079997,410,AlgorillaArmy#265
+AGA528,545072498,Bright Pink and Purple,Yellow,Normal,Green,"Arm down, smiling",Pink Sports Bra,Blue Dreads,,,142.2833908317547,411,AlgorillaArmy#528
+AGA65,378880445,Light Blue and Deep Blue,Normal,Pink,Green,Arm up,White Tanktop,Blue Fishing Hat,Red Cocktail,Anderson Glasses,142.02183092522614,412,AlgorillaArmy#65
+AGA523,545071896,Light Grey and Yellow,Normal,Normal,Normal,Arm up,Yellow Tanktop,Bright Red Beanie Hat,Oar,White Shudder Shades,141.56945712636906,413,AlgorillaArmy#523
+AGA339,449524103,Light Pink and Red,Normal,Green,Red,Arm up,Yellow Tanktop,Dark Blue Backwards Cap,Banana,Yellow Shutter Shades,141.55692700320805,414,AlgorillaArmy#339
+AGA893,545194720,White and Orange,Yellow,Green,Green,Arm up,Red Tanktop,Rainbow Afro,Blue Selfiestick,,141.5524096563496,415,AlgorillaArmy#893
+AGA363,539414964,Grey and Silver Radial,Purple,Red,Yellow,Arm down,Green Vneck,Green Afro,,,141.54272167387902,416,AlgorillaArmy#363
+AGA425,545030961,Light Green and Mid Green,Pink,Blue,Normal,"Arm down, smiling",Red Tanktop,Gold Dreads,,White Shudder Shades,141.40294121970763,417,AlgorillaArmy#425
+AGA316,449464847,Purple and Light Green,Normal,Green,Green,"Arm up, smiling",Light Blue Tanktop,,Microphone,Red Clown Nose,141.40118032596197,418,AlgorillaArmy#316
+AGA375,544998564,Grey and Green,Red,Green,Normal,"Arm up, smiling",White Tanktop,,Cutlass,,141.24671110025938,419,AlgorillaArmy#375
+AGA835,386004164,Purple and Light Green,Red,Blue,Silver,"Arm down, smiling",,Brown Tophat,,Morpheus Glasses,141.11368908891376,420,AlgorillaArmy#835
+AGA372,544997943,Light Blue and Deep Blue,Pink,Green,Yellow,"Arm down, smiling",Blue Vneck,Blue Dreads,,White Shudder Shades,141.10803295652104,421,AlgorillaArmy#372
+AGA790,545147988,Grey and Green,Normal,Normal,Yellow,Arm up,,Green Dreads,Red Cocktail,,141.02208134706618,422,AlgorillaArmy#790
+AGA98,379205034,Sky Blue and White,Zebra,Blue,Normal,"Arm down, smiling",,Red Backwards Cap,,Yellow Shutter Shades,141.01512047134193,423,AlgorillaArmy#98
+AGA805,545149944,Bright Pink and Purple,Purple,Blue,Red,Arm up,Blue Hawaiian Shirt,Blue Fishing Hat,Spear,,140.95319063823086,424,AlgorillaArmy#805
+AGA371,544997793,Bright Pink and Light Blue,Pink,Gold,Blue,Arm down,Orange Hawaiian Shirt,White Fishing Hat,,Black Eyepatch,140.8275963590719,425,AlgorillaArmy#371
+AGA391,545000685,Light Green and Mid Green,Normal,Blue,Normal,Arm down,Green Vneck,Silver Crown,,Yellow Shutter Shades,140.62814705254914,426,AlgorillaArmy#391
+AGA424,545030601,Orange and Green,Blue,Normal,Blue,"Arm up, smiling",,Green Backwards Cap,Oar,Yellow Shutter Shades,140.58285914901384,427,AlgorillaArmy#424
+AGA959,545205309,Purple and Light Green and White Radial,Blue,Normal,Blue,Arm up,Light Blue Tanktop,Blue Fishing Hat,Green Cocktail,Morpheus Glasses,140.5655836816238,428,AlgorillaArmy#959
+AGA31,377728012,Bright Pink and Purple,Normal,Normal,Red,Arm down,Black Vneck,Yellow Backwards Cap,,,140.52750596817185,429,AlgorillaArmy#31
+AGA577,545078339,Grey and Green,Normal,Normal,Yellow,"Arm down, smiling",Red Vneck,Blue Beanie,,Morpheus Glasses,140.4685296266127,430,AlgorillaArmy#577
+AGA791,545148180,White and Orange,Red,Normal,Green,"Arm up, smiling",Leather Belt,Red Backwards Cap,Red Selfiestick,Black Eyepatch,140.3856045381523,431,AlgorillaArmy#791
+AGA226,409012910,Bright Pink and Purple,Blue,Purple,Red,Arm down,Red Tanktop,Rainbow Afro,,Aviators,140.3827263915975,432,AlgorillaArmy#226
+AGA251,409100415,Orange and Green,Gold,Red,Blue,Arm down,White Tanktop,Blue Fishing Hat,,Black Eyepatch,140.143634448547,433,AlgorillaArmy#251
+AGA828,545153878,Light Blue and Deep Blue,Normal,Red,Normal,"Arm down, smiling",White Tanktop,Gold Tophat,,,140.0809727448546,434,AlgorillaArmy#828
+AGA823,545152152,Sky Blue and White,Yellow,Purple,Yellow,Arm up,Green Tanktop,,Purple Cocktail,Morpheus Glasses,140.01845952902204,435,AlgorillaArmy#823
+AGA820,545151521,Bright Pink and Light Blue,Normal,Normal,Normal,"Arm down, smiling",,Silver Dreads,,,139.71580132938067,436,AlgorillaArmy#820
+AGA21,377713277,Light Green and Mid Green,Blue,Blue,Normal,Arm down,,Green Backwards Cap,,Yellow Lasers,139.69119228230122,437,AlgorillaArmy#21
+AGA414,545027964,White and Orange,Blue,Red,Purple,Arm down,Orange Hawaiian Shirt,Green Backwards Cap,,Neo Glasses,139.6337759640108,438,AlgorillaArmy#414
+AGA126,384667861,Purple and Light Green,Green,Normal,Normal,Arm up,White Tanktop,,Cutlass,,139.35271891467391,439,AlgorillaArmy#126
+AGA718,545140205,Light Grey and Yellow,Yellow,Blue,Red,"Arm up, smiling",Red Tanktop,Green Fishing Hat,Spear,,139.1880312276412,440,AlgorillaArmy#718
+AGA529,545072643,White and Pink,Blue,Yellow,Green,Arm down,Light Blue Tanktop,Gold Dreads,,Blue Shutter Shades,138.8793107572987,441,AlgorillaArmy#529
+AGA849,545184355,Orange and Green,Normal,Yellow,Normal,Arm down,Blue Vneck,Light Blue Backwards Cap,,Morpheus Glasses,138.8139236505524,442,AlgorillaArmy#849
+AGA944,545203661,Bright Pink and Light Blue,Blue,Silver,Bloodshot,"Arm up, smiling",Purple Hawaiian Shirt,,Banana,Anderson Glasses,138.8036573340853,443,AlgorillaArmy#944
+AGA252,409102084,Purple and Light Green and White Radial,Purple,Pink,Red,"Arm down, smiling",Pink Sports Bra,,,,138.55335213453304,444,AlgorillaArmy#252
+AGA289,425898115,White and Pink,Pink,Normal,Green,Arm up,Suit Purple Tie,,Pink Gold Selfiestick,,138.30849145195495,445,AlgorillaArmy#289
+AGA275,425872945,Orange and Green,Normal,Red,Yellow,Arm up,White Tanktop,Yellow Dreads,Green Cocktail,,138.220218615947,446,AlgorillaArmy#275
+AGA890,545194018,Light Pink and Red,Blue,Yellow,Pink,"Arm down, smiling",,Green Dreads,,Neo Glasses,137.87424402435084,447,AlgorillaArmy#890
+AGA958,545205141,White and Orange,Red,Green,Yellow,"Arm up, smiling",White Tanktop,Black Tophat,Green Cocktail,Yellow Shutter Shades,137.79756548119468,448,AlgorillaArmy#958
+AGA290,425898471,Bright Pink and Light Blue,Pink,Red,Blue,"Arm up, smiling",Blue Hawaiian Shirt,Brown Tophat,Red Selfiestick,,137.69400269015983,449,AlgorillaArmy#290
+AGA442,545036058,Purple and Light Green and White Radial,Normal,Blue,Normal,"Arm up, smiling",Purple Hawaiian Shirt,,Gold Selfiestick,White Shudder Shades,137.6668724507719,450,AlgorillaArmy#442
+AGA26,377719662,Bright Pink and Light Blue,Normal,Normal,Normal,Arm up,Red Tanktop,Blue Dreads,Green Cocktail,Anderson Glasses,137.59915443205782,451,AlgorillaArmy#26
+AGA409,545026771,Bright Pink and Light Blue,Green,Purple,Normal,Arm up,Blue Hawaiian Shirt,,Claymore,Blue Shutter Shades,137.4435149702396,452,AlgorillaArmy#409
+AGA29,377723886,White and Orange,Green,Green,Green,"Arm up, smiling",Leather Belt,Black Tophat,Banana,,137.34317774245895,453,AlgorillaArmy#29
+AGA394,545001061,Bright Pink and Purple,Blue,Pink,Normal,"Arm up, smiling",Leather Belt,Green Afro,Banana,White Shudder Shades,137.15620617304097,454,AlgorillaArmy#394
+AGA693,546877542,Bright Pink and Light Blue,Blue,Red,Normal,"Arm up, smiling",,Yellow Beanie,Microphone,Yellow Shutter Shades,137.03669372973147,455,AlgorillaArmy#693
+AGA770,545146034,Light Grey and Yellow,Normal,Pink,Purple,"Arm down, smiling",Green Vneck,Bright Red Beanie Hat,,,136.95551245898912,456,AlgorillaArmy#770
+AGA862,545187343,White and Orange,Yellow,Red,Blue,"Arm down, smiling",Black Sports Bra,,,,136.8102629883604,457,AlgorillaArmy#862
+AGA926,545201291,Bright Pink and Purple,Yellow,Green,Blue,Arm up,Blue Hawaiian Shirt,Red Backwards Cap,Red Selfiestick,Neo Glasses,136.80198793744344,458,AlgorillaArmy#926
+AGA294,425946331,White and Pink,Normal,Blue,Green,"Arm down, smiling",Teal Vneck,Green Afro,,,136.7964440846332,459,AlgorillaArmy#294
+AGA867,545188469,Bright Pink and Purple,Blue,Purple,Normal,"Arm up, smiling",Green Tanktop,,Claymore,,136.67174355328086,460,AlgorillaArmy#867
+AGA508,545070029,Light Blue and Deep Blue,Green,Red,Normal,Arm up,Light Blue Tanktop,Red Backwards Cap,Oar,,136.5760648940299,461,AlgorillaArmy#508
+AGA527,545072338,Light Blue and Deep Blue,Red,Red,Normal,Arm up,Purple Hawaiian Shirt,Green Beanie,Red Selfiestick,Yellow Shutter Shades,136.54326619241562,462,AlgorillaArmy#527
+AGA261,425828604,Bright Pink and Purple,Normal,Blue,Normal,Arm up,Leather Belt,Blue Beanie,Green Cocktail,Anderson Glasses,136.4582804650969,463,AlgorillaArmy#261
+AGA233,409035181,Sky Blue and White,Blue,Red,Normal,"Arm up, smiling",Green Tanktop,Yellow Beanie,Green Cocktail,Blue Shutter Shades,136.40896807137457,464,AlgorillaArmy#233
+AGA798,545149256,White and Pink,Normal,Normal,Normal,Arm up,Banana Shirt,Blue Beanie,Yellow Cocktail,,136.2619623122599,465,AlgorillaArmy#798
+AGA734,545141955,White and Purple,Red,Purple,Red,"Arm up, smiling",,Yellow Banana Hat,Banana,Blue Shutter Shades,136.22750971750585,466,AlgorillaArmy#734
+AGA122,384663810,Sky Blue and White,Zebra,Normal,Normal,Arm down,Blue Hawaiian Shirt,Blue Fishing Hat,,,136.15482915423183,467,AlgorillaArmy#122
+AGA420,545029463,Grey and Green,Normal,Red,Yellow,Arm up,Yellow Tanktop,Normal Dreads,Red Cocktail,,136.15229545426237,468,AlgorillaArmy#420
+AGA495,545050969,White and Orange,Yellow,Yellow,Red,"Arm up, smiling",Green Tanktop,,Purple Cocktail,Aviators,135.8271788908736,469,AlgorillaArmy#495
+AGA360,464249748,Light Grey and Yellow,Normal,Blue,Blue,"Arm down, smiling",Red Vneck,Normal Dreads,,Yellow Shutter Shades,135.8134553859656,470,AlgorillaArmy#360
+AGA942,545203459,White and Pink,Normal,Silver,Green,"Arm up, smiling",Blue Hawaiian Shirt,Normal Dreads,Banana,Yellow Shutter Shades,135.63254507799897,471,AlgorillaArmy#942
+AGA811,545150534,Bright Pink and Purple,Gold,Normal,Red,Arm up,White Tanktop,Blue Fishing Hat,Banana,,135.57912830322485,472,AlgorillaArmy#811
+AGA85,379113349,Light Grey and Yellow,Normal,Red,Blue,Arm down,Green Vneck,Green Afro,,Yellow Shutter Shades,135.3507169939084,473,AlgorillaArmy#85
+AGA71,378898298,Grey and Green,Lava,Yellow,Blue,"Arm up, smiling",,Blue Fishing Hat,Green Cocktail,,135.30861354465745,474,AlgorillaArmy#71
+AGA283,425893869,Light Pink and Red,Normal,Normal,Normal,Arm down,Suit Red Tie,,,Silver Algo Necklace,135.25992496249214,475,AlgorillaArmy#283
+AGA880,545191282,Grey and Silver Radial,Blue,Green,Blue,"Arm down, smiling",Red Tanktop,Pink Dreads,,Yellow Shutter Shades,135.20366515815937,476,AlgorillaArmy#880
+AGA408,545026559,Bright Pink and Purple,Normal,Pink,Bloodshot,Arm up,Light Blue Tanktop,,Red Cocktail,Black Eyepatch,135.1776608047467,477,AlgorillaArmy#408
+AGA682,545105409,Bright Pink and Purple,Green,Silver,Red,"Arm up, smiling",Yellow Tanktop,Normal Dreads,Pink Gold Selfiestick,,134.98077781923536,478,AlgorillaArmy#682
+AGA600,545081305,Light Green and Mid Green,Normal,Pink,Pink,Arm up,Yellow Tanktop,Red Dreads,Green Cocktail,,134.94329271162326,479,AlgorillaArmy#600
+AGA149,384695738,White and Purple,Silver,Normal,Blue,"Arm down, smiling",Pink Vneck,Yellow Banana Hat,,,134.87755157937636,480,AlgorillaArmy#149
+AGA415,545028176,Purple and Light Green,Pink,Normal,Normal,Arm up,Pink Sports Bra,,Yellow Cocktail,Aviators,134.794963655777,481,AlgorillaArmy#415
+AGA647,545095900,Bright Pink and Light Blue,Yellow,Green,Yellow,Arm up,Yellow Tanktop,Blue Fishing Hat,Oar,,134.55959539521285,482,AlgorillaArmy#647
+AGA643,545094762,Light Green and Mid Green,Yellow,Yellow,Pink,Arm up,,Green Beanie,Yellow Cocktail,Neo Glasses,134.51078062699878,483,AlgorillaArmy#643
+AGA241,409072768,Orange and Green,Green,Green,Normal,Arm up,White Tanktop,Green Afro,Yellow Cocktail,Neo Glasses,134.50161957628973,484,AlgorillaArmy#241
+AGA830,545154706,Grey and Green,Red,Green,Yellow,Arm up,White Tanktop,Light Blue Backwards Cap,Yellow Cocktail,,134.499572612341,485,AlgorillaArmy#830
+AGA222,409000943,White and Orange,Normal,Purple,Black,"Arm down, smiling",Red Tanktop,,,Yellow Shutter Shades,134.4804860787677,486,AlgorillaArmy#222
+AGA154,384701475,Orange and Green,Blue,Pink,Normal,Arm down,,Gold Crown,,,134.09691728871272,487,AlgorillaArmy#154
+AGA295,425948187,White and Pink,Yellow,Yellow,Normal,"Arm down, smiling",Blue Hawaiian Shirt,Yellow Backwards Cap,,Yellow Shutter Shades,134.0304492607132,488,AlgorillaArmy#295
+AGA139,384685274,White and Purple,Yellow,Yellow,Green,Arm up,Banana Shirt,,Pink Gold Selfiestick,Blue Shutter Shades,133.90220723323424,489,AlgorillaArmy#139
+AGA565,545076869,Bright Pink and Light Blue,Red,Green,Red,Arm up,Purple Hawaiian Shirt,Green Backwards Cap,Green Cocktail,,133.74471164909292,490,AlgorillaArmy#565
+AGA745,545143099,Bright Pink and Purple,Normal,Silver,Green,"Arm down, smiling",Light Blue Tanktop,Silver Crown,,Neo Glasses,133.74282907449646,491,AlgorillaArmy#745
+AGA287,425896559,Purple and Light Green,Blue,Normal,Normal,"Arm up, smiling",White Tanktop,Blue Fishing Hat,Claymore,Blue Shutter Shades,133.6404181362423,492,AlgorillaArmy#287
+AGA971,545206857,White and Pink,Blue,Purple,Pink,"Arm down, smiling",Teal Vneck,,,Yellow Shutter Shades,133.47362295841634,493,AlgorillaArmy#971
+AGA382,544999736,Grey and Silver Radial,Normal,Red,Normal,Arm down,,Green Backwards Cap,,Yellow Lasers,133.37700010848704,494,AlgorillaArmy#382
+AGA52,378825888,Bright Pink and Light Blue,Zebra,Red,Normal,"Arm down, smiling",,Bright Red Beanie Hat,,,133.28402573643103,495,AlgorillaArmy#52
+AGA314,449458206,Orange and Green,Normal,Normal,Blue,Arm down,White Spacesuit,Blue Fishing Hat,,,133.19267435790138,496,AlgorillaArmy#314
+AGA800,545149453,Light Pink and Red,Normal,Red,Blue,Arm down,Red Vneck,Yellow Banana Hat,,,132.87506127467864,497,AlgorillaArmy#800
+AGA436,545034524,Orange and Green,Normal,Yellow,Normal,"Arm down, smiling",Purple Hawaiian Shirt,Yellow Backwards Cap,,Yellow Shutter Shades,132.65000869137262,498,AlgorillaArmy#436
+AGA378,544999222,Grey and Silver Radial,Normal,Blue,Yellow,"Arm down, smiling",Light Blue Sports Bra,,,,132.59517164010373,499,AlgorillaArmy#378
+AGA396,545001365,White and Pink,Silver,Normal,Purple,Arm up,White Tanktop,,Microphone,,132.42147475411343,500,AlgorillaArmy#396
+AGA588,545079882,Grey and Green,Yellow,Blue,Blue,"Arm down, smiling",Yellow Tanktop,Green Dreads,,Blue Shutter Shades,132.2284232171233,501,AlgorillaArmy#588
+AGA903,545196962,White and Orange,Pink,Red,Normal,Arm down,Blue Hawaiian Shirt,Light Blue Backwards Cap,,Blue Shutter Shades,132.156866010679,502,AlgorillaArmy#903
+AGA617,545086487,Grey and Silver Radial,Purple,Green,Normal,"Arm up, smiling",,Brown Tophat,Green Cocktail,White Shudder Shades,132.13902118475443,503,AlgorillaArmy#617
+AGA614,545085111,White and Purple,Normal,Normal,Normal,"Arm up, smiling",White Tanktop,Rainbow Afro,Red Selfiestick,Aviators,132.01796341412486,504,AlgorillaArmy#614
+AGA696,545138007,Brown and Gold Radial,Yellow,Normal,Normal,Arm up,Banana Shirt,,Yellow Cocktail,,131.89673018546338,505,AlgorillaArmy#696
+AGA756,545144373,White and Pink,Normal,Blue,Normal,"Arm down, smiling",Green Vneck,Normal Dreads,,Blue Shutter Shades,131.72149075168713,506,AlgorillaArmy#756
+AGA827,545153170,Bright Pink and Light Blue,Normal,Blue,Blue,"Arm up, smiling",Red Tanktop,Red Backwards Cap,Red Selfiestick,Black Eyepatch,131.37433067182326,507,AlgorillaArmy#827
+AGA631,545090846,Orange and Green,Blue,Silver,Normal,Arm up,,Bright Red Beanie Hat,Banana,Silver Algo Necklace,131.36908076991205,508,AlgorillaArmy#631
+AGA953,545204634,Bright Pink and Purple,Normal,Yellow,Bloodshot,"Arm up, smiling",Light Blue Tanktop,Brown Tophat,Yellow Cocktail,,131.29377242891823,509,AlgorillaArmy#953
+AGA960,545205428,Light Pink and Red,Blue,Red,Yellow,"Arm up, smiling",White Tanktop,Blue Fishing Hat,Green Cocktail,Red Clown Nose,131.2700633873751,510,AlgorillaArmy#960
+AGA557,545075977,White and Orange,Normal,Normal,Blue,Arm up,Yellow Tanktop,Bright Red Beanie Hat,Claymore,,131.099192786535,511,AlgorillaArmy#557
+AGA24,377716839,Grey and Green,Silver,Gold,Normal,Arm up,Leather Belt,,Yellow Cocktail,Yellow Shutter Shades,130.81704312504854,512,AlgorillaArmy#24
+AGA300,425971772,Light Grey and Yellow,Green,Pink,Blue,Arm down,Pink Vneck,Yellow Banana Hat,,,130.77980066241255,513,AlgorillaArmy#300
+AGA347,449554565,Light Green and Mid Green,Pink,Normal,Red,Arm up,Light Blue Tanktop,Bright Red Beanie Hat,Green Cocktail,Aviators,130.658979983702,514,AlgorillaArmy#347
+AGA215,408984469,Bright Pink and Purple,Silver,Silver,Normal,Arm up,Purple Hawaiian Shirt,,Yellow Cocktail,White Shudder Shades,130.4994865890896,515,AlgorillaArmy#215
+AGA502,545069210,Grey and Silver Radial,Red Zebra,Green,Normal,Arm down,Leather Belt,,,,130.47762004258578,516,AlgorillaArmy#502
+AGA929,545201560,Purple and Light Green,Normal,Normal,Yellow,Arm up,,Yellow Backwards Cap,Pink Gold Selfiestick,Blue Shutter Shades,130.33250165466615,517,AlgorillaArmy#929
+AGA145,384691183,Sky Blue and White,Normal,Pink,Blue,Arm down,Suit Purple Tie,,,White Shudder Shades,130.23658609615768,518,AlgorillaArmy#145
+AGA267,425841914,White and Pink,Yellow,Green,Purple,"Arm down, smiling",Pink Vneck,Green Afro,,,130.12238693166572,519,AlgorillaArmy#267
+AGA142,384688419,Grey and Silver Radial,Normal,Green,Bloodshot,Arm down,Black Vneck,Yellow Beanie,,Blue Shutter Shades,130.0342098494727,520,AlgorillaArmy#142
+AGA997,545210106,Bright Pink and Light Blue,Normal,Yellow,Normal,"Arm up, smiling",Light Blue Tanktop,Green Beanie,Green Cocktail,Anderson Glasses,129.9868052727241,521,AlgorillaArmy#997
+AGA906,545197549,Sky Blue and White,Blue,Normal,Red,Arm up,Yellow Tanktop,,Red Cocktail,Anderson Glasses,129.8909342233541,522,AlgorillaArmy#906
+AGA874,545190030,Sky Blue and White,Yellow,Gold,Green,"Arm up, smiling",Light Blue Tanktop,Red Backwards Cap,Pink Gold Selfiestick,,129.8486780891012,523,AlgorillaArmy#874
+AGA578,545078518,Purple and Light Green and White Radial,Normal,Green,Normal,"Arm down, smiling",Yellow Tanktop,Pink Dreads,,,129.7595341488488,524,AlgorillaArmy#578
+AGA826,545152937,Sky Blue and White,Blue,Purple,Normal,Arm up,Green Tanktop,,Red Selfiestick,Neo Glasses,129.75272469154407,525,AlgorillaArmy#826
+AGA260,425823559,Bright Pink and Purple,Normal,Blue,Normal,"Arm down, smiling",Banana Shirt,Brown Tophat,,,129.61838471022492,526,AlgorillaArmy#260
+AGA418,545028892,Light Blue and Deep Blue,Yellow,Normal,Bloodshot,Arm down,,Light Blue Backwards Cap,,Anderson Glasses,129.56839198651568,527,AlgorillaArmy#418
+AGA73,378911884,Bright Pink and Purple,Normal,Normal,Green,"Arm down, smiling",Banana Shirt,Black Tophat,,,129.4348182447465,528,AlgorillaArmy#73
+AGA879,545191104,White and Pink,Yellow,Yellow,Normal,Arm up,Yellow Tanktop,Dark Blue Backwards Cap,Pink Gold Selfiestick,,129.19952429058307,529,AlgorillaArmy#879
+AGA282,425893338,Grey and Green,Silver,Pink,Red,"Arm down, smiling",Red Tanktop,Blue Dreads,,,128.84379812265345,530,AlgorillaArmy#282
+AGA125,384666518,Grey and Green,Purple,Yellow,Bloodshot,Arm down,Red Vneck,,,Morpheus Glasses,128.65223005728828,531,AlgorillaArmy#125
+AGA683,545105783,Brown and Gold Radial,Blue,Red,Normal,"Arm down, smiling",Light Blue Tanktop,Red Dreads,,,128.64812928869432,532,AlgorillaArmy#683
+AGA62,378874465,White and Purple,Purple,Normal,Normal,"Arm up, smiling",White Tanktop,,Oar,Neo Glasses,128.6201119742936,533,AlgorillaArmy#62
+AGA94,379192133,Grey and Silver Radial,Silver,Gold,Yellow,"Arm down, smiling",White Tanktop,Normal Dreads,,,128.6098289364476,534,AlgorillaArmy#94
+AGA645,545095293,White and Purple,Pink,Normal,Normal,"Arm down, smiling",Teal Vneck,,,Anderson Glasses,128.4544997800288,535,AlgorillaArmy#645
+AGA89,379140653,Grey and Silver Radial,Red,Red,Yellow,Arm up,,Silver Crown,Green Cocktail,Yellow Shutter Shades,128.38970002167025,536,AlgorillaArmy#89
+AGA11,377692895,Light Grey and Yellow,Normal,Normal,Blue,"Arm up, smiling",Light Blue Tanktop,Normal Dreads,Purple Cocktail,Blue Shutter Shades,128.2715451473727,537,AlgorillaArmy#11
+AGA672,545102562,Grey and Green,Green,Red,Normal,"Arm up, smiling",Yellow Tanktop,Blue Fishing Hat,Gold Selfiestick,Blue Shutter Shades,128.21229826376253,538,AlgorillaArmy#672
+AGA254,409115360,Sky Blue and White,Blue,Blue,Normal,"Arm up, smiling",Light Blue Tanktop,Blue Beanie,Pink Gold Selfiestick,White Shudder Shades,128.1912761211544,539,AlgorillaArmy#254
+AGA817,545151088,Bright Pink and Purple,Normal,Red,Yellow,Arm down,Blue Vneck,Blue Beanie,,Neo Glasses,128.18047592277588,540,AlgorillaArmy#817
+AGA356,449581782,Bright Pink and Light Blue,Purple,Normal,Normal,Arm up,,Green Afro,Yellow Cocktail,Black Eyepatch,128.01056508860182,541,AlgorillaArmy#356
+AGA493,545050454,Orange and Green,Red,Pink,Pink,Arm down,Orange Hawaiian Shirt,Green Backwards Cap,,White Shudder Shades,127.95477453306114,542,AlgorillaArmy#493
+AGA951,545204461,Sky Blue and White,Normal,Normal,Silver,Arm down,Pink Vneck,Bright Red Beanie Hat,,,127.86335098848336,543,AlgorillaArmy#951
+AGA256,409120718,White and Purple,Normal,Yellow,Red,Arm down,Teal Vneck,,,Neo Glasses,127.70272655300342,544,AlgorillaArmy#256
+AGA352,449569769,Purple and Light Green,Normal,Blue,Red,Arm down,Teal Vneck,,,Black Eyepatch,127.66450635138268,545,AlgorillaArmy#352
+AGA918,545200567,Bright Pink and Light Blue,Normal,Green,Normal,"Arm up, smiling",Light Blue Tanktop,Blue Fishing Hat,Spear,Yellow Shutter Shades,127.52628922540788,546,AlgorillaArmy#918
+AGA751,545143928,Orange and Green,Purple,Green,Normal,Arm down,Pink Vneck,Green Beanie,,Blue Shutter Shades,127.5006184562011,547,AlgorillaArmy#751
+AGA124,384665664,Sky Blue and White,Blue,Blue,Green,Arm down,Blue Vneck,Blue Fishing Hat,,Silver Algo Necklace,127.47489261949332,548,AlgorillaArmy#124
+AGA158,384707502,Grey and Green,Normal,Blue,Green,Arm down,Red Vneck,White Fishing Hat,,Yellow Shutter Shades,127.45414107489208,549,AlgorillaArmy#158
+AGA368,539439453,Orange and Green,Purple,Green,Purple,"Arm up, smiling",,Bright Red Beanie Hat,Green Cocktail,Yellow Shutter Shades,127.44760611162094,550,AlgorillaArmy#368
+AGA318,449470091,White and Pink,Yellow,Purple,Purple,Arm up,Yellow Tanktop,,Green Cocktail,Silver Algo Necklace,127.39423296020962,551,AlgorillaArmy#318
+AGA882,545191953,Light Blue and Deep Blue,Red,Normal,Normal,Arm down,Black Vneck,Red Backwards Cap,,Neo Glasses,127.32241788915006,552,AlgorillaArmy#882
+AGA952,545204556,Light Pink and Red,Pink,Blue,Purple,Arm down,Blue Hawaiian Shirt,Bright Red Beanie Hat,,Yellow Shutter Shades,127.27065381411953,553,AlgorillaArmy#952
+AGA127,384669657,White and Purple,Pink,Blue,Green,"Arm down, smiling",Light Blue Tanktop,Silver Crown,,Blue Shutter Shades,127.25641781315248,554,AlgorillaArmy#127
+AGA752,545144007,White and Orange,Normal,Normal,Normal,"Arm up, smiling",Green Tanktop,,Red Cocktail,Blue Shutter Shades,127.2384019809942,555,AlgorillaArmy#752
+AGA446,545037098,Light Pink and Red,Purple,Red,Yellow,"Arm down, smiling",Leather Belt,Blue Beanie,,White Shudder Shades,127.09054910036636,556,AlgorillaArmy#446
+AGA4,377675803,Grey and Silver Radial,Normal,Red,Normal,"Arm down, smiling",Yellow Vneck,,,Red Clown Nose,127.08095782872006,557,AlgorillaArmy#4
+AGA276,425873252,Bright Pink and Light Blue,Blue,Red,Green,Arm up,,Dark Blue Backwards Cap,Blue Selfiestick,,127.02262565235918,558,AlgorillaArmy#276
+AGA891,545194218,Grey and Silver Radial,Silver,Normal,Normal,Arm up,White Tanktop,Red Backwards Cap,Green Cocktail,Aviators,127.01717823576496,559,AlgorillaArmy#891
+AGA768,545145767,Bright Pink and Purple,Yellow,Normal,Blue,Arm up,Blue Hawaiian Shirt,Black Tophat,Pink Gold Selfiestick,,126.94510719741052,560,AlgorillaArmy#768
+AGA917,545200405,White and Orange,Purple,Yellow,Red,"Arm up, smiling",Yellow Tanktop,Green Backwards Cap,Pink Gold Selfiestick,,126.76367703551465,561,AlgorillaArmy#917
+AGA558,545076120,Light Grey and Yellow,Normal,Gold,Red,"Arm down, smiling",White Tanktop,Light Blue Backwards Cap,,,126.6680862804521,562,AlgorillaArmy#558
+AGA928,545201484,Bright Pink and Light Blue,Blue,Normal,Bloodshot,"Arm down, smiling",Leather Belt,Bright Red Beanie Hat,,Neo Glasses,126.56521097553605,563,AlgorillaArmy#928
+AGA748,545143566,White and Purple,Blue,Red,Blue,"Arm up, smiling",Light Blue Tanktop,Green Fishing Hat,Green Cocktail,Neo Glasses,126.50328448616992,564,AlgorillaArmy#748
+AGA576,545078167,Sky Blue and White,Normal,Yellow,Normal,Arm up,Orange Hawaiian Shirt,Green Backwards Cap,Yellow Cocktail,Yellow Shutter Shades,126.29871889350584,565,AlgorillaArmy#576
+AGA6,377681409,Light Green and Mid Green,Yellow,Normal,Normal,"Arm up, smiling",,Yellow Dreads,Banana,,126.15397306761248,566,AlgorillaArmy#6
+AGA697,545138156,Light Green and Mid Green,Yellow,Normal,Normal,"Arm up, smiling",,Yellow Dreads,Banana,,126.15397306761248,567,AlgorillaArmy#697
+AGA737,545142214,White and Orange,Green,Yellow,Bloodshot,"Arm down, smiling",,Rainbow Afro,,Aviators,126.081664040618,568,AlgorillaArmy#737
+AGA992,545209480,White and Pink,Normal,Purple,Blue,"Arm down, smiling",Yellow Tanktop,Yellow Dreads,,,125.95514857556071,569,AlgorillaArmy#992
+AGA44,377746632,Sky Blue and White,Purple,Pink,Red,"Arm down, smiling",Red Tanktop,Blue Fishing Hat,,Red Clown Nose,125.85184729017104,570,AlgorillaArmy#44
+AGA484,545047731,Light Blue and Deep Blue,Normal,Blue,Normal,"Arm down, smiling",Purple Hawaiian Shirt,Green Afro,,Silver Algo Necklace,125.45079698099336,571,AlgorillaArmy#484
+AGA654,545097906,White and Pink,Normal,Normal,Normal,"Arm down, smiling",Black Vneck,Normal Dreads,,Morpheus Glasses,125.33639750165854,572,AlgorillaArmy#654
+AGA738,545142328,Light Pink and Red,Green,Purple,Red,Arm up,Light Blue Tanktop,Yellow Beanie,Red Selfiestick,,125.2206056515283,573,AlgorillaArmy#738
+AGA349,449559622,Grey and Silver Radial,Green,Green,Red,Arm down,Purple Hawaiian Shirt,Blue Fishing Hat,,Black Eyepatch,125.17488136559042,574,AlgorillaArmy#349
+AGA177,384739980,Bright Pink and Light Blue,Normal,Yellow,Normal,Arm up,Leather Belt,,Claymore,Aviators,125.11672004975036,575,AlgorillaArmy#177
+AGA435,545034256,Light Pink and Red,Silver,Yellow,Pink,Arm down,Pink Vneck,Green Fishing Hat,,,124.987686368888,576,AlgorillaArmy#435
+AGA257,425815776,Grey and Green,Pink,Purple,Bloodshot,Arm up,White Tanktop,White Fishing Hat,Yellow Cocktail,,124.98046267881344,577,AlgorillaArmy#257
+AGA59,378863340,White and Purple,Purple,Green,Blue,Arm up,Banana Shirt,,Yellow Cocktail,,124.97869596913355,578,AlgorillaArmy#59
+AGA374,544998362,Light Pink and Red,Normal,Purple,Green,"Arm down, smiling",,Red Dreads,,Black Eyepatch,124.82993594811197,579,AlgorillaArmy#374
+AGA991,545209375,Bright Pink and Purple,Normal,Blue,Red,"Arm up, smiling",Yellow Tanktop,Green Fishing Hat,Green Cocktail,Silver Algo Necklace,124.77092654018604,580,AlgorillaArmy#991
+AGA594,545080568,Sky Blue and White,Pink,Red,Bloodshot,Arm up,,Yellow Beanie,Pink Gold Selfiestick,Black Eyepatch,124.74689640325629,581,AlgorillaArmy#594
+AGA410,545027022,Light Grey and Yellow,Yellow,Red,Blue,Arm down,Yellow Tanktop,Gold Dreads,,,124.71879075158056,582,AlgorillaArmy#410
+AGA281,425892309,White and Orange,Normal,Red,Normal,Arm up,Light Blue Tanktop,,Oar,Anderson Glasses,124.6960932013854,583,AlgorillaArmy#281
+AGA680,545104799,Light Pink and Red,Blue,Purple,Purple,"Arm down, smiling",Red Tanktop,Blue Beanie,,,124.24407298529232,584,AlgorillaArmy#680
+AGA171,384731667,Sky Blue and White,Yellow,Normal,Yellow,"Arm up, smiling",,Red Backwards Cap,Oar,,124.18887430242955,585,AlgorillaArmy#171
+AGA5,377678261,White and Pink,Red,Yellow,Normal,"Arm down, smiling",Black Vneck,Blue Fishing Hat,,Neo Glasses,124.07614257793678,586,AlgorillaArmy#5
+AGA699,545138366,Grey and Silver Radial,Yellow,Red,Red,"Arm down, smiling",Red Tanktop,Normal Dreads,,Aviators,123.89152689874778,587,AlgorillaArmy#699
+AGA897,545195631,White and Pink,Normal,Blue,Blue,Arm down,Pink Vneck,White Fishing Hat,,Silver Algo Necklace,123.86424570957442,588,AlgorillaArmy#897
+AGA322,449480470,Sky Blue and White,Normal,Silver,Yellow,"Arm down, smiling",Blue Vneck,Yellow Beanie,,Blue Shutter Shades,123.80585743757148,589,AlgorillaArmy#322
+AGA193,384762476,Light Blue and Deep Blue,Silver,Purple,Normal,"Arm down, smiling",Light Blue Tanktop,White Fishing Hat,,Neo Glasses,123.78860375484469,590,AlgorillaArmy#193
+AGA871,545189329,Orange and Green,Blue,Purple,Purple,"Arm down, smiling",Yellow Tanktop,Yellow Banana Hat,,,123.75180696671052,591,AlgorillaArmy#871
+AGA496,545051205,White and Purple,Lava,Purple,Green,"Arm down, smiling",Blue Hawaiian Shirt,,,,123.6488120721946,592,AlgorillaArmy#496
+AGA303,425983082,Light Blue and Deep Blue,Lava,Blue,Green,Arm down,,,,Red Clown Nose,123.13145744550675,593,AlgorillaArmy#303
+AGA872,545189559,Light Grey and Yellow,Yellow,Green,Red,Arm up,White Tanktop,White Fishing Hat,Red Selfiestick,Yellow Shutter Shades,123.04226616844863,594,AlgorillaArmy#872
+AGA264,425837355,Grey and Green,Pink,Normal,Red,Arm down,Yellow Vneck,,,Blue Shutter Shades,122.95309803530714,595,AlgorillaArmy#264
+AGA936,545202522,Orange and Green,Yellow,Green,Purple,"Arm down, smiling",Blue Hawaiian Shirt,Yellow Banana Hat,,,122.89837317808004,596,AlgorillaArmy#936
+AGA56,378835255,Grey and Silver Radial,Normal,Blue,Bloodshot,"Arm down, smiling",Purple Hawaiian Shirt,White Fishing Hat,,Morpheus Glasses,122.8511648041807,597,AlgorillaArmy#56
+AGA671,545102220,Light Blue and Deep Blue,Normal,Red,Green,Arm up,Light Blue Tanktop,Red Dreads,Pink Gold Selfiestick,,122.72452922329911,598,AlgorillaArmy#671
+AGA545,545074562,Orange and Green,Normal,Blue,Blue,"Arm down, smiling",Red Tanktop,Blue Dreads,,Black Eyepatch,122.62372293853844,599,AlgorillaArmy#545
+AGA277,425874775,White and Purple,Pink,Blue,Green,Arm down,Pink Vneck,Normal Dreads,,,122.52781763741704,600,AlgorillaArmy#277
+AGA510,545070221,Orange and Green,Normal,Green,Purple,"Arm up, smiling",Pink Sports Bra,,Banana,,122.41539498887896,601,AlgorillaArmy#510
+AGA421,545029812,Light Grey and Yellow,Pink,Pink,Blue,"Arm down, smiling",Orange Hawaiian Shirt,Yellow Beanie,,Black Eyepatch,122.05421660196744,602,AlgorillaArmy#421
+AGA642,545094466,Sky Blue and White,Normal,Purple,Blue,"Arm up, smiling",Yellow Tanktop,Red Backwards Cap,Blue Selfiestick,Yellow Shutter Shades,121.98323301410684,603,AlgorillaArmy#642
+AGA431,545032947,White and Orange,Blue,Red,Normal,"Arm up, smiling",,Dark Blue Backwards Cap,Red Selfiestick,,121.92785381285132,604,AlgorillaArmy#431
+AGA467,545042726,Light Blue and Deep Blue,Normal,Green,Blue,"Arm down, smiling",Red Vneck,Blue Beanie,,,121.61641098767927,605,AlgorillaArmy#467
+AGA190,384758269,White and Purple,Normal,Green,Green,Arm down,Leather Belt,Green Beanie,,Black Eyepatch,121.40130869557208,606,AlgorillaArmy#190
+AGA212,408977210,Brown and Gold Radial,Gold,Blue,Green,"Arm down, smiling",White Tanktop,,,,121.35986771032984,607,AlgorillaArmy#212
+AGA497,545051425,Purple and Light Green,Purple,Yellow,Purple,"Arm down, smiling",Red Tanktop,Yellow Beanie,,White Shudder Shades,121.29320033165013,608,AlgorillaArmy#497
+AGA727,545141295,Orange and Green,Normal,Red,Yellow,"Arm up, smiling",,Blue Beanie,Blue Selfiestick,Neo Glasses,121.19474509389222,609,AlgorillaArmy#727
+AGA38,377737475,Grey and Silver Radial,Purple,Gold,Pink,"Arm up, smiling",,,Pink Gold Selfiestick,Morpheus Glasses,121.0350590869826,610,AlgorillaArmy#38
+AGA769,545145896,Light Pink and Red,Normal,Normal,Green,"Arm up, smiling",,Red Dreads,Banana,Blue Shutter Shades,120.65769988866144,611,AlgorillaArmy#769
+AGA590,545080125,Bright Pink and Purple,Pink,Pink,Yellow,"Arm up, smiling",Yellow Tanktop,Normal Dreads,Banana,,120.58629024011184,612,AlgorillaArmy#590
+AGA524,545072000,White and Purple,Normal,Red,Pink,Arm up,Green Tanktop,,Blue Selfiestick,Yellow Shutter Shades,120.23714424091796,613,AlgorillaArmy#524
+AGA333,449508915,Orange and Green,Pink,Green,Silver,"Arm up, smiling",,,Pink Gold Selfiestick,Anderson Glasses,120.16386534403586,614,AlgorillaArmy#333
+AGA331,449505134,Purple and Light Green,Silver,Normal,Silver,Arm up,Blue Hawaiian Shirt,,Banana,,120.126723000868,615,AlgorillaArmy#331
+AGA783,545147312,Light Blue and Deep Blue,Normal,Green,Blue,Arm down,Blue Vneck,Red Dreads,,,120.10632177710424,616,AlgorillaArmy#783
+AGA808,545150223,Purple and Light Green and White Radial,Normal,Blue,Red,"Arm up, smiling",,,Claymore,,119.76215468346636,617,AlgorillaArmy#808
+AGA773,545146331,Grey and Green,Yellow,Purple,Green,Arm up,Yellow Tanktop,,Gold Selfiestick,White Shudder Shades,119.75234804519052,618,AlgorillaArmy#773
+AGA244,409083413,Grey and Silver Radial,Normal,Blue,Red,"Arm down, smiling",Pink Vneck,Red Backwards Cap,,Blue Shutter Shades,119.70689039604083,619,AlgorillaArmy#244
+AGA152,384698776,Purple and Light Green,Green,Blue,Bloodshot,"Arm down, smiling",,Black Tophat,,White Shudder Shades,119.67757969429036,620,AlgorillaArmy#152
+AGA673,545102807,White and Purple,Normal,Normal,Yellow,"Arm down, smiling",Red Tanktop,Black Tophat,,Aviators,119.67348234541672,621,AlgorillaArmy#673
+AGA956,545204918,Grey and Green,Normal,Normal,Normal,Arm up,Blue Hawaiian Shirt,Brown Tophat,Red Selfiestick,,119.65704103907596,622,AlgorillaArmy#956
+AGA572,545077597,Orange and Green,Normal,Yellow,Blue,"Arm up, smiling",,Green Afro,Green Cocktail,Black Eyepatch,119.52575639202058,623,AlgorillaArmy#572
+AGA209,408967596,Light Green and Mid Green,Green,Yellow,Normal,"Arm down, smiling",Suit Red Tie,,,,119.51643014555351,624,AlgorillaArmy#209
+AGA109,384639807,Bright Pink and Purple,Normal,Purple,Green,Arm up,,Light Blue Backwards Cap,Pink Gold Selfiestick,,119.34925877323089,625,AlgorillaArmy#109
+AGA70,378889726,Sky Blue and White,Blue,Red,Normal,"Arm up, smiling",Blue Hawaiian Shirt,,Microphone,,119.15082902444132,626,AlgorillaArmy#70
+AGA388,545000366,Sky Blue and White,Blue,Red,Normal,"Arm up, smiling",Blue Hawaiian Shirt,,Microphone,,119.15082902444132,627,AlgorillaArmy#388
+AGA284,425894481,Sky Blue and White,Pink,Pink,Purple,Arm up,Red Tanktop,,Gold Selfiestick,,119.07588415483151,628,AlgorillaArmy#284
+AGA537,545073799,Bright Pink and Purple,Pink,Normal,Pink,Arm down,Purple Hawaiian Shirt,Yellow Beanie,,Aviators,119.02193341452715,629,AlgorillaArmy#537
+AGA271,425870207,Light Grey and Yellow,Normal,Green,Bloodshot,"Arm down, smiling",Blue Hawaiian Shirt,Green Afro,,White Shudder Shades,119.00065459341327,630,AlgorillaArmy#271
+AGA793,545148487,Purple and Light Green,Green,Yellow,Blue,Arm up,Yellow Tanktop,White Fishing Hat,Purple Cocktail,,118.67405232111116,631,AlgorillaArmy#793
+AGA636,545092633,Grey and Silver Radial,Silver,Purple,Blue,"Arm down, smiling",,Green Fishing Hat,,Red Clown Nose,118.64192424017251,632,AlgorillaArmy#636
+AGA386,545000132,Purple and Light Green and White Radial,Red,Normal,Normal,Arm down,Black Vneck,,,White Shudder Shades,118.59963316279178,633,AlgorillaArmy#386
+AGA973,545207084,Light Grey and Yellow,Red,Red,Yellow,Arm up,Orange Hawaiian Shirt,Blue Fishing Hat,Purple Cocktail,,118.45970975858718,634,AlgorillaArmy#973
+AGA184,384748272,Grey and Green,Purple,Pink,Yellow,Arm down,Yellow Vneck,,,,118.14970414667856,635,AlgorillaArmy#184
+AGA466,545042487,Brown and Gold Radial,Purple,Yellow,Green,Arm down,White Tanktop,Blue Beanie,,,118.12775698368294,636,AlgorillaArmy#466
+AGA583,545079243,Light Grey and Yellow,Red,Normal,Blue,"Arm down, smiling",Black Vneck,Blue Fishing Hat,,White Shudder Shades,118.10844867685827,637,AlgorillaArmy#583
+AGA250,409098661,Grey and Silver Radial,Normal,Yellow,Bloodshot,"Arm down, smiling",Blue Hawaiian Shirt,Yellow Beanie,,Black Eyepatch,118.02787888386342,638,AlgorillaArmy#250
+AGA984,545208296,White and Orange,Normal,Red,Purple,Arm up,Light Blue Tanktop,,Oar,,117.92374854867842,639,AlgorillaArmy#984
+AGA76,378921778,Grey and Green,Green,Normal,Green,"Arm down, smiling",Red Tanktop,Dark Blue Backwards Cap,,,117.78931061478292,640,AlgorillaArmy#76
+AGA902,545196773,Grey and Green,Green,Normal,Green,"Arm down, smiling",Red Tanktop,Dark Blue Backwards Cap,,,117.78931061478292,641,AlgorillaArmy#902
+AGA662,545100118,Light Pink and Red,Pink,Silver,Bloodshot,Arm down,,Red Backwards Cap,,Aviators,117.67280786631692,642,AlgorillaArmy#662
+AGA210,408969658,Sky Blue and White,Yellow,Normal,Purple,Arm up,Purple Hawaiian Shirt,,Green Cocktail,White Shudder Shades,117.6266204480319,643,AlgorillaArmy#210
+AGA213,408979649,Sky Blue and White,Normal,Purple,Normal,Arm down,Blue Vneck,Red Backwards Cap,,Aviators,117.61541165668118,644,AlgorillaArmy#213
+AGA885,545192874,Light Blue and Deep Blue,Pink,Purple,Blue,Arm up,Orange Hawaiian Shirt,Yellow Beanie,Banana,,117.57130465926036,645,AlgorillaArmy#885
+AGA571,545077491,Grey and Green,Normal,Yellow,Bloodshot,"Arm down, smiling",Green Vneck,Blue Fishing Hat,,,117.34809095064594,646,AlgorillaArmy#571
+AGA923,545201015,White and Purple,Normal,Normal,Normal,Arm up,White Tanktop,,Plunger,,117.28184228645758,647,AlgorillaArmy#923
+AGA178,384741109,White and Purple,Normal,Green,Silver,"Arm down, smiling",Pink Vneck,,,Blue Shutter Shades,117.14952276398526,648,AlgorillaArmy#178
+AGA629,545090315,Light Green and Mid Green,Red,Normal,Yellow,"Arm up, smiling",White Tanktop,Blue Dreads,Green Cocktail,,117.0599610782208,649,AlgorillaArmy#629
+AGA43,377745393,Grey and Silver Radial,Normal,Normal,Blue,Arm down,Green Vneck,Green Fishing Hat,,Yellow Shutter Shades,116.90169974429146,650,AlgorillaArmy#43
+AGA136,384682261,Grey and Green,Purple,Purple,Yellow,Arm down,Leather Belt,Green Beanie,,,116.823358390985,651,AlgorillaArmy#136
+AGA659,545099245,White and Pink,Silver,Green,Normal,"Arm up, smiling",White Tanktop,Bright Red Beanie Hat,Red Selfiestick,,116.80542568614143,652,AlgorillaArmy#659
+AGA825,545152658,Light Blue and Deep Blue,Normal,Green,Yellow,"Arm up, smiling",Blue Hawaiian Shirt,,Red Cocktail,Yellow Shutter Shades,116.73920830264362,653,AlgorillaArmy#825
+AGA480,545046505,Brown and Gold Radial,Pink,Normal,Yellow,"Arm up, smiling",White Tanktop,,Red Selfiestick,Aviators,116.71448848400456,654,AlgorillaArmy#480
+AGA596,545080774,Light Pink and Red,Normal,Silver,Yellow,Arm down,Light Blue Tanktop,Brown Tophat,,,116.70587611865662,655,AlgorillaArmy#596
+AGA690,545107610,Light Grey and Yellow,Red,Red,Blue,Arm up,Banana Shirt,,Yellow Cocktail,,116.5843942758575,656,AlgorillaArmy#690
+AGA886,545193077,Orange and Green,Green,Yellow,Blue,Arm down,Black Vneck,White Fishing Hat,,,116.5140612289938,657,AlgorillaArmy#886
+AGA832,545155330,Orange and Green,Blue,Red,Green,"Arm up, smiling",,Blue Beanie,Green Cocktail,Blue Shutter Shades,116.4529818906847,658,AlgorillaArmy#832
+AGA938,545202935,Bright Pink and Purple,Green,Normal,Pink,Arm down,Yellow Tanktop,Green Beanie,,Aviators,116.3981442117906,659,AlgorillaArmy#938
+AGA931,545201734,Bright Pink and Purple,Silver,Normal,Red,"Arm down, smiling",Black Vneck,,,Aviators,116.3719901111153,660,AlgorillaArmy#931
+AGA128,384670995,Bright Pink and Light Blue,Pink,Yellow,Bloodshot,Arm down,Pink Vneck,,,Anderson Glasses,115.94218691594128,661,AlgorillaArmy#128
+AGA225,409008680,Purple and Light Green,Red Zebra,Normal,Bloodshot,Arm down,,,,,115.50472889646858,662,AlgorillaArmy#225
+AGA167,384721675,Sky Blue and White,Red,Pink,Bloodshot,Arm down,White Tanktop,Green Fishing Hat,,Silver Algo Necklace,115.47002638565982,663,AlgorillaArmy#167
+AGA623,545088543,Purple and Light Green,Normal,Green,Yellow,Arm up,Purple Hawaiian Shirt,,Blue Selfiestick,Anderson Glasses,115.3416644251679,664,AlgorillaArmy#623
+AGA512,545070473,Purple and Light Green,Red,Green,Blue,Arm down,Blue Hawaiian Shirt,Yellow Beanie,,Silver Algo Necklace,115.14769068491356,665,AlgorillaArmy#512
+AGA703,545138698,Purple and Light Green,Yellow,Yellow,Blue,Arm up,,Black Tophat,Green Cocktail,,114.69023352826902,666,AlgorillaArmy#703
+AGA459,545040579,Light Pink and Red,Green,Normal,Normal,"Arm up, smiling",White Tanktop,Blue Beanie,Blue Selfiestick,,114.56796291070287,667,AlgorillaArmy#459
+AGA574,545077827,Orange and Green,Blue,Gold,Normal,"Arm up, smiling",Green Tanktop,,Banana,,114.48811725781248,668,AlgorillaArmy#574
+AGA836,545181323,Orange and Green,Pink,Blue,Normal,"Arm down, smiling",Red Tanktop,Green Backwards Cap,,Aviators,114.34649868074318,669,AlgorillaArmy#836
+AGA777,545146764,Light Pink and Red,Normal,Normal,Normal,"Arm down, smiling",Teal Vneck,Blue Fishing Hat,,,113.90519798118332,670,AlgorillaArmy#777
+AGA815,545150911,Purple and Light Green and White Radial,Green,Blue,Normal,Arm up,,,Pink Gold Selfiestick,Black Eyepatch,113.81484367346688,671,AlgorillaArmy#815
+AGA129,384672929,Bright Pink and Purple,Normal,Yellow,Normal,Arm down,Pink Vneck,Black Tophat,,,113.51453524977028,672,AlgorillaArmy#129
+AGA481,545046761,Bright Pink and Purple,Pink,Normal,Yellow,Arm down,Green Vneck,Blue Fishing Hat,,,113.46298639605104,673,AlgorillaArmy#481
+AGA630,545090597,Grey and Silver Radial,Blue,Purple,Normal,"Arm up, smiling",White Tanktop,Green Fishing Hat,Purple Cocktail,,113.44169981879432,674,AlgorillaArmy#630
+AGA559,545076235,Purple and Light Green,Red,Yellow,Green,Arm up,Light Blue Tanktop,White Fishing Hat,Blue Selfiestick,,113.43304570362687,675,AlgorillaArmy#559
+AGA656,545098502,Orange and Green,Red,Green,Red,Arm up,,Blue Beanie,Banana,Yellow Shutter Shades,112.93251829659904,676,AlgorillaArmy#656
+AGA887,545193273,Light Blue and Deep Blue,Normal,Normal,Red,Arm down,Red Tanktop,Green Beanie,,Black Eyepatch,112.696034195947,677,AlgorillaArmy#887
+AGA716,545139925,Grey and Green,Normal,Normal,Normal,Arm up,Purple Hawaiian Shirt,Green Fishing Hat,Banana,Aviators,112.48530610254696,678,AlgorillaArmy#716
+AGA13,377695238,Purple and Light Green,Red,Normal,Pink,Arm down,Red Vneck,,,White Shudder Shades,112.48483643558232,679,AlgorillaArmy#13
+AGA878,545190891,White and Pink,Normal,Yellow,Silver,"Arm down, smiling",Blue Hawaiian Shirt,White Fishing Hat,,,112.04440381922772,680,AlgorillaArmy#878
+AGA994,545209686,White and Purple,Normal,Normal,Pink,"Arm up, smiling",Yellow Tanktop,,Gold Selfiestick,Aviators,111.89059737186264,681,AlgorillaArmy#994
+AGA458,545040279,Light Green and Mid Green,Normal,Normal,Green,Arm up,White Tanktop,Yellow Beanie,Green Cocktail,Anderson Glasses,111.66416074014202,682,AlgorillaArmy#458
+AGA866,545188273,White and Purple,Red,Normal,Green,Arm up,White Tanktop,,Microphone,,111.64478487809986,683,AlgorillaArmy#866
+AGA517,545071042,White and Orange,Normal,Blue,Purple,"Arm up, smiling",Leather Belt,,Gold Selfiestick,,111.63315374313564,684,AlgorillaArmy#517
+AGA173,384733714,Bright Pink and Light Blue,Blue,Green,Blue,"Arm up, smiling",,Red Backwards Cap,Red Selfiestick,White Shudder Shades,111.5095081500236,685,AlgorillaArmy#173
+AGA792,545148348,White and Purple,Purple,Blue,Pink,"Arm down, smiling",,Green Fishing Hat,,Silver Algo Necklace,111.4865155266479,686,AlgorillaArmy#792
+AGA869,545188886,Bright Pink and Purple,Green,Red,Pink,"Arm up, smiling",White Tanktop,,Blue Selfiestick,Neo Glasses,111.4806651108443,687,AlgorillaArmy#869
+AGA328,449493501,Orange and Green,Normal,Purple,Normal,"Arm down, smiling",Blue Vneck,Yellow Beanie,,White Shudder Shades,111.39915309711458,688,AlgorillaArmy#328
+AGA550,545075020,Light Grey and Yellow,Green,Pink,Normal,"Arm up, smiling",Light Blue Tanktop,,Red Selfiestick,Black Eyepatch,111.31914115251892,689,AlgorillaArmy#550
+AGA766,545145391,Grey and Silver Radial,Red,Red,Pink,Arm down,Orange Hawaiian Shirt,Green Fishing Hat,,Blue Shutter Shades,111.2878439249396,690,AlgorillaArmy#766
+AGA977,545207535,Light Blue and Deep Blue,Normal,Green,Normal,Arm up,Orange Hawaiian Shirt,Red Backwards Cap,Purple Cocktail,,111.1371763113078,691,AlgorillaArmy#977
+AGA433,545033589,White and Purple,Silver,Blue,Green,Arm down,Green Vneck,,,,111.10594119633664,692,AlgorillaArmy#433
+AGA967,545206464,Bright Pink and Light Blue,Green,Normal,Normal,Arm down,White Tanktop,Yellow Backwards Cap,,,110.93536009493712,693,AlgorillaArmy#967
+AGA846,545183677,Bright Pink and Purple,Normal,Green,Green,Arm up,Light Blue Tanktop,Blue Beanie,Yellow Cocktail,,110.76680783138912,694,AlgorillaArmy#846
+AGA901,545196570,Orange and Green,Yellow,Yellow,Red,Arm up,Blue Hawaiian Shirt,,Yellow Cocktail,Morpheus Glasses,110.72063273015992,695,AlgorillaArmy#901
+AGA199,384768943,Light Blue and Deep Blue,Normal,Normal,Pink,Arm down,Black Vneck,White Fishing Hat,,,110.6274611862585,696,AlgorillaArmy#199
+AGA712,545139495,Bright Pink and Purple,Blue,Red,Normal,Arm down,Green Vneck,Green Fishing Hat,,,110.62419049790812,697,AlgorillaArmy#712
+AGA17,377702704,White and Purple,Normal,Silver,Yellow,Arm down,White Tanktop,White Fishing Hat,,Morpheus Glasses,110.58557157502362,698,AlgorillaArmy#17
+AGA395,545001189,White and Orange,Pink,Pink,Normal,Arm down,,Yellow Backwards Cap,,,110.45322227404996,699,AlgorillaArmy#395
+AGA288,425897476,Light Blue and Deep Blue,Pink,Normal,Blue,"Arm up, smiling",,Blue Dreads,Yellow Cocktail,,110.33168936924798,700,AlgorillaArmy#288
+AGA706,545138974,Bright Pink and Light Blue,Normal,Blue,Yellow,Arm down,Orange Hawaiian Shirt,Green Beanie,,Blue Shutter Shades,110.310298403998,701,AlgorillaArmy#706
+AGA291,425944619,Orange and Green,Pink,Green,Normal,Arm down,Blue Vneck,Green Beanie,,,109.93744189568469,702,AlgorillaArmy#291
+AGA939,545203093,Grey and Silver Radial,Normal,Green,Yellow,"Arm down, smiling",Orange Hawaiian Shirt,Green Beanie,,Yellow Shutter Shades,109.88425168291228,703,AlgorillaArmy#939
+AGA155,384702176,Grey and Silver Radial,Blue,Normal,Normal,"Arm down, smiling",Blue Vneck,Green Backwards Cap,,,109.83788753597644,704,AlgorillaArmy#155
+AGA561,545076437,Light Pink and Red,Normal,Purple,Normal,"Arm down, smiling",Light Blue Tanktop,Red Backwards Cap,,Black Eyepatch,109.61980635627874,705,AlgorillaArmy#561
+AGA440,545035564,White and Pink,Normal,Blue,Yellow,Arm down,Yellow Tanktop,Brown Tophat,,Yellow Shutter Shades,109.08702489555336,706,AlgorillaArmy#440
+AGA330,449501620,Bright Pink and Purple,Normal,Normal,Normal,Arm up,,Pink Dreads,Yellow Cocktail,,109.06196820050108,707,AlgorillaArmy#330
+AGA916,545200199,Grey and Green,Green,Red,Normal,"Arm up, smiling",,Red Backwards Cap,Red Selfiestick,Blue Shutter Shades,109.0210662153876,708,AlgorillaArmy#916
+AGA324,449486069,Grey and Green,Normal,Normal,Bloodshot,Arm up,Yellow Tanktop,,Yellow Cocktail,Red Clown Nose,108.96403664616705,709,AlgorillaArmy#324
+AGA740,545142584,Light Green and Mid Green,Normal,Normal,Blue,Arm down,Red Tanktop,Blue Beanie,,Black Eyepatch,108.91104015237208,710,AlgorillaArmy#740
+AGA950,545204322,White and Orange,Normal,Normal,Normal,"Arm up, smiling",Orange Hawaiian Shirt,Green Afro,Banana,,108.2642502641385,711,AlgorillaArmy#950
+AGA744,545142978,White and Purple,Normal,Red,Bloodshot,"Arm down, smiling",Leather Belt,Green Afro,,,108.2323093438542,712,AlgorillaArmy#744
+AGA988,545209013,Orange and Green,Normal,Pink,Green,"Arm down, smiling",Orange Hawaiian Shirt,Bright Red Beanie Hat,,White Shudder Shades,108.19185866488576,713,AlgorillaArmy#988
+AGA855,545185810,Purple and Light Green,Normal,Normal,Normal,Arm up,,Red Backwards Cap,Purple Cocktail,Neo Glasses,107.99493219026635,714,AlgorillaArmy#855
+AGA987,545208819,Light Green and Mid Green,Normal,Green,Normal,"Arm down, smiling",Light Blue Tanktop,Yellow Backwards Cap,,,107.92875836027248,715,AlgorillaArmy#987
+AGA584,545079333,Orange and Green,Normal,Purple,Green,"Arm up, smiling",Purple Hawaiian Shirt,,Banana,Morpheus Glasses,107.79847378435124,716,AlgorillaArmy#584
+AGA726,545141196,White and Purple,Normal,Green,Normal,Arm up,Yellow Tanktop,,Spear,Yellow Shutter Shades,107.74275523697877,717,AlgorillaArmy#726
+AGA479,545046172,White and Orange,Yellow,Silver,Normal,"Arm down, smiling",Blue Vneck,,,Aviators,107.69056593623084,718,AlgorillaArmy#479
+AGA829,545154108,White and Pink,Normal,Purple,Normal,Arm down,Light Blue Tanktop,Green Afro,,Aviators,107.67287834458266,719,AlgorillaArmy#829
+AGA592,545080336,Orange and Green,Normal,Purple,Blue,Arm down,White Tanktop,Bright Red Beanie Hat,,Anderson Glasses,107.4072769073497,720,AlgorillaArmy#592
+AGA892,545194431,Purple and Light Green,Normal,Red,Purple,"Arm down, smiling",Blue Vneck,,,Anderson Glasses,107.08390705379053,721,AlgorillaArmy#892
+AGA857,545186268,Orange and Green,Normal,Red,Purple,"Arm down, smiling",,Brown Tophat,,Yellow Shutter Shades,107.05929679771089,722,AlgorillaArmy#857
+AGA854,545185596,Purple and Light Green,Normal,Normal,Green,Arm up,White Tanktop,Green Fishing Hat,Blue Selfiestick,Aviators,106.99140549878308,723,AlgorillaArmy#854
+AGA464,545041840,White and Pink,Yellow,Normal,Normal,Arm up,Light Blue Tanktop,Blue Beanie,Pink Gold Selfiestick,,106.95642117791472,724,AlgorillaArmy#464
+AGA468,545042944,Light Pink and Red,Normal,Normal,Blue,"Arm up, smiling",White Tanktop,Normal Dreads,Blue Selfiestick,,106.92319538222412,725,AlgorillaArmy#468
+AGA638,545093173,Light Green and Mid Green,Red,Yellow,Green,"Arm up, smiling",Light Blue Tanktop,Green Fishing Hat,Blue Selfiestick,,106.63014427189944,726,AlgorillaArmy#638
+AGA441,545035780,Bright Pink and Light Blue,Normal,Normal,Normal,"Arm up, smiling",Light Blue Tanktop,Red Backwards Cap,Yellow Cocktail,Yellow Shutter Shades,106.38317373532396,727,AlgorillaArmy#441
+AGA674,545103123,Light Green and Mid Green,Purple,Silver,Green,Arm down,Yellow Tanktop,,,Red Clown Nose,106.19245869730784,728,AlgorillaArmy#674
+AGA165,384714676,Light Pink and Red,Normal,Green,Yellow,"Arm down, smiling",,Green Backwards Cap,,Silver Algo Necklace,105.92022371069255,729,AlgorillaArmy#165
+AGA236,409059395,Purple and Light Green,Purple,Yellow,Pink,Arm down,,Green Beanie,,Yellow Shutter Shades,105.88721462779152,730,AlgorillaArmy#236
+AGA153,384700342,Grey and Green,Pink,Normal,Normal,Arm up,,,Spear,Morpheus Glasses,105.6748197823117,731,AlgorillaArmy#153
+AGA941,545203348,Bright Pink and Light Blue,Pink,Green,Yellow,Arm down,Blue Hawaiian Shirt,Normal Dreads,,,105.48720128003484,732,AlgorillaArmy#941
+AGA487,545048820,Light Pink and Red,Green,Yellow,Yellow,Arm up,,,Claymore,,105.4102725836188,733,AlgorillaArmy#487
+AGA753,545144085,Grey and Green,Normal,Normal,Normal,Arm up,White Tanktop,Normal Dreads,Purple Cocktail,,105.30648820584034,734,AlgorillaArmy#753
+AGA884,545192544,White and Pink,Yellow,Yellow,Bloodshot,"Arm up, smiling",Purple Hawaiian Shirt,,Red Selfiestick,,105.20671375218596,735,AlgorillaArmy#884
+AGA788,545147810,Purple and Light Green,Red,Normal,Normal,Arm up,,Blue Beanie,Banana,White Shudder Shades,105.1753352495675,736,AlgorillaArmy#788
+AGA187,384753801,Light Pink and Red,Blue,Pink,Normal,Arm down,Orange Hawaiian Shirt,Green Beanie,,,105.02720744097084,737,AlgorillaArmy#187
+AGA562,545076580,Bright Pink and Purple,Green,Yellow,Normal,Arm down,Red Tanktop,Blue Fishing Hat,,Black Eyepatch,104.991118973305,738,AlgorillaArmy#562
+AGA650,545096837,White and Orange,Yellow,Green,Green,Arm down,,Green Afro,,Morpheus Glasses,104.9298034388016,739,AlgorillaArmy#650
+AGA552,545075365,Purple and Light Green and White Radial,Red,Red,Blue,Arm down,White Tanktop,White Fishing Hat,,,104.61363639883504,740,AlgorillaArmy#552
+AGA95,379201775,Grey and Green,Green,Blue,Green,Arm down,Pink Sports Bra,,,,104.52685181430964,741,AlgorillaArmy#95
+AGA41,377742125,Bright Pink and Purple,Normal,Yellow,Normal,Arm up,,Yellow Beanie,Yellow Cocktail,Anderson Glasses,104.51268757518028,742,AlgorillaArmy#41
+AGA692,545108191,Bright Pink and Light Blue,Normal,Yellow,Bloodshot,"Arm up, smiling",White Tanktop,,Purple Cocktail,Aviators,104.45436287709396,743,AlgorillaArmy#692
+AGA544,545074464,Bright Pink and Purple,Normal,Blue,Blue,Arm down,Leather Belt,Brown Tophat,,,104.19762310067296,744,AlgorillaArmy#544
+AGA749,545143723,Light Blue and Deep Blue,Green,Normal,Green,"Arm up, smiling",,Blue Fishing Hat,Blue Selfiestick,White Shudder Shades,104.08990090293148,745,AlgorillaArmy#749
+AGA321,449478988,Sky Blue and White,Green,Purple,Pink,Arm down,Yellow Tanktop,White Fishing Hat,,,103.95445407413492,746,AlgorillaArmy#321
+AGA845,545183462,Brown and Gold Radial,Normal,Red,Green,"Arm up, smiling",,,Red Selfiestick,Neo Glasses,103.7728014052237,747,AlgorillaArmy#845
+AGA547,545074726,Light Grey and Yellow,Normal,Pink,Green,"Arm down, smiling",White Tanktop,White Fishing Hat,,Anderson Glasses,103.44244681129916,748,AlgorillaArmy#547
+AGA821,545151626,Purple and Light Green,Blue,Red,Pink,"Arm down, smiling",,Green Beanie,,White Shudder Shades,103.38001448368166,749,AlgorillaArmy#821
+AGA397,545001502,Grey and Green,Normal,Normal,Pink,Arm down,Yellow Vneck,,,,103.32430755344436,750,AlgorillaArmy#397
+AGA657,545098687,Grey and Green,Normal,Normal,Red,"Arm down, smiling",Red Tanktop,Blue Beanie,,Yellow Shutter Shades,103.14729806177212,751,AlgorillaArmy#657
+AGA795,545148766,White and Purple,Normal,Normal,Blue,Arm down,Purple Hawaiian Shirt,Red Backwards Cap,,White Shudder Shades,103.13470109953585,752,AlgorillaArmy#795
+AGA186,384751446,Light Green and Mid Green,Normal,Green,Normal,Arm down,Light Blue Tanktop,Red Backwards Cap,,Red Clown Nose,103.07160198684078,753,AlgorillaArmy#186
+AGA681,545105110,Purple and Light Green and White Radial,Yellow,Silver,Pink,"Arm down, smiling",White Tanktop,,,,102.99019721642613,754,AlgorillaArmy#681
+AGA543,545074394,Purple and Light Green and White Radial,Red,Red,Yellow,"Arm down, smiling",Yellow Tanktop,,,Morpheus Glasses,102.8100919775079,755,AlgorillaArmy#543
+AGA332,449506675,Bright Pink and Purple,Normal,Pink,Yellow,"Arm down, smiling",Red Vneck,,,Yellow Shutter Shades,102.79523164177456,756,AlgorillaArmy#332
+AGA864,545187815,Grey and Silver Radial,Normal,Normal,Normal,"Arm down, smiling",Blue Hawaiian Shirt,Red Backwards Cap,,Black Eyepatch,102.47041919457094,757,AlgorillaArmy#864
+AGA358,449590039,Light Blue and Deep Blue,Normal,Pink,Pink,Arm up,,Blue Fishing Hat,Pink Gold Selfiestick,Blue Shutter Shades,102.17387489218603,758,AlgorillaArmy#358
+AGA851,545184787,White and Pink,Pink,Red,Normal,Arm down,,Yellow Backwards Cap,,,102.16580492281771,759,AlgorillaArmy#851
+AGA723,545140923,White and Pink,Green,Normal,Pink,Arm down,Blue Hawaiian Shirt,Green Fishing Hat,,Yellow Shutter Shades,102.0705128890949,760,AlgorillaArmy#723
+AGA563,545076655,White and Pink,Pink,Green,Bloodshot,Arm up,,,Spear,,101.7561090225564,761,AlgorillaArmy#563
+AGA471,545043798,Orange and Green,Normal,Normal,Normal,"Arm down, smiling",Red Vneck,Yellow Beanie,,,101.61106980359652,762,AlgorillaArmy#471
+AGA393,545000960,Bright Pink and Light Blue,Purple,Red,Blue,Arm up,,,Claymore,,101.39599327700014,763,AlgorillaArmy#393
+AGA679,545104510,White and Orange,Yellow,Normal,Blue,Arm down,Purple Hawaiian Shirt,Bright Red Beanie Hat,,,101.1649260195952,764,AlgorillaArmy#679
+AGA482,545046994,Light Grey and Yellow,Normal,Yellow,Normal,Arm up,Yellow Tanktop,Green Fishing Hat,Banana,White Shudder Shades,101.16009183880196,765,AlgorillaArmy#482
+AGA804,545149829,Sky Blue and White,Normal,Normal,Purple,Arm up,Yellow Tanktop,,Yellow Cocktail,Morpheus Glasses,100.8297966723044,766,AlgorillaArmy#804
+AGA97,379203813,Purple and Light Green and White Radial,Green,Normal,Blue,Arm down,Blue Vneck,,,,100.54945629413714,767,AlgorillaArmy#97
+AGA933,545201907,White and Pink,Purple,Red,Normal,"Arm up, smiling",,Normal Dreads,Pink Gold Selfiestick,,100.48015873612398,768,AlgorillaArmy#933
+AGA444,545036625,Orange and Green,Normal,Green,Blue,Arm down,,Gold Dreads,,,100.26734076292496,769,AlgorillaArmy#444
+AGA426,545031246,Sky Blue and White,Pink,Pink,Blue,"Arm down, smiling",Yellow Tanktop,Normal Dreads,,,100.19631153621508,770,AlgorillaArmy#426
+AGA709,545139279,Bright Pink and Purple,Yellow,Red,Green,Arm up,Yellow Tanktop,Green Fishing Hat,Pink Gold Selfiestick,,99.94506299334026,771,AlgorillaArmy#709
+AGA580,545078818,Grey and Green,Purple,Pink,Green,"Arm up, smiling",,Blue Fishing Hat,Red Selfiestick,,99.8197910640307,772,AlgorillaArmy#580
+AGA27,377720740,Grey and Silver Radial,Normal,Silver,Blue,"Arm down, smiling",,Silver Crown,,,99.667801177831,773,AlgorillaArmy#27
+AGA741,545142680,Purple and Light Green,Pink,Red,Normal,Arm up,White Tanktop,Red Backwards Cap,Pink Gold Selfiestick,,99.44916015527993,774,AlgorillaArmy#741
+AGA273,425871714,Light Green and Mid Green,Blue,Gold,Yellow,Arm down,Blue Vneck,,,,99.32214281911726,775,AlgorillaArmy#273
+AGA554,545075611,Light Blue and Deep Blue,Normal,Green,Normal,"Arm up, smiling",Light Blue Tanktop,,Oar,,99.04986529714952,776,AlgorillaArmy#554
+AGA413,545027701,White and Orange,Green,Normal,Blue,"Arm up, smiling",Light Blue Tanktop,,Green Cocktail,Morpheus Glasses,99.0446247551349,777,AlgorillaArmy#413
+AGA810,545150426,White and Purple,Purple,Normal,Red,"Arm down, smiling",Orange Hawaiian Shirt,Yellow Beanie,,,99.03902842112466,778,AlgorillaArmy#810
+AGA972,545207001,Orange and Green,Normal,Normal,Normal,Arm up,Yellow Tanktop,Green Fishing Hat,Blue Selfiestick,Yellow Shutter Shades,98.96840244446236,779,AlgorillaArmy#972
+AGA787,545147710,Orange and Green,Normal,Normal,Purple,"Arm up, smiling",Orange Hawaiian Shirt,,Banana,White Shudder Shades,98.94222715429808,780,AlgorillaArmy#787
+AGA615,545085729,Bright Pink and Purple,Normal,Normal,Red,"Arm down, smiling",Black Vneck,Blue Fishing Hat,,,98.87363368771776,781,AlgorillaArmy#615
+AGA541,545074144,Sky Blue and White,Blue,Normal,Normal,"Arm up, smiling",White Tanktop,Blue Fishing Hat,Pink Gold Selfiestick,Yellow Shutter Shades,98.51794796140486,782,AlgorillaArmy#541
+AGA40,377740989,Light Grey and Yellow,Normal,Red,Blue,"Arm up, smiling",Light Blue Tanktop,,Spear,,98.4352684379572,783,AlgorillaArmy#40
+AGA621,545087854,White and Purple,Normal,Red,Blue,Arm down,Yellow Tanktop,Black Tophat,,,98.37289677251412,784,AlgorillaArmy#621
+AGA724,545141036,Orange and Green,Normal,Normal,Red,"Arm down, smiling",,Rainbow Afro,,Blue Shutter Shades,98.3302209131613,785,AlgorillaArmy#724
+AGA720,545140522,Bright Pink and Light Blue,Normal,Normal,Normal,"Arm down, smiling",Blue Hawaiian Shirt,Rainbow Afro,,,98.21253335552446,786,AlgorillaArmy#720
+AGA834,545155777,Sky Blue and White,Pink,Normal,Bloodshot,Arm down,Leather Belt,Yellow Beanie,,,98.05850907778948,787,AlgorillaArmy#834
+AGA556,545075852,White and Purple,Purple,Red,Yellow,"Arm up, smiling",Blue Hawaiian Shirt,,Red Selfiestick,,97.86322613799268,788,AlgorillaArmy#556
+AGA747,545143393,White and Orange,Yellow,Green,Normal,Arm down,Orange Hawaiian Shirt,Green Fishing Hat,,Yellow Shutter Shades,97.85742624983968,789,AlgorillaArmy#747
+AGA776,545146670,Purple and Light Green,Red,Green,Green,Arm up,Red Tanktop,,Green Cocktail,Blue Shutter Shades,97.61934885343648,790,AlgorillaArmy#776
+AGA640,545093856,Light Blue and Deep Blue,Blue,Blue,Bloodshot,Arm up,Leather Belt,,Green Cocktail,,97.44031152066584,791,AlgorillaArmy#640
+AGA686,545106662,Light Green and Mid Green,Red,Pink,Purple,"Arm down, smiling",,Green Backwards Cap,,,97.2966109861386,792,AlgorillaArmy#686
+AGA549,545074908,Light Grey and Yellow,Normal,Pink,Red,Arm down,,Red Dreads,,,97.29368415883516,793,AlgorillaArmy#549
+AGA325,449487790,White and Orange,Yellow,Red,Pink,Arm up,,Green Fishing Hat,Pink Gold Selfiestick,,97.03574814854151,794,AlgorillaArmy#325
+AGA653,545097696,Light Blue and Deep Blue,Silver,Normal,Purple,Arm up,,,Banana,Blue Shutter Shades,97.00655408094084,795,AlgorillaArmy#653
+AGA194,384764695,Purple and Light Green,Pink,Normal,Blue,Arm up,Orange Hawaiian Shirt,,Green Cocktail,Yellow Shutter Shades,96.66392040250108,796,AlgorillaArmy#194
+AGA515,545070820,Light Grey and Yellow,Red,Silver,Green,"Arm down, smiling",,Green Backwards Cap,,,96.41344436314029,797,AlgorillaArmy#515
+AGA945,545203805,White and Purple,Red,Green,Normal,"Arm down, smiling",Red Tanktop,Green Beanie,,,96.33136768182564,798,AlgorillaArmy#945
+AGA694,545137590,White and Pink,Silver,Purple,Green,Arm down,Blue Vneck,,,,96.3247627066341,799,AlgorillaArmy#694
+AGA168,384723077,Purple and Light Green,Pink,Pink,Normal,"Arm up, smiling",Yellow Tanktop,,Banana,Aviators,96.02412350984306,800,AlgorillaArmy#168
+AGA889,545193750,White and Pink,Red,Red,Normal,"Arm down, smiling",,Pink Dreads,,,95.97348568463318,801,AlgorillaArmy#889
+AGA981,545207920,Sky Blue and White,Green,Blue,Pink,Arm up,Orange Hawaiian Shirt,,Banana,,95.96416913808218,802,AlgorillaArmy#981
+AGA229,409027094,Bright Pink and Light Blue,Normal,Yellow,Blue,"Arm up, smiling",White Tanktop,Yellow Beanie,Red Selfiestick,,95.54631690008247,803,AlgorillaArmy#229
+AGA784,545147401,Light Blue and Deep Blue,Red,Green,Green,Arm down,,Red Backwards Cap,,Anderson Glasses,95.49384886966855,804,AlgorillaArmy#784
+AGA247,409091928,White and Orange,Normal,Red,Yellow,Arm down,,Bright Red Beanie Hat,,Anderson Glasses,95.33480228074195,805,AlgorillaArmy#247
+AGA812,545150623,Orange and Green,Normal,Pink,Pink,Arm down,Pink Vneck,,,Blue Shutter Shades,95.25383413820552,806,AlgorillaArmy#812
+AGA701,545138529,Bright Pink and Light Blue,Red,Red,Purple,"Arm up, smiling",,,Gold Selfiestick,,95.08063889700836,807,AlgorillaArmy#701
+AGA364,539418939,Grey and Silver Radial,Normal,Normal,Normal,"Arm down, smiling",,Red Dreads,,Yellow Shutter Shades,94.95404030121183,808,AlgorillaArmy#364
+AGA579,545078675,Light Green and Mid Green,Blue,Green,Blue,"Arm up, smiling",Blue Hawaiian Shirt,,Banana,Blue Shutter Shades,94.77488725273584,809,AlgorillaArmy#579
+AGA407,545026313,White and Purple,Normal,Green,Normal,"Arm down, smiling",,Silver Crown,,Yellow Shutter Shades,94.39348564866536,810,AlgorillaArmy#407
+AGA824,545152429,White and Pink,Green,Silver,Green,Arm down,Light Blue Tanktop,Blue Fishing Hat,,,94.26417625660304,811,AlgorillaArmy#824
+AGA80,378935942,White and Purple,Normal,Yellow,Normal,"Arm down, smiling",Blue Vneck,Yellow Beanie,,,94.21437293321544,812,AlgorillaArmy#80
+AGA429,545032477,Grey and Silver Radial,Normal,Normal,Normal,Arm up,Orange Hawaiian Shirt,,Pink Gold Selfiestick,Neo Glasses,94.18875150164452,813,AlgorillaArmy#429
+AGA995,545209805,Bright Pink and Light Blue,Silver,Red,Red,"Arm down, smiling",Blue Hawaiian Shirt,,,Blue Shutter Shades,94.18019799203864,814,AlgorillaArmy#995
+AGA719,545140335,Light Pink and Red,Silver,Green,Red,Arm up,,,Purple Cocktail,,94.15115896182124,815,AlgorillaArmy#719
+AGA317,449467663,Orange and Green,Normal,Red,Green,"Arm down, smiling",Leather Belt,Normal Dreads,,,93.81969246943768,816,AlgorillaArmy#317
+AGA624,545088821,Light Blue and Deep Blue,Normal,Normal,Normal,"Arm up, smiling",Green Tanktop,,Purple Cocktail,,93.79335240691238,817,AlgorillaArmy#624
+AGA591,545080227,Light Blue and Deep Blue,Green,Blue,Blue,"Arm down, smiling",,Green Beanie,,Yellow Shutter Shades,93.72755875396916,818,AlgorillaArmy#591
+AGA947,545203984,Orange and Green,Normal,Normal,Red,"Arm down, smiling",,Normal Dreads,,Neo Glasses,93.40775824799464,819,AlgorillaArmy#947
+AGA33,377730790,Light Green and Mid Green,Silver,Silver,Normal,"Arm down, smiling",,White Fishing Hat,,,93.3055533280033,820,AlgorillaArmy#33
+AGA506,545069752,Bright Pink and Light Blue,Blue,Blue,Green,Arm down,White Tanktop,Blue Beanie,,,93.20425053843736,821,AlgorillaArmy#506
+AGA865,545188040,Grey and Green,Normal,Normal,Green,Arm up,Red Tanktop,,Pink Gold Selfiestick,Neo Glasses,93.06598181060608,822,AlgorillaArmy#865
+AGA989,545209144,Sky Blue and White,Normal,Blue,Normal,"Arm up, smiling",Green Tanktop,,Red Selfiestick,,92.91957857304324,823,AlgorillaArmy#989
+AGA943,545203550,Bright Pink and Purple,Normal,Blue,Normal,"Arm up, smiling",,Green Backwards Cap,Yellow Cocktail,,92.91641926755835,824,AlgorillaArmy#943
+AGA895,545195204,Bright Pink and Light Blue,Normal,Normal,Blue,Arm up,,,Purple Cocktail,Red Clown Nose,92.50475948921545,825,AlgorillaArmy#895
+AGA841,545182586,Bright Pink and Purple,Yellow,Pink,Normal,Arm down,Red Tanktop,,,Red Clown Nose,92.38817472391432,826,AlgorillaArmy#841
+AGA622,545088262,White and Orange,Normal,Normal,Blue,"Arm up, smiling",Light Blue Tanktop,,Pink Gold Selfiestick,Anderson Glasses,92.3675084462072,827,AlgorillaArmy#622
+AGA270,425857127,Light Green and Mid Green,Normal,Pink,Red,Arm up,,,Purple Cocktail,Morpheus Glasses,92.23567870073671,828,AlgorillaArmy#270
+AGA566,545076973,White and Purple,Normal,Normal,Yellow,"Arm down, smiling",White Tanktop,Blue Dreads,,,91.75625240595024,829,AlgorillaArmy#566
+AGA922,545200919,White and Orange,Green,Yellow,Blue,"Arm up, smiling",,Blue Fishing Hat,Green Cocktail,,90.9761147529556,830,AlgorillaArmy#922
+AGA568,545077199,Sky Blue and White,Normal,Pink,Normal,Arm up,Light Blue Tanktop,Blue Fishing Hat,Pink Gold Selfiestick,,90.89750073770152,831,AlgorillaArmy#568
+AGA140,384686301,Light Green and Mid Green,Purple,Normal,Pink,"Arm up, smiling",,,Red Selfiestick,Blue Shutter Shades,90.85881761975445,832,AlgorillaArmy#140
+AGA598,545081034,Grey and Green,Normal,Blue,Green,Arm down,Red Tanktop,Blue Fishing Hat,,White Shudder Shades,90.8065160660075,833,AlgorillaArmy#598
+AGA133,384678953,Grey and Green,Yellow,Gold,Normal,"Arm down, smiling",,Red Backwards Cap,,,90.74841210042705,834,AlgorillaArmy#133
+AGA385,545000034,White and Pink,Normal,Normal,Yellow,Arm down,,Black Tophat,,Yellow Shutter Shades,90.72104305131064,835,AlgorillaArmy#385
+AGA134,384680230,Light Green and Mid Green,Pink,Yellow,Blue,Arm down,,Yellow Banana Hat,,,90.53238785601609,836,AlgorillaArmy#134
+AGA262,425832103,Light Blue and Deep Blue,Green,Normal,Normal,"Arm up, smiling",,Red Backwards Cap,Red Selfiestick,,90.28617791528193,837,AlgorillaArmy#262
+AGA490,545049546,Orange and Green,Yellow,Pink,Pink,Arm down,White Tanktop,,,Anderson Glasses,90.26600287144674,838,AlgorillaArmy#490
+AGA930,545201644,Light Blue and Deep Blue,Normal,Normal,Purple,"Arm up, smiling",Light Blue Tanktop,,Purple Cocktail,,90.18971956554712,839,AlgorillaArmy#930
+AGA384,544999943,White and Pink,Purple,Red,Normal,"Arm down, smiling",Green Tanktop,,,Yellow Shutter Shades,90.1610832042612,840,AlgorillaArmy#384
+AGA553,545075480,Orange and Green,Normal,Normal,Pink,Arm down,Yellow Tanktop,Blue Fishing Hat,,Aviators,89.8135630477556,841,AlgorillaArmy#553
+AGA169,384723965,Sky Blue and White,Normal,Green,Blue,Arm up,Light Blue Tanktop,,Blue Selfiestick,White Shudder Shades,89.80892724175277,842,AlgorillaArmy#169
+AGA346,449551367,White and Pink,Green,Red,Pink,Arm down,White Tanktop,White Fishing Hat,,,89.80257765920487,843,AlgorillaArmy#346
+AGA711,545139419,White and Pink,Blue,Pink,Blue,"Arm down, smiling",Black Vneck,,,,89.7242293764899,844,AlgorillaArmy#711
+AGA163,384713002,Grey and Silver Radial,Red,Silver,Normal,"Arm down, smiling",Blue Vneck,,,,89.71742253973503,845,AlgorillaArmy#163
+AGA581,545078997,Light Blue and Deep Blue,Yellow,Normal,Red,"Arm up, smiling",White Tanktop,,Banana,Aviators,89.6983931181407,846,AlgorillaArmy#581
+AGA315,449460207,Grey and Green,Pink,Normal,Green,"Arm down, smiling",,Blue Dreads,,,89.47553887995855,847,AlgorillaArmy#315
+AGA573,545077732,Light Green and Mid Green,Normal,Normal,Pink,"Arm up, smiling",White Tanktop,,Banana,Neo Glasses,89.01038905980681,848,AlgorillaArmy#573
+AGA937,545202694,Light Blue and Deep Blue,Green,Normal,Bloodshot,Arm up,Blue Hawaiian Shirt,,Banana,,89.00679997456791,849,AlgorillaArmy#937
+AGA259,425820868,Light Grey and Yellow,Pink,Blue,Yellow,Arm down,Leather Belt,,,Aviators,88.93908325788361,850,AlgorillaArmy#259
+AGA593,545080421,Purple and Light Green,Normal,Purple,Yellow,Arm up,Yellow Tanktop,,Banana,Yellow Shutter Shades,88.91425102189659,851,AlgorillaArmy#593
+AGA611,545084265,Light Green and Mid Green,Red,Normal,Yellow,"Arm up, smiling",,White Fishing Hat,Pink Gold Selfiestick,,88.76080326424892,852,AlgorillaArmy#611
+AGA198,384767947,White and Orange,Normal,Normal,Blue,Arm down,Pink Vneck,Green Fishing Hat,,,88.64420433595662,853,AlgorillaArmy#198
+AGA875,545190242,Light Green and Mid Green,Normal,Pink,Blue,Arm down,,Green Backwards Cap,,Blue Shutter Shades,88.60404177153475,854,AlgorillaArmy#875
+AGA775,545146552,Light Grey and Yellow,Green,Yellow,Red,Arm down,Light Blue Tanktop,Green Fishing Hat,,,88.45907585006837,855,AlgorillaArmy#775
+AGA974,545207228,Light Pink and Red,Normal,Normal,Bloodshot,"Arm down, smiling",Black Vneck,,,,87.92652816850782,856,AlgorillaArmy#974
+AGA416,545028430,Sky Blue and White,Normal,Normal,Green,"Arm down, smiling",,Yellow Beanie,,Red Clown Nose,87.89100170092996,857,AlgorillaArmy#416
+AGA935,545202342,Bright Pink and Purple,Yellow,Purple,Normal,Arm down,Red Tanktop,Green Fishing Hat,,,87.54451295090475,858,AlgorillaArmy#935
+AGA627,545089602,Light Pink and Red,Red,Blue,Normal,"Arm down, smiling",,Yellow Beanie,,Morpheus Glasses,87.511015812612,859,AlgorillaArmy#627
+AGA513,545070601,White and Purple,Normal,Blue,Yellow,Arm down,White Tanktop,Green Fishing Hat,,White Shudder Shades,87.1282750660454,860,AlgorillaArmy#513
+AGA799,545149355,White and Pink,Yellow,Normal,Bloodshot,"Arm up, smiling",,,Red Selfiestick,Blue Shutter Shades,86.99431197814036,861,AlgorillaArmy#799
+AGA646,545095539,Grey and Green,Pink,Red,Purple,Arm down,Purple Hawaiian Shirt,,,,86.96224635109196,862,AlgorillaArmy#646
+AGA69,378889133,Bright Pink and Light Blue,Normal,Gold,Normal,"Arm down, smiling",,Green Fishing Hat,,Yellow Shutter Shades,86.88015253822125,863,AlgorillaArmy#69
+AGA110,384640994,Bright Pink and Purple,Normal,Yellow,Normal,Arm up,Red Tanktop,,Banana,Morpheus Glasses,86.44883996184049,864,AlgorillaArmy#110
+AGA729,545141489,Purple and Light Green,Normal,Pink,Pink,Arm up,Yellow Tanktop,,Red Selfiestick,,86.21719084870563,865,AlgorillaArmy#729
+AGA239,409065340,White and Orange,Green,Blue,Normal,"Arm down, smiling",,Green Fishing Hat,,Morpheus Glasses,86.14475073719677,866,AlgorillArmy#239
+AGA949,545204207,Orange and Green,Normal,Blue,Normal,"Arm up, smiling",Light Blue Tanktop,,Blue Selfiestick,Blue Shutter Shades,86.10035890156192,867,AlgorillaArmy#949
+AGA183,384746948,Purple and Light Green,Red,Normal,Red,"Arm up, smiling",Red Tanktop,,Red Selfiestick,,86.08388430231993,868,AlgorillaArmy#183
+AGA542,545074267,Purple and Light Green,Normal,Normal,Normal,"Arm up, smiling",,Blue Beanie,Pink Gold Selfiestick,,85.82032564258827,869,AlgorillaArmy#542
+AGA586,545079621,Sky Blue and White,Blue,Red,Bloodshot,Arm down,,Bright Red Beanie Hat,,,85.3665579345207,870,AlgorillaArmy#586
+AGA704,545138789,Sky Blue and White,Normal,Blue,Green,Arm down,Red Tanktop,,,Red Clown Nose,85.34282861474242,871,AlgorillaArmy#704
+AGA641,545094181,Bright Pink and Purple,Purple,Blue,Yellow,Arm down,White Tanktop,Yellow Beanie,,,85.14838717035144,872,AlgorillaArmy#641
+AGA238,409063637,Purple and Light Green,Blue,Green,Green,Arm down,White Tanktop,,,Red Clown Nose,85.14145883194361,873,AlgorillaArmy#238
+AGA728,545141374,Brown and Gold Radial,Normal,Normal,Purple,"Arm down, smiling",Red Tanktop,,,,84.64250288791503,874,AlgorillaArmy#728
+AGA908,545198109,Light Green and Mid Green,Normal,Green,Blue,Arm down,White Tanktop,White Fishing Hat,,Blue Shutter Shades,84.59831500003696,875,AlgorillaArmy#908
+AGA843,545183033,Bright Pink and Purple,Green,Yellow,Yellow,"Arm down, smiling",Green Tanktop,,,,84.4466969599467,876,AlgorillaArmy#843
+AGA514,545070678,White and Purple,Normal,Silver,Yellow,Arm down,Red Tanktop,,,Yellow Shutter Shades,84.07912471030764,877,AlgorillaArmy#514
+AGA732,545141766,Sky Blue and White,Yellow,Blue,Normal,Arm down,Light Blue Tanktop,,,Silver Algo Necklace,84.06162400605928,878,AlgorillaArmy#732
+AGA920,545200730,Grey and Green,Normal,Normal,Green,"Arm down, smiling",Blue Vneck,,,Aviators,84.0284849073787,879,AlgorillaArmy#920
+AGA993,545209578,White and Pink,Normal,Blue,Pink,"Arm up, smiling",,,Banana,Neo Glasses,83.86390984485949,880,AlgorillaArmy#993
+AGA118,384656013,Purple and Light Green,Silver,Silver,Red,Arm down,White Tanktop,,,,83.82867548069545,881,AlgorillaArmy#118
+AGA613,545084776,Light Pink and Red,Normal,Blue,Normal,Arm down,Yellow Tanktop,Blue Fishing Hat,,White Shudder Shades,83.82596899437468,882,AlgorillaArmy#613
+AGA842,545182796,Bright Pink and Purple,Red,Green,Blue,Arm up,Leather Belt,,Pink Gold Selfiestick,,83.76273207445567,883,AlgorillaArmy#842
+AGA698,545138263,Light Grey and Yellow,Blue,Green,Red,Arm down,White Tanktop,Yellow Beanie,,,83.68860048773503,884,AlgorillaArmy#698
+AGA179,384741993,Bright Pink and Light Blue,Blue,Normal,Normal,Arm down,Yellow Tanktop,Green Fishing Hat,,Yellow Shutter Shades,83.64005929739673,885,AlgorillaArmy#179
+AGA366,539426329,Light Blue and Deep Blue,Yellow,Blue,Green,"Arm down, smiling",White Tanktop,White Fishing Hat,,,83.61462712633701,886,AlgorillaArmy#366
+AGA39,377739518,Light Green and Mid Green,Normal,Normal,Normal,Arm down,White Tanktop,Brown Tophat,,,83.31338595741894,887,AlgorillaArmy#39
+AGA465,545042184,White and Pink,Yellow,Normal,Normal,Arm down,,Brown Tophat,,,82.59177742751704,888,AlgorillaArmy#465
+AGA475,545045060,White and Orange,Green,Green,Blue,"Arm down, smiling",Pink Vneck,,,,82.41537463079409,889,AlgorillaArmy#475
+AGA312,449452562,Bright Pink and Light Blue,Yellow,Yellow,Green,"Arm down, smiling",Pink Vneck,,,,82.27805496434986,890,AlgorillaArmy#312
+AGA582,545079148,White and Orange,Red,Blue,Blue,Arm down,White Tanktop,Red Backwards Cap,,,82.1919440192184,891,AlgorillaArmy#582
+AGA796,545148968,Light Blue and Deep Blue,Normal,Normal,Blue,"Arm down, smiling",White Tanktop,Yellow Beanie,,Aviators,82.01705131651411,892,AlgorillaArmy#796
+AGA223,409003430,White and Pink,Normal,Yellow,Green,Arm down,Orange Hawaiian Shirt,Yellow Beanie,,,81.98742797673309,893,AlgorillaArmy#223
+AGA714,545139680,Light Green and Mid Green,Normal,Normal,Green,"Arm down, smiling",Light Blue Tanktop,Green Beanie,,,81.84262978299283,894,AlgorillaArmy#714
+AGA961,545205648,Light Blue and Deep Blue,Normal,Red,Normal,Arm up,,White Fishing Hat,Yellow Cocktail,,81.78470633857748,895,AlgorillaArmy#961
+AGA649,545096559,Light Blue and Deep Blue,Normal,Pink,Normal,"Arm up, smiling",,Green Fishing Hat,Red Selfiestick,,81.56644887566102,896,AlgorillaArmy#649
+AGA82,378937277,Grey and Green,Red,Red,Blue,"Arm down, smiling",,Green Afro,,,81.5410822958273,897,AlgorillaArmy#82
+AGA531,545072934,Grey and Green,Red,Red,Blue,"Arm down, smiling",,Green Afro,,,81.5410822958273,898,AlgorillaArmy#531
+AGA411,545027244,Bright Pink and Purple,Normal,Green,Blue,"Arm down, smiling",,Bright Red Beanie Hat,,White Shudder Shades,81.1450754664869,899,AlgorillaArmy#411
+AGA779,545146940,White and Purple,Normal,Normal,Green,Arm up,Orange Hawaiian Shirt,,Yellow Cocktail,,80.85699740455924,900,AlgorillaArmy#779
+AGA297,425964096,Bright Pink and Light Blue,Normal,Red,Normal,"Arm down, smiling",,Blue Beanie,,Yellow Shutter Shades,80.85300738064132,901,AlgorillaArmy#297
+AGA530,545072792,Light Blue and Deep Blue,Blue,Yellow,Yellow,"Arm up, smiling",Yellow Tanktop,,Pink Gold Selfiestick,,80.72521523844563,902,AlgorillaArmy#530
+AGA803,545149719,White and Pink,Red,Blue,Green,"Arm down, smiling",White Tanktop,,,Silver Algo Necklace,80.57188585091943,903,AlgorillaArmy#803
+AGA813,545150722,Grey and Silver Radial,Yellow,Red,Normal,Arm down,,Blue Beanie,,,80.33451930444184,904,AlgorillaArmy#813
+AGA533,545073302,Light Blue and Deep Blue,Purple,Yellow,Normal,Arm down,Leather Belt,,,Blue Shutter Shades,80.31794850316106,905,AlgorillaArmy#533
+AGA334,449511200,White and Orange,Pink,Normal,Green,"Arm up, smiling",Yellow Tanktop,,Green Cocktail,,80.2326707958323,906,AlgorillaArmy#334
+AGA509,545070134,Light Grey and Yellow,Yellow,Normal,Green,Arm up,,,Gold Selfiestick,,80.19736498477268,907,AlgorillaArmy#509
+AGA15,377697837,Grey and Silver Radial,Silver,Purple,Normal,Arm down,,,,Aviators,80.12510594855945,908,AlgorillaArmy#15
+AGA507,545069883,Light Green and Mid Green,Normal,Normal,Green,Arm up,Purple Hawaiian Shirt,,Green Cocktail,,79.95514947220667,909,AlgorillaArmy#507
+AGA870,545189100,White and Pink,Normal,Green,Red,"Arm down, smiling",,White Fishing Hat,,Blue Shutter Shades,79.59960029109331,910,AlgorillaArmy#870
+AGA555,545075721,Orange and Green,Normal,Normal,Green,Arm down,Red Tanktop,,,Red Clown Nose,79.18236055496085,911,AlgorillaArmy#555
+AGA957,545205015,White and Purple,Normal,Blue,Normal,Arm down,Orange Hawaiian Shirt,,,Neo Glasses,79.06997964211203,912,AlgorillaArmy#957
+AGA518,545071178,Bright Pink and Purple,Green,Normal,Normal,"Arm up, smiling",,,Yellow Cocktail,Aviators,79.01095296834075,913,AlgorillaArmy#518
+AGA894,545194992,Light Grey and Yellow,Green,Pink,Purple,Arm down,,,,Blue Shutter Shades,78.88095356399057,914,AlgorillaArmy#894
+AGA610,545083916,Light Grey and Yellow,Blue,Normal,Yellow,Arm up,White Tanktop,,Blue Selfiestick,,78.57238737140992,915,AlgorillaArmy#610
+AGA859,545186672,White and Orange,Normal,Normal,Pink,Arm down,Red Tanktop,,,Morpheus Glasses,78.52689204543847,916,AlgorillaArmy#859
+AGA625,545089126,White and Orange,Red,Green,Normal,"Arm down, smiling",,Green Backwards Cap,,,78.38214875637583,917,AlgorillaArmy#625
+AGA837,545181582,Light Grey and Yellow,Normal,Normal,Normal,"Arm down, smiling",Light Blue Tanktop,Blue Fishing Hat,,White Shudder Shades,78.23146096305271,918,AlgorillaArmy#837
+AGA137,384683634,Grey and Green,Normal,Gold,Normal,Arm down,,Yellow Beanie,,,78.07515067245468,919,AlgorillaArmy#137
+AGA230,409029251,White and Pink,Green,Yellow,Normal,Arm down,Light Blue Tanktop,,,Neo Glasses,77.5539394928745,920,AlgorillaArmy#230
+AGA53,378831282,Purple and Light Green,Normal,Gold,Green,"Arm down, smiling",Blue Hawaiian Shirt,,,,77.52440751080636,921,AlgorillaArmy#53
+AGA763,545145035,Sky Blue and White,Normal,Yellow,Red,"Arm down, smiling",Blue Hawaiian Shirt,,,Aviators,77.4926376566518,922,AlgorillaArmy#763
+AGA924,545201112,Grey and Green,Normal,Normal,Normal,Arm up,White Tanktop,,Blue Selfiestick,Blue Shutter Shades,77.30607664378495,923,AlgorillaArmy#924
+AGA914,545199688,Light Grey and Yellow,Pink,Red,Normal,Arm down,White Tanktop,,,Anderson Glasses,76.28645860239551,924,AlgorillaArmy#914
+AGA279,425875789,Purple and Light Green,Pink,Purple,Red,Arm down,Red Tanktop,,,,76.12797429388606,925,AlgorillArmy#279
+AGA691,545107818,Light Blue and Deep Blue,Purple,Normal,Normal,"Arm up, smiling",White Tanktop,,Blue Selfiestick,,76.04519872103171,926,AlgorillaArmy#691
+AGA292,425945111,Light Green and Mid Green,Normal,Normal,Normal,"Arm down, smiling",White Tanktop,Green Fishing Hat,,Aviators,75.11281253773853,927,AlgorillaArmy#292
+AGA121,384660125,Purple and Light Green,Normal,Green,Green,"Arm down, smiling",,Green Backwards Cap,,,74.19467283915992,928,AlgorillaArmy#121
+AGA326,449489487,White and Purple,Normal,Yellow,Green,"Arm up, smiling",White Tanktop,,Yellow Cocktail,,73.95596117718046,929,AlgorillaArmy#326
+AGA243,409079923,Light Green and Mid Green,Yellow,Blue,Blue,"Arm down, smiling",,Red Backwards Cap,,,72.3325262946349,930,AlgorillaArmy#243
+AGA739,545142474,White and Pink,Normal,Pink,Yellow,"Arm down, smiling",White Tanktop,Green Fishing Hat,,,71.23873597882283,931,AlgorillaArmy#739
+AGA473,545044500,Light Grey and Yellow,Silver,Red,Normal,Arm down,Red Tanktop,,,,70.50548238122225,932,AlgorillaArmy#473
+AGA390,545000598,Light Grey and Yellow,Pink,Red,Normal,Arm down,,White Fishing Hat,,,70.3281980852109,933,AlgorillaArmy#390
+AGA881,545191539,Light Blue and Deep Blue,Normal,Normal,Yellow,"Arm down, smiling",White Tanktop,,,Silver Algo Necklace,70.23425521704607,934,AlgorillaArmy#881
+AGA968,545206575,Light Grey and Yellow,Normal,Normal,Red,"Arm down, smiling",Light Blue Tanktop,,,Morpheus Glasses,70.21898957543857,935,AlgorillaArmy#968
+AGA329,449498358,White and Pink,Pink,Normal,Normal,"Arm down, smiling",Leather Belt,,,Yellow Shutter Shades,69.88743363999377,936,AlgorillaArmy#329
+AGA344,449541448,Light Pink and Red,Purple,Yellow,Yellow,"Arm down, smiling",Light Blue Tanktop,,,,69.61501336396105,937,AlgorillaArmy#344
+AGA176,384738795,White and Purple,Red,Normal,Normal,"Arm up, smiling",,,Purple Cocktail,,69.5377042622867,938,AlgorillaArmy#176
+AGA668,545101530,Light Grey and Yellow,Red,Normal,Pink,"Arm down, smiling",,Blue Fishing Hat,,,69.51694356361403,939,AlgorillaArmy#668
+AGA131,384675621,Grey and Green,Pink,Green,Green,Arm down,Leather Belt,,,,69.47165574295227,940,AlgorillaArmy#131
+AGA353,449572885,Light Grey and Yellow,Blue,Normal,Blue,"Arm down, smiling",Light Blue Tanktop,,,Blue Shutter Shades,69.08020940995652,941,AlgorillaArmy#353
+AGA759,545144652,Bright Pink and Light Blue,Normal,Blue,Blue,Arm up,,,Banana,Blue Shutter Shades,68.48712038819338,942,AlgorillaArmy#759
+AGA678,545104252,Grey and Green,Purple,Normal,Normal,Arm down,Purple Hawaiian Shirt,,,,68.47609508894314,943,AlgorillaArmy#678
+AGA780,545147025,Light Pink and Red,Green,Normal,Blue,Arm up,,,Yellow Cocktail,,68.46969727263485,944,AlgorillaArmy#780
+AGA320,449477065,Purple and Light Green,Normal,Red,Normal,Arm down,White Tanktop,,,Silver Algo Necklace,68.42803828434748,945,AlgorillaArmy#320
+AGA1000,545210512,Grey and Green,Normal,Yellow,Green,Arm down,,,,Red Clown Nose,68.20284299649593,946,AlgorillaArmy#1000
+AGA534,545073461,Brown and Gold Radial,Normal,Normal,Green,Arm down,Light Blue Tanktop,,,,68.07133199541971,947,AlgorillaArmy#534
+AGA883,545192274,Light Grey and Yellow,Normal,Normal,Purple,Arm down,Orange Hawaiian Shirt,,,,67.75685568164465,948,AlgorillaArmy#883
+AGA898,545195903,Grey and Green,Red,Green,Blue,Arm down,,,,Anderson Glasses,67.59794647089387,949,AlgorillaArmy#898
+AGA802,545149621,Bright Pink and Light Blue,Yellow,Red,Red,"Arm down, smiling",Red Tanktop,,,,67.52324639253625,950,AlgorillaArmy#802
+AGA456,545039808,Sky Blue and White,Normal,Yellow,Normal,Arm down,Pink Vneck,,,,66.66768840292345,951,AlgorillaArmy#456
+AGA710,545139345,Light Pink and Red,Red,Normal,Yellow,Arm down,,Green Fishing Hat,,,65.87048659694779,952,AlgorillaArmy#710
+AGA266,425841788,Purple and Light Green,Normal,Yellow,Yellow,Arm down,Purple Hawaiian Shirt,,,,65.59100271949193,953,AlgorillaArmy#266
+AGA632,545091193,Light Green and Mid Green,Normal,Green,Normal,"Arm down, smiling",White Tanktop,Yellow Beanie,,,65.28179912960744,954,AlgorillaArmy#632
+AGA713,545139604,Bright Pink and Purple,Normal,Green,Blue,Arm up,White Tanktop,,Green Cocktail,,65.03258371935377,955,AlgorillaArmy#713
+AGA900,545196347,White and Pink,Pink,Green,Pink,"Arm down, smiling",,,,Yellow Shutter Shades,64.95538133162209,956,AlgorillaArmy#900
+AGA539,545073960,Light Blue and Deep Blue,Normal,Red,Blue,"Arm down, smiling",,,,Red Clown Nose,64.31628106526675,957,AlgorillaArmy#539
+AGA232,409032966,Orange and Green,Normal,Green,Normal,"Arm down, smiling",Blue Vneck,,,,64.09389947392619,958,AlgorillaArmy#232
+AGA963,545206025,White and Pink,Normal,Silver,Normal,Arm down,,Blue Fishing Hat,,,63.999500649599696,959,AlgorillaArmy#963
+AGA272,425870664,White and Orange,Green,Green,Normal,Arm down,Blue Hawaiian Shirt,,,,63.82442228321436,960,AlgorillaArmy#272
+AGA51,378823684,Sky Blue and White,Pink,Red,Normal,Arm down,Orange Hawaiian Shirt,,,,63.19064964331463,961,AlgorillaArmy#51
+AGA188,384755242,Grey and Silver Radial,Green,Green,Normal,Arm down,Red Tanktop,,,,63.18606905538263,962,AlgorillaArmy#188
+AGA969,545206643,Orange and Green,Normal,Normal,Red,"Arm down, smiling",,White Fishing Hat,,,62.40936855395278,963,AlgorillaArmy#969
+AGA717,545140087,White and Pink,Normal,Blue,Purple,"Arm down, smiling",Yellow Tanktop,,,,61.93705616072916,964,AlgorillaArmy#717
+AGA619,545087192,Grey and Green,Normal,Pink,Normal,"Arm down, smiling",,Yellow Beanie,,,61.8464484600278,965,AlgorillaArmy#619
+AGA342,449533385,White and Purple,Yellow,Purple,Normal,Arm down,White Tanktop,,,,61.324380187111935,966,AlgorillaArmy#342
+AGA669,545101770,Orange and Green,Red,Yellow,Normal,Arm down,,Green Fishing Hat,,,60.40964872566775,967,AlgorillaArmy#669
+AGA816,545151002,Bright Pink and Purple,Red,Normal,Blue,"Arm down, smiling",Orange Hawaiian Shirt,,,,59.59729948247926,968,AlgorillaArmy#816
+AGA196,384766290,Sky Blue and White,Blue,Green,Green,"Arm down, smiling",Yellow Tanktop,,,,58.84376385673617,969,AlgorillaArmy#196
+AGA253,409106622,Purple and Light Green,Purple,Red,Normal,Arm down,,,,Blue Shutter Shades,58.28543854891898,970,AlgorillaArmy#253
+AGA460,545040771,Light Blue and Deep Blue,Yellow,Red,Blue,"Arm down, smiling",,,,White Shudder Shades,57.96352358137966,971,AlgorillaArmy#460
+AGA589,545080023,Light Grey and Yellow,Normal,Pink,Normal,"Arm down, smiling",,Blue Fishing Hat,,,57.48771195843416,972,AlgorillaArmy#589
+AGA910,545198701,White and Orange,Normal,Blue,Bloodshot,"Arm down, smiling",White Tanktop,,,,57.41188281131705,973,AlgorillaArmy#910
+AGA170,384724844,Orange and Green,Normal,Green,Normal,"Arm up, smiling",,,Blue Selfiestick,,57.02582296747414,974,AlgorillaArmy#170
+AGA437,545034706,White and Pink,Yellow,Yellow,Blue,"Arm down, smiling",Yellow Tanktop,,,,56.90610488995264,975,AlgorillaArmy#437
+AGA338,449521466,Grey and Silver Radial,Normal,Purple,Normal,"Arm down, smiling",,,,Blue Shutter Shades,56.35518085108186,976,AlgorillaArmy#338
+AGA399,545001872,Light Green and Mid Green,Normal,Yellow,Blue,Arm down,,,,Neo Glasses,56.24975167454066,977,AlgorillaArmy#399
+AGA781,545147116,Light Green and Mid Green,Normal,Yellow,Normal,Arm down,,,,Black Eyepatch,55.62279273229187,978,AlgorillaArmy#781
+AGA695,545137865,Grey and Silver Radial,Normal,Pink,Blue,"Arm down, smiling",Yellow Tanktop,,,,55.54771836209601,979,AlgorillaArmy#695
+AGA998,545210283,Bright Pink and Purple,Normal,Green,Normal,"Arm down, smiling",White Tanktop,,,White Shudder Shades,54.95473293297602,980,AlgorillaArmy#998
+AGA64,378879791,White and Purple,Normal,Green,Normal,Arm down,Blue Hawaiian Shirt,,,,54.31640973588867,981,AlgorillaArmy#64
+AGA877,545190669,White and Purple,Normal,Green,Normal,Arm down,Blue Hawaiian Shirt,,,,54.31640973588867,982,AlgorillaArmy#877
+AGA36,377734918,Bright Pink and Purple,Normal,Pink,Green,Arm down,,,,Blue Shutter Shades,53.31819455020365,983,AlgorillaArmy#36
+AGA585,545079496,Light Green and Mid Green,Blue,Blue,Blue,Arm down,White Tanktop,,,,52.77802204769274,984,AlgorillaArmy#585
+AGA340,449526369,Light Pink and Red,Normal,Pink,Normal,"Arm down, smiling",Yellow Tanktop,,,,52.57212629096879,985,AlgorillaArmy#340
+AGA743,545142878,Sky Blue and White,Normal,Red,Normal,"Arm down, smiling",Blue Hawaiian Shirt,,,,50.93010563831413,986,AlgorillaArmy#743
+AGA687,545106908,Purple and Light Green,Blue,Blue,Red,"Arm down, smiling",,,,,49.98518969169028,987,AlgorillaArmy#687
+AGA688,545107135,Orange and Green,Normal,Yellow,Normal,"Arm down, smiling",Red Tanktop,,,,49.35221754474425,988,AlgorillaArmy#688
+AGA476,545045406,Orange and Green,Normal,Normal,Blue,Arm down,Blue Hawaiian Shirt,,,,49.05902089651684,989,AlgorillaArmy#476
+AGA419,545029232,Light Green and Mid Green,Normal,Normal,Yellow,"Arm down, smiling",Light Blue Tanktop,,,,47.23813986628036,990,AlgorillaArmy#419
+AGA560,545076348,Grey and Silver Radial,Normal,Normal,Normal,"Arm down, smiling",,,,Blue Shutter Shades,44.39318451408553,991,AlgorillaArmy#560
+AGA457,545040017,Light Green and Mid Green,Yellow,Normal,Green,"Arm down, smiling",,,,,41.09310964147352,992,AlgorillaArmy#457
+AGA211,408972582,Bright Pink and Light Blue,Red,Green,Normal,Arm down,,,,,39.92963015854964,993,AlgorillaArmy#211
+AGA151,384697981,White and Pink,Normal,Pink,Green,Arm down,,,,,38.60605089970384,994,AlgorillaArmy#151
+AGA907,545197809,Orange and Green,Normal,Red,Red,Arm down,,,,,37.77699947052576,995,AlgorillaArmy#907
+AGA731,545141683,White and Orange,Normal,Pink,Normal,Arm down,,,,,37.38600111233738,996,AlgorillaArmy#731
+AGA616,545086137,Grey and Silver Radial,Normal,Normal,Yellow,"Arm down, smiling",,,,,36.653432220103454,997,AlgorillaArmy#616
+AGA485,545048148,White and Orange,Normal,Normal,Blue,Arm down,,,,,32.42231528048435,998,AlgorillaArmy#485
+AGA735,545142045,Grey and Green,Normal,Normal,Blue,"Arm down, smiling",,,,,31.882762628174763,999,AlgorillaArmy#735
+AGA488,545049062,Orange and Green,Normal,Red,Normal,"Arm down, smiling",,,,,30.19444295218705,1000,AlgorillaArmy#488
