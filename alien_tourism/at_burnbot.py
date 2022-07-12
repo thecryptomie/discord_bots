@@ -79,8 +79,8 @@ def compute_trait_rarities(arc69, attributes, burn=True):
         return trait_rarities
 
 
-@bot.command(name='help')
-async def help(ctx):
+@bot.command(name='get_help')
+async def get_help(ctx):
     bot_commands = [
         '**$wallet_info**',
         '**$wallet_list**',
