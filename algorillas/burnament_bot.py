@@ -111,7 +111,32 @@ async def register(ctx, *args):
         return
     with open(user_file, 'w+') as fobj:
         fobj.write(f'{user_id},{wallet}')
-    await ctx.send('Registration successful')
+    await ctx.author.send('Registration successful')
+
+async def unregister_help(ctx):
+    msg = 'Algorillas Burnament Bot Help: **#unregister**\n'
+    msg += "This bot is used to remove your Burnament registration.\n"
+    msg += "Usage:\n"
+    msg += "**#unregister**"
+    await ctx.author.send(msg)
+
+@bot.command(name='unregister')
+async def unregister(ctx, *args):
+    if args[0] == 'help':
+        await unregister_help(ctx)
+        return
+    # if len(args) > 1:
+    #     await ctx.send('Incorret number of arguments. Use the command'
+    #                    '#register help to see more info.')
+    #     return
+
+    user_id = str(ctx.author)
+    user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
+    if os.path.exists(user_file):
+        await ctx.send(f'Removing registration for {user_id}...')
+        os.remove(user_file)
+        return
+
 
 async def add_aga_help(ctx):
     msg = 'Algorillas Burnament Bot Help: **#add_aga**\n'
