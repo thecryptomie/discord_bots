@@ -260,7 +260,7 @@ async def aga_info(ctx, aga):
         msg += f"**{col.capitalize()}**: {aga[col]}\n"
     await ctx.author.send(msg)
     fname = await get_img(ctx, aga['unit_name'])
-    LOG.info(fname)
+    # LOG.info(fname)
     await ctx.author.send(file=discord.File(fname))
 
 
@@ -580,9 +580,20 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
 
     if 'AGA' not in aga2 and 'BYE' not in aga2:
         aga2 = f'AGA{aga2}'
+    try:
+        aga1 = _BURN_DATA.entrants[_BURN_DATA.entrants.unit_name == aga1].iloc[0]
+    except AttributeError as e:
+        aga1 = _BURN_DATA.aga_holder_df[
+            _BURN_DATA.aga_holder_df.unit_name == aga1
+        ].iloc[0]
 
-    aga1 = _BURN_DATA.entrants[_BURN_DATA.entrants.unit_name == aga1].iloc[0]
-    aga2 = _BURN_DATA.entrants[_BURN_DATA.entrants.unit_name == aga2].iloc[0]
+    try:
+        aga2 = _BURN_DATA.entrants[_BURN_DATA.entrants.unit_name == aga2].iloc[0]
+    except AttributeError as e:
+        aga2 = _BURN_DATA.aga_holder_df[
+            _BURN_DATA.aga_holder_df.unit_name == aga2
+        ].iloc[0]
+
     s1_rs = aga1['rarity_score']
     s1_name = aga1['name']
     s1_unit_name = aga1['unit_name']
@@ -667,7 +678,10 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
         await ctx.send(
             f"**Winner:** {winner_seed} {winner} **Holder:** {user}\n"
         )
-        # await showit(ctx, w)
+        fname = await get_img(ctx, w)
+        await ctx.author.send(file=discord.File(fname))
+
+    # await showit(ctx, w)
 
 
     return results, entries, w

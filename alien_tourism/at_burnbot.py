@@ -291,7 +291,6 @@ async def wallet_list_help(ctx):
 
     await ctx.author.send(msg)
 
-
 async def lookup_nfd(ctx, *args):
     if '.' in args[0]:
         nfd = args[0].split('.')[0]
@@ -322,7 +321,7 @@ async def wallet_list(ctx, *args):
     -------
 
     """
-    print(args)
+
     if args[0] == 'help':
         await wallet_list_help(ctx)
         return
