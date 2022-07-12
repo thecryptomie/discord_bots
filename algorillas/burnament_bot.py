@@ -765,11 +765,7 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
         fname = await get_img(ctx, w)
         await ctx.send(file=discord.File(fname))
 
-    # await showit(ctx, w)
-
-
     return results, entries, w
-
 
 
 bot.run(_BOT_TOKEN)
