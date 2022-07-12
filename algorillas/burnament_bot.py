@@ -122,9 +122,11 @@ async def unregister_help(ctx):
 
 @bot.command(name='unregister')
 async def unregister(ctx, *args):
-    if args[0] == 'help':
+    if len(args) != 0 and args[0] == 'help'
         await unregister_help(ctx)
         return
+    else:
+        await ctx.author.send('Invalid usage. Use #unregister help to see more details')
     # if len(args) > 1:
     #     await ctx.send('Incorret number of arguments. Use the command'
     #                    '#register help to see more info.')
