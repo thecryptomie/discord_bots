@@ -109,9 +109,12 @@ async def register(ctx, *args):
             'Use #my_entries to check your registration.')
         )
         return
-    with open(user_file, 'w+') as fobj:
-        fobj.write(f'{user_id},{wallet}')
-    await ctx.author.send('Registration successful')
+    if wallet == 'Not found':
+        return
+    else:
+        with open(user_file, 'w+') as fobj:
+            fobj.write(f'{user_id},{wallet}')
+        await ctx.author.send('Registration successful')
 
 async def unregister_help(ctx):
     msg = 'Algorillas Burnament Bot Help: **#unregister**\n'
