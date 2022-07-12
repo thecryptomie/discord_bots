@@ -222,6 +222,22 @@ async def my_entries(ctx, *args):
     await ctx.author.send(msg)
 
 
+# @bot.command(name='showit')
+async def get_img(ctx, aga):
+    if 'AGA' not in aga:
+        aga = f"AGA{aga}"
+    image_dir = os.path.join(
+        _BURN_DATA.project_dir,
+        'images',
+        'algorillas'
+    )
+    fname = f"{image_dir}/{aga}.png"
+
+    return fname
+
+
+
+
 @bot.command(name='aga_info')
 async def aga_info(ctx, aga):
     if 'AGA' not in aga:
@@ -242,8 +258,11 @@ async def aga_info(ctx, aga):
     msg = f"{'**Traits**'.center(50,'-')}\n"
     for col in trait_cols:
         msg += f"**{col.capitalize()}**: {aga[col]}\n"
-
     await ctx.author.send(msg)
+    fname = await get_img(ctx, aga['unit_name'])
+    LOG.info(fname)
+    await ctx.send(file=discord.File(fname))
+
 
 async def wallet_info_help(ctx):
     msg = 'Algorillas Burnament Bot Help: **wallet_info**\n'
@@ -647,21 +666,11 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
         await ctx.send(
             f"**Winner:** {winner_seed} {winner} **Holder:** {user}\n"
         )
-        await showit(ctx, w)
+        # await showit(ctx, w)
+
 
     return results, entries, w
 
-@bot.command(name='showit')
-async def showit(ctx, aga):
-    if 'AGA' not in aga:
-        aga = f"AGA{aga}"
-    image_dir = os.path.join(
-        _BURN_DATA.project_dir,
-        'images',
-        'algorillas'
-    )
-    fname = f"{image_dir}/{aga}.png"
-    await ctx.send(file=discord.File(fname))
 
 
 bot.run(_BOT_TOKEN)

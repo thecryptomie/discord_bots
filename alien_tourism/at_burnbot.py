@@ -118,6 +118,8 @@ async def wallet_info_help(ctx):
 @bot.command(name='wallet_info')
 async def wallet_info(ctx, *args):
     wallet = args[0]
+    if len(wallet) != 58:
+        wallet = await lookup_nfd(ctx, wallet)
 
     df = _HOLDERS_DF.groupby('address').get_group(wallet)
     await ctx.author.send(
