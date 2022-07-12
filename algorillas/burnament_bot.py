@@ -125,8 +125,9 @@ async def unregister(ctx, *args):
     if len(args) != 0 and args[0] == 'help':
         await unregister_help(ctx)
         return
-    else:
+    elif len(args)>0:
         await ctx.author.send('Invalid usage. Use #unregister help to see more details')
+        return
     # if len(args) > 1:
     #     await ctx.send('Incorret number of arguments. Use the command'
     #                    '#register help to see more info.')
