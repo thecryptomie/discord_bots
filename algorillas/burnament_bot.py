@@ -292,8 +292,6 @@ async def get_img(ctx, aga):
     return fname
 
 
-
-
 @bot.command(name='aga_info')
 async def aga_info(ctx, aga):
     if 'AGA' not in aga:
@@ -341,7 +339,7 @@ async def wallet_info(ctx, *args):
         wallet = args[0]
 
         if len(wallet) != 58:
-            wallet = await lookup_nfd(ctx, wallet)
+            wallet = await lookup_nfd(ctx, wallet.lower())
 
 
     df = _BURN_DATA.aga_holder_df.groupby('address').get_group(wallet)
