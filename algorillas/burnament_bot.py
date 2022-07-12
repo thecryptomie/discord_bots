@@ -341,6 +341,8 @@ async def wallet_info(ctx, *args):
         if len(wallet) != 58:
             wallet = await lookup_nfd(ctx, wallet.lower())
 
+    if wallet == "Not found":
+        return
 
     df = _BURN_DATA.aga_holder_df.groupby('address').get_group(wallet)
     await ctx.author.send(
