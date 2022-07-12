@@ -156,7 +156,10 @@ async def wallet_info(ctx, *args):
 
     msg = f"{'**Most Collected Traits**'.center(50,'-')}\n"
     for key, val in trait_counts.items():
-        mc = val.most_common(1)[0]
+        print(key, val.most_common(1))
+        most_common = val.most_common(1)
+        if most_common:
+            mc = val.most_common(1)[0]
         msg += f"**{key.capitalize()}**: {mc[0]} ({mc[1]:0.0f}x)\n"
 
     await ctx.author.send(msg)

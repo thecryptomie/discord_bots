@@ -261,7 +261,7 @@ async def aga_info(ctx, aga):
     await ctx.author.send(msg)
     fname = await get_img(ctx, aga['unit_name'])
     LOG.info(fname)
-    await ctx.send(file=discord.File(fname))
+    await ctx.author.send(file=discord.File(fname))
 
 
 async def wallet_info_help(ctx):
@@ -283,6 +283,7 @@ async def wallet_info(ctx, *args):
         await wallet_info_help(ctx)
     else:
         wallet = args[0]
+
 
     df = _BURN_DATA.aga_holder_df.groupby('address').get_group(wallet)
     await ctx.author.send(
