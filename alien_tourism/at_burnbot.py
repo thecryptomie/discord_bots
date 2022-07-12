@@ -106,7 +106,7 @@ async def holder_traits(df):
 # async def register(ctx, wallet):
 
 async def wallet_info_help(ctx):
-    msg = 'Alien Tourism Bot Help: **$at_list**\n'
+    msg = 'Alien Tourism Bot Help: **wallet_info**\n'
     msg += ('This bot is will return statistics on the Alien Tourism NFTS' 
            ' provided wallet. All statistics included listed NFTs. \n')
     msg += (

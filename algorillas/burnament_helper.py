@@ -1,11 +1,22 @@
 from collections import defaultdict
 import glob
+import logging
 import math
 import os
+import pickle
 
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
+
+# Set up the style for logging output
+logging.basicConfig(format='%(levelname)-4s '
+                           '[%(module)s.%(funcName)s:%(lineno)d]'
+                           ' %(message)s')
+
+# instantiate the logger
+LOG = logging.getLogger()
+LOG.setLevel(logging.INFO)
 
 
 class BurnamentData(object):
@@ -25,19 +36,41 @@ class BurnamentData(object):
             col for col in self.arc69_df.columns
             if col not in self.non_trait_cols
         ]
-        self._holder_dir = os.path.join(self.project_dir,'holder_data')
+        self._holder_dir = os.path.join(self.project_dir, 'holder_data')
         self._aga_holders_df = pd.read_csv(
             os.path.join(self._holder_dir, 'aga_holders.csv'),
             header=0,
             index_col=None
+        )
+        self._aga_holders_df = pd.merge(
+            self._aga_holders_df,
+            self._arc69_df,
+            on='asa',
+            how='inner',
+            suffixes=('', '_1')
+        )
+        self._aga_holders_df= self._aga_holders_df.drop(
+            columns=['name_1', 'unit_name_1']
         )
         self._cache_dir = os.path.join(
             self._project_dir,
             'algorillas',
             'bot_cache'
         )
-        self._cache = os.path.join(
+        self._entrants_dir = os.path.join(
             self._cache_dir,
+            'entrants'
+        )
+        self._giveaway_dir = os.path.join(
+            self._cache_dir,
+            'giveaway_winners'
+        )
+        self._tournament_results_dir = os.path.join(
+            self._cache_dir,
+            'tournament_results'
+        )
+        self._cache = os.path.join(
+            self._entrants_dir,
             'registered_users.csv'
         )
         if os.path.exists(self._cache):
@@ -51,6 +84,8 @@ class BurnamentData(object):
         self.trait_rarities = {}
         self._round_winners = None
         self._round_matchups = None
+        self._round_history = None
+        self._round_names = []
 
     @property
     def aga_holder_df(self):
@@ -98,12 +133,27 @@ class BurnamentData(object):
         self._cache_df = value
 
     @property
+    def entrants_dir(self):
+        return self._entrants_dir
+
+    @entrants_dir.setter
+    def entrants_dir(self, value):
+        self._entrants_dir
+
+    @property
     def cache_dir(self):
         return self._cache_dir
 
     @cache_dir.setter
     def cache_dir(self, value):
         self._cache_dir = value
+    @property
+    def giveaway_dir(self):
+        return self._giveaway_dir
+
+    @giveaway_dir.setter
+    def giveaway_dir(self, value):
+        self._giveaway_dir = value
 
     @property
     def holder_dir(self):
@@ -132,6 +182,22 @@ class BurnamentData(object):
         self._project_dir = value
 
     @property
+    def round_history(self):
+        return self._round_history
+
+    @round_history.setter
+    def round_history(self, value):
+        self._round_history = value
+
+    @property
+    def round_names(self):
+        return self._round_names
+
+    @round_names.setter
+    def round_names(self, value):
+        self._round_names = value
+
+    @property
     def round_winners(self):
         return self._round_winners
 
@@ -148,6 +214,14 @@ class BurnamentData(object):
         self._trait_cols = value
 
     @property
+    def tournament_results_dir(self):
+        return self._tournament_results_dir
+
+    @tournament_results_dir.setter
+    def tournament_results_dir(self, value):
+        self._tournament_results_dir
+
+    @property
     def trait_rarities(self):
         return self._trait_rarities
 
@@ -159,7 +233,8 @@ class BurnamentData(object):
         for trait in self.trait_cols:
             self.trait_rarities[trait] = {}
             for grp, df in self.arc69_df.groupby(trait):
-                self.trait_rarities[trait][grp] = df.shape[0] / self.arc69_df.shape[0]
+                self.trait_rarities[trait][grp] = df.shape[0] / \
+                                                  self.arc69_df.shape[0]
         rarity_score = []
         for i, row in self.arc69_df.iterrows():
             score = 0
@@ -170,7 +245,8 @@ class BurnamentData(object):
             rarity_score.append(score)
 
         self.arc69_df['rarity_score'] = rarity_score
-        self.arc69_df.sort_values(by='rarity_score', inplace=True, ascending=False)
+        self.arc69_df.sort_values(by='rarity_score', inplace=True,
+                                  ascending=False)
         self.arc69_df['rank'] = [i + 1 for i in range(self.arc69_df.shape[0])]
 
     def add_user(self, user_id, wallet):
@@ -182,20 +258,27 @@ class BurnamentData(object):
             }
             self.cache_df = pd.DataFrame(tmp)
 
-    def load_competitors(self, N):
-        flist = glob.glob(f"{self.cache_dir}/*txt")
+    def load_competitors(self, N=None):
+        flist = glob.glob(f"{self.entrants_dir}/*txt")
+        np.random.shuffle(flist)
+        if N is not None:
+            flist = flist[:N]
         competitors = defaultdict(list)
-        for f in tqdm(flist[:N]):
+        for f in tqdm(flist):
             with open(f, 'r') as fobj:
                 data = fobj.readlines()[0].split(',')
-                competitors['user'].append(data[0])
-                competitors['unit_name'].append(data[1])
-                competitors['wallet'].append(data[2])
+                agas = data[2:]
+                for aga in agas:
+                    competitors['user'].append(data[0])
+                    competitors['wallet'].append(data[1])
+                    competitors['unit_name'].append(aga)
+
         self.cache_df = pd.DataFrame(competitors)
         # entrants = self.arc69_df.to_dict(orient='list')
         final_list = defaultdict(list)
         for i, row in self.cache_df.iterrows():
-            aga_cut = self.arc69_df[self.arc69_df.unit_name == row['unit_name']]
+            aga_cut = self.arc69_df[
+                self.arc69_df.unit_name == row['unit_name']]
             for col in aga_cut.columns:
                 final_list[col].append(aga_cut[col].iloc[0])
             final_list['user'].append(row['user'])
@@ -203,37 +286,50 @@ class BurnamentData(object):
 
         self.entrants = pd.DataFrame(final_list)
         self.entrants = self.entrants.sort_values(by='rank', ascending=True)
-        seed = [i+1 for i in range(self.entrants.shape[0])]
+        seed = [i + 1 for i in range(self.entrants.shape[0])]
         self.entrants['seed'] = seed
 
     def find_holder(self, aga):
         holder = self.aga_holder_df[self.aga_holder_df.unit_name == aga]
         return holder
 
-
     def initialize_bracket(self):
         """Initialize the bracket rounds"""
         self.entrants = self.entrants.sort_values('rank')
         N = self.entrants.shape[0]
-        N_desired = 2**(np.ceil(np.log2(N)))
+        N_desired = 2 ** (np.ceil(np.log2(N)))
+        N_players = N_desired
+        N_players_per_round = []
+        while N_players > 1:
+            N_players_per_round.append(int(N_players))
+            N_players /= 2
 
-    #     if N > N_desired//2:
+        round_names = []
+        special_rounds = {8: 'Quarterfinal Round', 4: 'Semifinal Round',
+                          2: 'Championship Round'}
+        for n in N_players_per_round:
+            if n not in special_rounds.keys():
+                round_names.append(f'Round of {n}')
+            else:
+                round_names.append(special_rounds[n])
+        #     if N > N_desired//2:
+        self.round_names = round_names
+
         N_byes = int(N_desired - N)
-        print(N_byes)
+
         if N_byes != 0:
             cols = self.entrants.columns
-            data = [None]*len(cols)
+            data = [None] * len(cols)
 
-
-    #         lowest_seed = entrants['seed'].min()
+            #         lowest_seed = entrants['seed'].min()
             j = 0
             for i in range(N, int(N_desired)):
-                data[0] = f'BYE{j+1:0.0f}'
-                data[-4] = f'BYE{j+1:0.0f}'
-                data[-1] = i+1
+                data[0] = f'BYE{j + 1:0.0f}'
+                data[-4] = f'BYE{j + 1:0.0f}'
+                data[-1] = i + 1
                 data[-6] = 0
                 self.entrants.loc[len(self.entrants.index)] = data
-                j+=1
+                j += 1
         N = self.entrants.shape[0]
         groups = self.generate_tournament(N)
         for key in groups.keys():
@@ -244,12 +340,12 @@ class BurnamentData(object):
 
         self.matchups = groups
 
-
     def tournament_round(self, no_of_teams, matchlist):
         new_matches = []
         for team_or_match in matchlist:
             if type(team_or_match) == type([]):
-                new_matches += [self.tournament_round(no_of_teams, team_or_match)]
+                new_matches += [
+                    self.tournament_round(no_of_teams, team_or_match)]
             else:
                 new_matches += [
                     [team_or_match, no_of_teams + 1 - team_or_match]]
@@ -264,7 +360,7 @@ class BurnamentData(object):
                 teamlist += [team_or_match]
         return teamlist
 
-    def generate_tournament(self,num):
+    def generate_tournament(self, num):
         num_rounds = math.log(num, 2)
         if num_rounds != math.trunc(num_rounds):
             raise ValueError("Number of teams must be a power of 2")
@@ -283,3 +379,117 @@ class BurnamentData(object):
                 k += 1
             groups[k].append(p)
         return groups
+
+    def get_round_winners(self, round_name):
+        if round_name in self.round_history.keys():
+            winners1 = self.round_history[round_name]['top']['winners']
+            winners2 = self.round_history[round_name]['bottom']['winners']
+            winner_list = [val for val in winners1]
+            winner_list += [val for val in winners2]
+
+            return winner_list
+
+
+    def save_round(self, round_name):
+        round_file = (
+            f"{self.tournament_results_dir}/{round_name.replace(' ','_')}"
+        )
+        if round_name == 'Championship Round':
+            f = f"{round_file}.pkl"
+            with open(f, 'wb+') as fobj:
+                pickle.dump(self.round_history[round_name], fobj)
+
+        else:
+            for key, item in self.round_history[round_name].items():
+                f = f"{round_file}_{key}.pkl"
+                LOG.info(f)
+                with open(f, 'wb+') as fobj:
+                    pickle.dump(item, fobj)
+
+    def load_round(self, round_name):
+        if self.round_history is None:
+            self.round_history = {
+                round_name: {'top': {}, 'bottom': {}}
+            }
+        round_file = (
+            f"{self.tournament_results_dir}/{round_name.replace(' ', '_')}"
+        )
+        if round_name == 'Championship Round':
+            f = f"{round_file}.pkl"
+            with open(f, 'rb') as fobj:
+                self.round_history[round_name] = pickle.load(fobj)
+        else:
+            for key in ['top','bottom']:
+                f = f"{round_file}_{key}.pkl"
+                with open(f, 'rb') as fobj:
+                    self.round_history[round_name][key] = pickle.load(fobj)
+
+    def print_round_summary(self, round_name):
+        msg = ''
+        messages = []
+        low_rounds = ["Quarterfinal", "Semifinal"]
+        if round_name in self.round_history.keys():
+            msg += round_name + '\n'
+            if round_name == 'Championship Round':
+                champ_round = self.round_history[round_name]
+                matchup = champ_round['matches']
+                winner = champ_round['winners']
+                msg += 'Championship Matchup\n'
+                msg += (
+                    f"({matchup[0]['seed']}) {matchup[0]['name']} vs "
+                    f"({matchup[1]['seed']}) {matchup[1]['name']}"
+                )
+                messages.append(msg)
+            else:
+                top_half = self.round_history[round_name]['top']
+                bottom_half = self.round_history[round_name]['bottom']
+                title_str = [
+                    '**Top half of the draw**'.center(50, '-') + '\n',
+                    '**Bottom half of the draw**'.center(50, '-') + '\n'
+                ]
+                current_length = 0
+                for half, title in zip([top_half, bottom_half], title_str):
+                    msg += title
+                    msg_length = 0
+                    # start_length = sum([len(val) for val in messages])
+                    for m in half['matches']:
+                        aga1 = m[0]
+                        aga2 = m[1]
+                        msg += (f"({aga1['seed']}) {aga1['name']} vs "
+                                f"({aga2['seed']}) {aga2['name']}\n")
+                        msg_length += len(msg)
+                        current_length += len(msg)
+                        if msg_length > 1000:
+                            messages.append(msg)
+                            msg = ''
+                            msg_length = 0
+
+                    msg_list_length = sum([len(val) for val in messages])
+                    if msg_list_length == 0:
+                        messages.append(msg)
+                        msg_list_length = sum(
+                            [len(val) for val in messages]
+                        )
+                    elif msg_list_length < current_length:
+                        messages.append(msg)
+
+                    msg = ''
+                    msg += "**Winners**".center(25, '-') + '\n'
+                    count = 0
+                    msg_length = 0
+                    for w in half['winners']:
+                        msg += (f"({w['seed']}) {w['name']} **{w['user']}**\n")
+                        msg_length += len(msg)
+                        current_length += len(msg)
+                        if msg_length > 1000:
+                            messages.append(msg)
+                            msg = ''
+                            msg_length = 0
+
+                    msg_list_length = sum([len(val) for val in messages])
+                    if msg_list_length < current_length:
+                        messages.append(msg)
+                    messages.append('-'*40+'\n')
+                    msg = ''
+
+        return messages
