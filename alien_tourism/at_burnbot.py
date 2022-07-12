@@ -4,7 +4,7 @@ import os
 import discord
 from discord.ext import commands
 
-
+import requests
 import pandas as pd
 intents = discord.Intents.default()
 intents.messages = True
@@ -270,7 +270,7 @@ async def wallet_list_help(ctx):
 
     msg = ''
     msg += 'Usage:\n'
-    msg += '**$wallet_list <trait1> <value1> <trait2> <value2> <tourist_to_keep> <wallet_address>\n**'
+    msg += '**$wallet_list <trait1> <value1> <trait2> <value2> <tourist_to_keep> <wallet_address or NFD>\n**'
     msg += 'Examples\n' + f"{'-' * 15}\n"
     msg += '**$wallet_list hat "viking helmet" UWVYY2WRT7CCRPWNYUUKQ6HCO7JYTGH6TNQIJIJV6X2PG74UML2HGU5BAA\n**'
     msg += (
@@ -286,6 +286,23 @@ async def wallet_list_help(ctx):
 
     await ctx.author.send(msg)
 
+
+async def lookup_nfd(ctx, *args):
+    if '.' in args[0]:
+        nfd = args[0].split('.')[0]
+        nfd = nfd +'.algo'
+    else:
+        nfd = nfd + '.algo'
+
+    url = f"https://api.nf.domains/nfd/{nfd}?view=tiny"
+    # print(url)
+    response = requests.get(url)
+    data = response.json()
+    if 'owner' in data.keys():
+        wallet = data['owner']
+    else:
+        wallet = 'Not found'
+    return wallet
 
 @bot.command(name='wallet_list')
 async def wallet_list(ctx, *args):
@@ -317,6 +334,10 @@ async def wallet_list(ctx, *args):
         else:
             keep = 'Tour'+args[-2]
         wallet = args[-1]
+
+    if len(wallet) != 58:
+        wallet = await lookup_nfd(ctx, wallet)
+
     wallet_cut = _HOLDERS_DF[_HOLDERS_DF['address'] == wallet]
     trait_cuts = []
     for i, (t, v) in enumerate(zip(traits, values)):
