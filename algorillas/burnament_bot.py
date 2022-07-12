@@ -122,7 +122,7 @@ async def unregister_help(ctx):
 
 @bot.command(name='unregister')
 async def unregister(ctx, *args):
-    if len(args) != 0 and args[0] == 'help'
+    if len(args) != 0 and args[0] == 'help':
         await unregister_help(ctx)
         return
     else:
