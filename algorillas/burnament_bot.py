@@ -136,9 +136,11 @@ async def unregister(ctx, *args):
     user_id = str(ctx.author)
     user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
     if os.path.exists(user_file):
-        await ctx.send(f'Removing registration for {user_id}...')
+        await ctx.author.send(f'Removing registration for {user_id}...')
         os.remove(user_file)
         return
+    else:
+        await ctx.author.send('User registration not found!')
 
 
 async def add_aga_help(ctx):
