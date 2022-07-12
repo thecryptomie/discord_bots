@@ -89,12 +89,12 @@ async def get_help(ctx):
         '**$burn**',
         '**$burn_list**'
     ]
-    msg = 'Alien Tourism Bot Help'
+    msg = 'Alien Tourism Bot Help\n'
     msg += 'The available commands are,\n'
     msg += '\n'.join(bot_commands)
     await ctx.send(msg)
     msg = 'Each command has its own set of information accessible through help.\n'
-    msg += 'Accessing the help menu for a given command\n $<command_name> help**\n'
+    msg += 'Accessing the help menu for a given command\n **$<command_name> help**\n'
     msg += (
             'For example, need help using the **$wallet_list** command?'
             ' Just type **$wallet_list help**.'
