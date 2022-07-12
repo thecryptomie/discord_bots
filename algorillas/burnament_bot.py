@@ -31,7 +31,7 @@ _BOOSTED_TRAITS = {
     'Blue Lasers':0.15,
     'Yellow Lasers':0.15
 }
-bot = commands.Bot(command_prefix='$')
+bot = commands.Bot(command_prefix='#')
 
 # initialize the burnament data class
 _BURN_DATA = BurnamentData()
@@ -60,13 +60,13 @@ async def get_user_data(ctx):
     return user_id, wallet, data[2:]
 
 async def register_help(ctx):
-    msg = 'Algorillas Burnament Bot Help: **$register**\n'
+    msg = 'Algorillas Burnament Bot Help: **#register**\n'
     msg += ("This bot is used to register a wallet address with a" 
            " discord user. You will only be able to register one wallet address"
             " to your account. ")
     await ctx.send(msg)
     msg +=('Usage:\n' \
-          '**$register** <wallet_address or NFD>')
+          '**#register** <wallet_address or NFD>')
     await ctx.send(msg)
 
 async def lookup_nfd(ctx, *args):
@@ -83,6 +83,7 @@ async def lookup_nfd(ctx, *args):
     if 'owner' in data.keys():
         wallet = data['owner']
     else:
+        await ctx.author.send(f'{nfd} could not be resolved.')
         wallet = 'Not found'
     return wallet
 
@@ -93,7 +94,7 @@ async def register(ctx, *args):
         return
     if len(args) > 1:
         await ctx.send('Incorret number of arguments. Use the command'
-                       '$register help to see more info.')
+                       '#register help to see more info.')
         return
 
     wallet = args[0]
@@ -103,14 +104,17 @@ async def register(ctx, *args):
     user_id = str(ctx.author)
     user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
     if os.path.exists(user_file):
-        await ctx.send(f'{user_id} is already resgistered')
+        await ctx.send(
+            (f'{user_id} is already resgistered. '
+            'Use #my_entries to check your registration.')
+        )
         return
     with open(user_file, 'w+') as fobj:
         fobj.write(f'{user_id},{wallet}')
     await ctx.send('Registration successful')
 
 async def add_aga_help(ctx):
-    msg = 'Algorillas Burnament Bot Help: **$add_aga**\n'
+    msg = 'Algorillas Burnament Bot Help: **#add_aga**\n'
     msg += (
         "This bot is used to add an AGA to your list of competitors. "
         "Each registered account can submit as many AGA as they like. "
@@ -120,7 +124,7 @@ async def add_aga_help(ctx):
     await ctx.author.send(msg)
     msg +=(
         'Usage:\n' 
-        '**$add_aga** <aga_number>\n'
+        '**#add_aga** <aga_number>\n'
         '<aga_number> can be either a number (e.g. 100) '
         'or the unitname (e.g AGA100).'
     )
@@ -167,7 +171,7 @@ async def add_aga(ctx, *args):
 
 
 async def remove_aga_help(ctx):
-    msg = 'Algorillas Burnament Bot Help: **$remove_aga**\n'
+    msg = 'Algorillas Burnament Bot Help: **#remove_aga**\n'
     msg += (
         "This bot is used to remove an AGA from your list of competitors. "
         "Each registered account can submit as many AGA as they like. "
@@ -177,7 +181,7 @@ async def remove_aga_help(ctx):
     await ctx.author.send(msg)
     msg +=(
         'Usage:\n' 
-        '**$remove_aga** <aga_number>\n'
+        '**#remove_aga** <aga_number>\n'
         '<aga_number> can be either a number (e.g. 100) '
         'or the unitname (e.g AGA100).'
     )
@@ -210,14 +214,14 @@ async def remove_aga(ctx, *args):
         await ctx.author.send(f'{aga} is not registered.')
 
 async def my_entries_help(ctx):
-    msg = 'Algorillas Burnament Bot Help: **my_entries**\n'
+    msg = 'Algorillas Burnament Bot Help: **#my_entries**\n'
     msg += (
         "This bot is used to display your tournament entries"
     )
     await ctx.author.send(msg)
     msg +=(
         'Usage:\n' 
-        '**my_entries**\n'
+        '**#my_entries**\n'
     )
     await ctx.author.send(msg)
 
@@ -286,12 +290,12 @@ async def aga_info(ctx, aga):
 
 
 async def wallet_info_help(ctx):
-    msg = 'Algorillas Burnament Bot Help: **wallet_info**\n'
+    msg = 'Algorillas Burnament Bot Help: **#wallet_info**\n'
     msg += ('This bot is will return info on the AlgorillaArmy NFTs in the' 
            ' provided wallet. The provided information included listed NFTs. \n')
     msg += (
         'Usage:\n'
-        '**wallet_info** <wallet_address>\n'
+        '**#wallet_info** <wallet_address>\n'
         'If you are a registered participant, the wallet address argument is'
         ' optional.'
     )
