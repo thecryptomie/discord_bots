@@ -601,7 +601,11 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
         s1_seed = aga1['seed']
     except KeyError:
         s1_seed = ''
-    s1_user = aga1['user']
+    try:
+        s1_user = aga1['user']
+    except KeyError:
+        s1_user = 'Unregistered'
+
     s1_item = aga1['item']
     s1_rank = aga1['rank']
     s1_accessory = aga1['accessories']
@@ -625,7 +629,12 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
         s2_seed = aga2['seed']
     except KeyError:
         s2_seed = ''
-    s2_user = aga2['user']
+
+    try:
+        s2_user = aga2['user']
+    except KeyError as e:
+        s2_user = 'Unregistered'
+
     s2_item = aga2['item']
     s2_rank = aga2['rank']
     s2_accessory = aga2['accessories']
