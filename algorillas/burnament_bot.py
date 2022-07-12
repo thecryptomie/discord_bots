@@ -65,6 +65,7 @@ async def register_help(ctx):
            " discord user. You will only be able to register one wallet address"
             " to your account. ")
     await ctx.send(msg)
+    msg =''
     msg +=('Usage:\n' \
           '**#register** <wallet_address or NFD>')
     await ctx.send(msg)
@@ -151,10 +152,9 @@ async def add_aga_help(ctx):
     msg += (
         "This bot is used to add an AGA to your list of competitors. "
         "Each registered account can submit as many AGA as they like. "
-        "Just remember, this is the \N{FIRE} Burnament \N{FIRE} where "
-        "losers are burned."
     )
     await ctx.author.send(msg)
+    msg = ''
     msg +=(
         'Usage:\n' 
         '**#add_aga** <aga_number>\n'
@@ -207,11 +207,9 @@ async def remove_aga_help(ctx):
     msg = 'Algorillas Burnament Bot Help: **#remove_aga**\n'
     msg += (
         "This bot is used to remove an AGA from your list of competitors. "
-        "Each registered account can submit as many AGA as they like. "
-        "Just remember, this is the \N{FIRE} Burnament \N{FIRE} where "
-        "losers are burned."
     )
     await ctx.author.send(msg)
+    msg=''
     msg +=(
         'Usage:\n' 
         '**#remove_aga** <aga_number>\n'
