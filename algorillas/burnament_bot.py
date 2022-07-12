@@ -291,9 +291,25 @@ async def get_img(ctx, aga):
 
     return fname
 
+async def aga_info_help(ctx):
+    msg = 'Algorillas Burnament Bot Help: **#aga_info**\n'
+    msg += (
+        "This bot is used to retrieve information about any AGA."
+    )
+    msg += 'Usage:\n'
+    msg += '**#aga_info <aga number>**'
+    await ctx.author.send(msg)
+    msg = ''
+    msg += '**Example:**\n'
+    msg += '**#aga_info 123'
+    await ctx.author.send(msg)
+    return
 
 @bot.command(name='aga_info')
 async def aga_info(ctx, aga):
+    if aga == 'help':
+        await aga_info_help(ctx)
+        return
     if 'AGA' not in aga:
         aga = f"AGA{aga}"
     aga = _BURN_DATA.arc69_df[_BURN_DATA.arc69_df.unit_name == aga].iloc[0]
@@ -747,7 +763,7 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
             f"**Winner:** {winner_seed} {winner} **Holder:** {user}\n"
         )
         fname = await get_img(ctx, w)
-        await ctx.author.send(file=discord.File(fname))
+        await ctx.send(file=discord.File(fname))
 
     # await showit(ctx, w)
 
