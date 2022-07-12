@@ -7,7 +7,7 @@ import time
 import discord
 from discord.ext import commands
 import numpy as np
-import pandas as pd
+import requests
 
 
 from burnament_helper import BurnamentData
@@ -66,8 +66,25 @@ async def register_help(ctx):
             " to your account. ")
     await ctx.send(msg)
     msg +=('Usage:\n' \
-          '**$register** <wallet_address>')
+          '**$register** <wallet_address or NFD>')
     await ctx.send(msg)
+
+async def lookup_nfd(ctx, *args):
+    if '.' in args[0]:
+        nfd = args[0].split('.')[0]
+        nfd = nfd +'.algo'
+    else:
+        nfd = args[0] + '.algo'
+
+    url = f"https://api.nf.domains/nfd/{nfd}?view=tiny"
+    # print(url)
+    response = requests.get(url)
+    data = response.json()
+    if 'owner' in data.keys():
+        wallet = data['owner']
+    else:
+        wallet = 'Not found'
+    return wallet
 
 @bot.command(name='register')
 async def register(ctx, *args):
@@ -78,7 +95,11 @@ async def register(ctx, *args):
         await ctx.send('Incorret number of arguments. Use the command'
                        '$register help to see more info.')
         return
+
     wallet = args[0]
+    if len(wallet) != 58:
+        wallet = await lookup_nfd(ctx, wallet)
+
     user_id = str(ctx.author)
     user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
     if os.path.exists(user_file):
@@ -283,6 +304,9 @@ async def wallet_info(ctx, *args):
         await wallet_info_help(ctx)
     else:
         wallet = args[0]
+
+        if len(wallet) != 58:
+            wallet = await lookup_nfd(ctx, wallet)
 
 
     df = _BURN_DATA.aga_holder_df.groupby('address').get_group(wallet)

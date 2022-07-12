@@ -296,7 +296,7 @@ async def lookup_nfd(ctx, *args):
         nfd = args[0].split('.')[0]
         nfd = nfd +'.algo'
     else:
-        nfd = nfd + '.algo'
+        nfd = args[0] + '.algo'
 
     url = f"https://api.nf.domains/nfd/{nfd}?view=tiny"
     # print(url)
@@ -305,6 +305,7 @@ async def lookup_nfd(ctx, *args):
     if 'owner' in data.keys():
         wallet = data['owner']
     else:
+        await ctx.author.send(f'{nfd} could not be resolved')
         wallet = 'Not found'
     return wallet
 
