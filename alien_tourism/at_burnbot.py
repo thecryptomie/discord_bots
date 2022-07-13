@@ -140,7 +140,7 @@ async def wallet_info_help(ctx):
     await ctx.author.send(msg)
     msg = 'Usage:\n'
     msg += "**$wallet_info <wallet address or NFD>**\n"
-    msg += 'Example:'
+    msg += 'Example:\n'
     msg += '$wallet_info UWVYY2WRT7CCRPWNYUUKQ6HCO7JYTGH6TNQIJIJV6X2PG74UML2HGU5BAA'
     await ctx.author.send(msg)
 
@@ -150,6 +150,7 @@ async def wallet_info(ctx, *args):
     wallet = args[0]
     if wallet == 'help':
         await wallet_info_help(ctx)
+        return
 
     if len(wallet) != 58:
         wallet = await lookup_nfd(ctx, wallet)
