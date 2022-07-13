@@ -136,11 +136,21 @@ async def wallet_info_help(ctx):
             'Stats reported:\n '
             'Number of NFTs held\n'
             'Top five rarest Tourists\n'
-            '')
+            'Lists of traits that you collect\n')
+    await ctx.author.send(msg)
+    msg = 'Usage:\n'
+    msg += "**$wallet_info <wallet address or NFD>**\n"
+    msg += 'Example:'
+    msg += '$wallet_info UWVYY2WRT7CCRPWNYUUKQ6HCO7JYTGH6TNQIJIJV6X2PG74UML2HGU5BAA'
+    await ctx.author.send(msg)
+
 
 @bot.command(name='wallet_info')
 async def wallet_info(ctx, *args):
     wallet = args[0]
+    if wallet == 'help':
+        await async wallet-wallet_info_help(ctx)
+
     if len(wallet) != 58:
         wallet = await lookup_nfd(ctx, wallet)
 
@@ -589,7 +599,8 @@ async def burn_list_help(ctx):
     msg = 'Alien Tourism Bot Help: **$burn_list**\n'
     msg += 'This bot is designed to burn a list of tourist specified by the user.\n'
     msg += 'The list should be a set of space-separated numbers.\n'
-    msg += 'The final number in the list corresponds to the alien you want to keep.'
+    msg += 'The final number in the list corresponds to the alien you want to keep.\n'
+    msg += 'There must be at least two numbers passed.'
     await ctx.author.send(msg)
     msg = ''
     msg += 'Usage:\n'
@@ -607,6 +618,13 @@ async def burn_list(ctx, *args):
     if args[0] == 'help':
         await burn_list_help(ctx)
         return
+    if len(args) < 2:
+        await ctx.author.send(
+            ('Need to pass at least two tourist numbers! '
+             'Try **$burn_list help** for more details')
+        )
+        return
+
     burn_list = []
     for val in args[:-1]:
         if 'tour' in val.lower():
