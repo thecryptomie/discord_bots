@@ -149,7 +149,7 @@ async def wallet_info_help(ctx):
 async def wallet_info(ctx, *args):
     wallet = args[0]
     if wallet == 'help':
-        await async wallet-wallet_info_help(ctx)
+        await wallet_info_help(ctx)
 
     if len(wallet) != 58:
         wallet = await lookup_nfd(ctx, wallet)
