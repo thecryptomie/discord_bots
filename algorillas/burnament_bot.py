@@ -1,5 +1,6 @@
 import asyncio
 from collections import Counter, defaultdict
+import glob
 import logging
 import os
 import time
@@ -69,6 +70,32 @@ async def register_help(ctx):
     msg +=('Usage:\n' \
           '**#register** <wallet_address or NFD>')
     await ctx.author.send(msg)
+
+@bot.command(name='load_users')
+async def load_users(ctx):
+    if str(ctx.author) != 'cauchy69.APE#8518':
+        await ctx.send(f'{ctx.author} is an unauthorized user')
+        return
+
+    user_data = _BURN_DATA.load_users()
+    messages = []
+    msg = '**Registered Users**\n'
+    msg_length = 0
+    for user, wallet in zip(user_data['user'], user_data['wallet']):
+        msg += f"{user},{wallet}\n"
+        msg_length += len(msg)
+        if msg_length > 1500:
+            messages.append(msg)
+            msg = ''
+            current_msg_length = msg_length
+
+    msg_list_length = sum([len(val) for val in messages])
+    if msg_list_length == 0:
+        messages.append(msg)
+    elif msg_list_length < msg_length:
+        messages.append(msg)
+    for msg in messages:
+        await ctx.author.send(msg)
 
 async def lookup_nfd(ctx, *args):
     if '.' in args[0]:
@@ -314,7 +341,9 @@ async def aga_info_help(ctx):
     await ctx.author.send(msg)
     msg = ''
     msg += '**Example:**\n'
-    msg += '**#aga_info 123'
+    msg += '**#aga_info 123**\n'
+    msg += 'This will print out information for AGA123,' \
+           ' including the NFT image.'
     await ctx.author.send(msg)
     return
 
@@ -396,10 +425,11 @@ async def wallet_info(ctx, *args):
     msg_list_length = sum([len(val) for val in messages])
     if msg_list_length == 0:
         messages.append(msg)
-    elif msg_list_length < current_length:
+    elif msg_list_length < msg_length:
         messages.append(msg)
 
-    await ctx.author.send(msg)
+    for msg in messages:
+        await ctx.author.send(msg)
 
 @bot.command(name='load_burnament')
 async def load_burnament(ctx, *args):

@@ -258,6 +258,22 @@ class BurnamentData(object):
             }
             self.cache_df = pd.DataFrame(tmp)
 
+    def load_users(self):
+        """Load the registered users
+
+        Returns
+        -------
+
+        """
+        flist = glob.glob(self.entrants_dir + '/*txt')
+        users = defaultdict(list)
+        for f in tqdm(flist):
+            with open(f, 'r') as fobj:
+                data = fobj.readlines()[0].split(',')
+                users['user'].append(data[0])
+                users['wallet'].append(data[1])
+        return users
+
     def load_competitors(self, N=None):
         flist = glob.glob(f"{self.entrants_dir}/*txt")
         np.random.shuffle(flist)
