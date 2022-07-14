@@ -1,0 +1,7 @@
+/algorillas/bot_cache/tournament_results/*pkl
+/algorillas/bot_cache/entrants/*txt
+/algorillas/bot_cache/giveaway_winners/*txt
+/algorillas/bot_cache/entrants/debugging/*txt
+/algorillas/__pycache__/
+/algorillas/.DS_store
+.DS_store
