@@ -356,12 +356,12 @@ async def aga_info(ctx, aga):
         aga = f"AGA{aga}"
     aga = aga.upper()
     aga = _BURN_DATA.arc69_df[_BURN_DATA.arc69_df.unit_name == aga].iloc[0]
-    nontrait_cols = ['unit_name','asa', 'rank', 'rarity_score', ]
+    nontrait_cols = ['name','unit_name','asa', 'rank', 'rarity_score']
     trait_cols = [
         col for col in _BURN_DATA.arc69_df.columns if col not in nontrait_cols
     ]
     msg = ""
-    for col, l in zip(nontrait_cols, ['Name','ASA', 'Rank','Rarity Score']):
+    for col, l in zip(nontrait_cols, ['Name','Unit Name','ASA', 'Rank','Rarity Score']):
         if l == 'Rarity Score':
             msg += f"**{l}**: {aga[col]:0.3f}\n"
         else:
