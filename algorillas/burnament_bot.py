@@ -370,7 +370,7 @@ async def aga_info(ctx, aga):
     await ctx.author.send(msg)
     msg = f"{'**Traits**'.center(50,'-')}\n"
     for col in trait_cols:
-        if np.isnan(aga[col]):
+        if not isinstance(aga[col], str):
             continue
         msg += (
             f"**{col.capitalize()}**: {aga[col]} "
