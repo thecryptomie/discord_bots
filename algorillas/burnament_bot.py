@@ -370,7 +370,12 @@ async def aga_info(ctx, aga):
     await ctx.author.send(msg)
     msg = f"{'**Traits**'.center(50,'-')}\n"
     for col in trait_cols:
-        msg += f"**{col.capitalize()}**: {aga[col]}\n"
+        if np.isnan(aga[col]):
+            continue
+        msg += (
+            f"**{col.capitalize()}**: {aga[col]} "
+            f"({_BURN_DATA.trait_rarities[col][aga[col]]*1000:0.0f}/1000)\n"
+        )
     await ctx.author.send(msg)
     fname = await get_img(ctx, aga['unit_name'])
     # LOG.info(fname)
