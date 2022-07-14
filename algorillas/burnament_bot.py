@@ -126,6 +126,7 @@ async def unregister_help(ctx):
 
 @bot.command(name='unregister')
 async def unregister(ctx, *args):
+
     if len(args) != 0 and args[0] == 'help':
         await unregister_help(ctx)
         return
@@ -165,6 +166,9 @@ async def add_aga_help(ctx):
 
 @bot.command('add_aga')
 async def add_aga(ctx, *args):
+    if str(ctx.author) != 'cauchy69.APE#8518':
+        await ctx.send(f'Command not available yet. Check back when registration opens!')
+        return
     if args[0] == 'help':
         await add_aga_help(ctx)
         return
@@ -220,6 +224,9 @@ async def remove_aga_help(ctx):
 
 @bot.command('remove_aga')
 async def remove_aga(ctx, *args):
+    if str(ctx.author) != 'cauchy69.APE#8518':
+        await ctx.send(f'Command not available yet. Check back when registration opens!')
+        return
     if args[0] == 'help':
         await remove_aga_help(ctx)
         return
@@ -258,6 +265,9 @@ async def my_entries_help(ctx):
 
 @bot.command('my_entries')
 async def my_entries(ctx, *args):
+    if str(ctx.author) != 'cauchy69.APE#8518':
+        await ctx.send(f'Command not available yet. Check back when registration opens!')
+        return
     if len(args) != 0:
         await my_entries_help(ctx)
     user_id = str(ctx.author)
@@ -340,13 +350,14 @@ async def wallet_info_help(ctx):
            ' provided wallet. The provided information included listed NFTs. \n')
     msg += (
         'Usage:\n'
-        '**#wallet_info** <wallet_address>\n'
+        '**#wallet_info** <wallet_address or NFD>\n'
         'If you are a registered participant, the wallet address argument is'
         ' optional.'
     )
 
 @bot.command(name='wallet_info')
 async def wallet_info(ctx, *args):
+
     if len(args) == 0:
         user_id, wallet, agas = await get_user_data(ctx)
     elif args[0] == 'help':
@@ -429,6 +440,8 @@ async def winners_giveaway(ctx, *args):
     if str(ctx.author) != 'cauchy69.APE#8518':
         await ctx.send(f'{ctx.author} not authorized')
         return
+
+
     round_name = args[0]
     N_winners = int(args[1])
     winner_list = _BURN_DATA.get_round_winners(round_name)
