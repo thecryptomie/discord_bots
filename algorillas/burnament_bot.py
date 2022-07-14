@@ -139,6 +139,7 @@ async def register(ctx, *args):
             (f'{user_id} is already registered. '
             'Use #my_entries to check your registration.')
         )
+        await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
         return
     if wallet == 'Not found':
         return
@@ -172,8 +173,8 @@ async def unregister(ctx, *args):
         os.remove(user_file)
         await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
         return
-    else:
-        await ctx.author.send('User registration not found!')
+    else:regist
+        await ctx.author.send('User ration not found!')
 
 
 async def add_aga_help(ctx):
