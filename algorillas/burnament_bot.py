@@ -392,6 +392,7 @@ async def wallet_info_help(ctx):
         'If you are a registered participant, the wallet address argument is'
         ' optional.'
     )
+    await ctx.author.send(msg)
 
 @bot.command(name='wallet_info')
 async def wallet_info(ctx, *args):
