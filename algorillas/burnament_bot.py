@@ -109,7 +109,7 @@ async def register(ctx, *args):
     user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
     if os.path.exists(user_file):
         await ctx.author.send(
-            (f'{user_id} is already resgistered. '
+            (f'{user_id} is already registered. '
             'Use #my_entries to check your registration.')
         )
         return
@@ -307,7 +307,7 @@ async def get_img(ctx, aga):
 async def aga_info_help(ctx):
     msg = 'Algorillas Burnament Bot Help: **#aga_info**\n'
     msg += (
-        "This bot is used to retrieve information about any AGA."
+        "This bot is used to retrieve information about any AGA.\n"
     )
     msg += 'Usage:\n'
     msg += '**#aga_info <aga number>**'
