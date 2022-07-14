@@ -352,8 +352,9 @@ async def aga_info(ctx, aga):
     if aga == 'help':
         await aga_info_help(ctx)
         return
-    if 'AGA' not in aga:
+    if 'aga' not in aga.lower():
         aga = f"AGA{aga}"
+    aga = aga.upper()
     aga = _BURN_DATA.arc69_df[_BURN_DATA.arc69_df.unit_name == aga].iloc[0]
     nontrait_cols = ['unit_name','asa', 'rank', 'rarity_score', ]
     trait_cols = [
