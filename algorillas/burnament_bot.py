@@ -90,10 +90,12 @@ async def lookup_nfd(ctx, *args):
 
 @bot.command(name='register')
 async def register(ctx, *args):
-    if args[0] == 'help' or len(args) == 0:
+    if len(args) == 0:
         await register_help(ctx)
         return
-
+    elif args[0] == 'help':
+        await register_help(ctx)
+        return
     elif len(args) > 1:
         await ctx.author.send('Incorret number of arguments. Use the command'
                        '#register help to see more info.')
