@@ -64,11 +64,11 @@ async def register_help(ctx):
     msg += ("This bot is used to register a wallet address with a" 
            " discord user. You will only be able to register one wallet address"
             " to your account. ")
-    await ctx.send(msg)
+    await ctx.author.send(msg)
     msg =''
     msg +=('Usage:\n' \
           '**#register** <wallet_address or NFD>')
-    await ctx.send(msg)
+    await ctx.author.send(msg)
 
 async def lookup_nfd(ctx, *args):
     if '.' in args[0]:
@@ -108,7 +108,7 @@ async def register(ctx, *args):
     user_id = str(ctx.author)
     user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
     if os.path.exists(user_file):
-        await ctx.send(
+        await ctx.author.send(
             (f'{user_id} is already resgistered. '
             'Use #my_entries to check your registration.')
         )
