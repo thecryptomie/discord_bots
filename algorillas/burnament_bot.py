@@ -408,8 +408,12 @@ async def wallet_info(ctx, *args):
 
     if wallet == "Not found":
         return
-
-    df = _BURN_DATA.aga_holder_df.groupby('address').get_group(wallet)
+    try:
+        df = _BURN_DATA.aga_holder_df.groupby('address').get_group(wallet)
+    except KeyError as e:
+        await ctx.author.send(
+            f'{wallet[:4]}...{wallet[-4:]} has no AGAs'
+        )
     await ctx.author.send(
         (f'{wallet[:4]}...{wallet[-4:]} holds {len(df)} '
          'AlgorillaArmy'
