@@ -196,7 +196,7 @@ async def add_aga_help(ctx):
 @bot.command('add_aga')
 async def add_aga(ctx, *args):
     if str(ctx.author) != 'cauchy69.APE#8518':
-        await ctx.send(f'Command not available yet. Check back when registration opens!')
+        await ctx.author.send(f'Command not available yet. Check back when registration opens!')
         return
     if args[0] == 'help':
         await add_aga_help(ctx)
@@ -254,7 +254,7 @@ async def remove_aga_help(ctx):
 @bot.command('remove_aga')
 async def remove_aga(ctx, *args):
     if str(ctx.author) != 'cauchy69.APE#8518':
-        await ctx.send(f'Command not available yet. Check back when registration opens!')
+        await ctx.author.send(f'Command not available yet. Check back when registration opens!')
         return
     if args[0] == 'help':
         await remove_aga_help(ctx)
@@ -295,7 +295,7 @@ async def my_entries_help(ctx):
 @bot.command('my_entries')
 async def my_entries(ctx, *args):
     if str(ctx.author) != 'cauchy69.APE#8518':
-        await ctx.send(f'Command not available yet. Check back when registration opens!')
+        await ctx.author.send(f'Command not available yet. Check back when registration opens!')
         return
     if len(args) != 0:
         await my_entries_help(ctx)
@@ -444,7 +444,7 @@ async def wallet_info(ctx, *args):
 @bot.command(name='load_burnament')
 async def load_burnament(ctx, *args):
     if str(ctx.author) != 'cauchy69.APE#8518':
-        await ctx.send(f'{ctx.author} not authorized')
+        await ctx.author.send(f'{ctx.author} not authorized')
         return
 
     # _BURN_DATA.load_competitors(int(args[0]))
@@ -481,7 +481,7 @@ async def round_summary(ctx, *args):
 @bot.command(name='winners_giveaway')
 async def winners_giveaway(ctx, *args):
     if str(ctx.author) != 'cauchy69.APE#8518':
-        await ctx.send(f'{ctx.author} not authorized')
+        await ctx.author.send(f'{ctx.author} not authorized')
         return
 
 
@@ -560,7 +560,7 @@ async def winners_giveaway(ctx, *args):
 @bot.command(name='run_round')
 async def run_round(ctx, *args):
     if str(ctx.author) != 'cauchy69.APE#8518':
-        await ctx.send(f'{ctx.author} not authorized')
+        await ctx.author.send(f'{ctx.author} not authorized')
         return
 
     round_name = args[0]
@@ -643,7 +643,7 @@ async def run_round(ctx, *args):
 @bot.command(name='fight')
 async def fight(ctx, *args):
     if str(ctx.author) != 'cauchy69.APE#8518':
-        await ctx.send(f'{ctx.author} not authorized')
+        await ctx.author.send(f'{ctx.author} not authorized')
         return
     winners = defaultdict(dict)
     for k in [0,1]:
