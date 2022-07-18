@@ -400,6 +400,7 @@ async def wallet_info(ctx, *args):
         user_id, wallet, agas = await get_user_data(ctx)
     elif args[0] == 'help':
         await wallet_info_help(ctx)
+        return
     else:
         wallet = args[0]
 
