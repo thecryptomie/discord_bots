@@ -117,7 +117,12 @@ async def lookup_nfd(ctx, *args):
 
 @bot.command(name='register')
 async def register(ctx, *args):
-    if len(args) == 0:
+
+    if str(ctx.author) != 'cauchy69.APE#8518':
+        await ctx.send(f'Holders airdrop registration is closed.')
+        return
+
+    elif len(args) == 0:
         await register_help(ctx)
         return
     elif args[0] == 'help':
@@ -127,6 +132,8 @@ async def register(ctx, *args):
         await ctx.author.send('Incorret number of arguments. Use the command'
                        '#register help to see more info.')
         return
+
+    elif str()
 
     wallet = args[0]
     if len(wallet) != 58:
