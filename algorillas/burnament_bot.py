@@ -133,8 +133,6 @@ async def register(ctx, *args):
                        '#register help to see more info.')
         return
 
-    elif str()
-
     wallet = args[0]
     if len(wallet) != 58:
         wallet = await lookup_nfd(ctx, wallet)
