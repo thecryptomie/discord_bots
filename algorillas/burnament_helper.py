@@ -52,6 +52,22 @@ class BurnamentData(object):
         self._aga_holders_df= self._aga_holders_df.drop(
             columns=['name_1', 'unit_name_1']
         )
+        t1 = self._aga_holders_df.groupby('address').get_group(
+            'PO4CEJB6IV2P5UACZ3P77KJCITMX2ZIT6RMW4WTX6JQGJYNJS6T5E4V27Q'
+        )
+        t1['creator_address'] = [
+            'PO4CEJB6IV2P5UACZ3P77KJCITMX2ZIT6RMW4WTX6JQGJYNJS6T5E4V27Q'
+        ] * t1.shape[0]
+
+        t2 = self._aga_holders_df.groupby('address').get_group(
+            'MPRRGD2IXHYNHRMOFD5AE6Y2KK6DL32GKDFIZG7SC6TYO6AKK7CZSSBKTA'
+        )
+        t2['creator_address'] = [
+            'MPRRGD2IXHYNHRMOFD5AE6Y2KK6DL32GKDFIZG7SC6TYO6AKK7CZSSBKTA'
+        ] * t2.shape[0]
+
+        self._unreleased_aga_df = pd.concat([t1, t2], axis=0)
+        self._unreleased_aga_df = self._unreleased_aga_df.sample(frac=1)
         self._cache_dir = os.path.join(
             self._project_dir,
             'algorillas',
@@ -228,6 +244,14 @@ class BurnamentData(object):
     @trait_rarities.setter
     def trait_rarities(self, value):
         self._trait_rarities = value
+
+    @property
+    def unreleased_aga_df(self):
+        return self._unreleased_aga_df
+
+    @unreleased_aga_df.setter
+    def unreleased_aga_df(self, value):
+        self._unreleased_aga_df = value
 
     def compute_trait_rarities(self):
         for trait in self.trait_cols:
