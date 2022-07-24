@@ -22,7 +22,7 @@ LOG.setLevel(logging.INFO)
 
 with open('rebirthed_apes.txt', 'r') as fobj:
     rebirthed_apes = fobj.readlines()
-    rebirthed_apes = ["APE"+val.strip('\n') for val in rebirthed_apes]
+    rebirthed_apes = ["APE#"+val.strip('\n') for val in rebirthed_apes]
 
 bot = commands.Bot(command_prefix='>')
 
@@ -30,12 +30,12 @@ bot = commands.Bot(command_prefix='>')
 async def check(ctx, *args):
     ape = args[0]
     if 'APE' not in ape:
-        ape = 'APE'+ape
+        ape = 'APE#'+ape
 
     if ape in rebirthed_apes:
-        msg = 'APE has been rebirthed'
+        msg = f'{ape} has been rebirthed'
     else:
-        msg = "You and this APE have a lot in common, you're both virgins"
+        msg = f"You and {ape} have a lot in common, you're both virgins"
 
     await ctx.send(msg)
     return
