@@ -49,11 +49,14 @@ async def get_img(ctx, aga):
     return fname
 
 @bot.command(name='airdrop_shuffle')
-@commands.has_role('ADMIN')
+# @commands.has_role('ADMIN')
 async def airdrop_shuffle(ctx, *args):
     global _N_SHUFFLES
-    discord_handle = args[0]
+    if str(ctx.author) != 'cauchy69.APE#8518':
+        await ctx.send(f'{ctx.author} is an unauthorized user')
+        return
 
+    discord_handle = args[0]
     try:
         member = await commands.MemberConverter().convert(ctx, discord_handle)
     except Exception as e:
