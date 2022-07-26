@@ -6,6 +6,10 @@ import os
 import time
 
 import discord
+intents = discord.Intents.default()
+intents.members = True
+
+client = discord.Client(intents=intents)
 from discord.ext import commands
 import numpy as np
 import requests
@@ -21,6 +25,7 @@ logging.basicConfig(format='%(levelname)-4s '
 # instantiate the logger
 LOG = logging.getLogger()
 LOG.setLevel(logging.INFO)
+_ALGO_PRIZE_AMOUNT = 500
 
 _BOT_TOKEN = os.environ['ALGORILLAS']
 
@@ -47,12 +52,15 @@ _BURN_DATA.compute_trait_rarities()
 
 _ROUND_WINNERS = defaultdict(list)
 
+
+
 @bot.event
 async def on_ready():
     print(f'We have logged in as {bot.user}')
 
 async def get_user_data(ctx):
-    user_id = str(ctx.author)
+    member = ctx.author
+    user_id = member.id
     user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
     with open(user_file, 'r') as fobj:
         data = fobj.readlines()[0].split(',')
@@ -70,6 +78,20 @@ async def register_help(ctx):
     msg +=('Usage:\n' \
           '**#register** <wallet_address or NFD>')
     await ctx.author.send(msg)
+
+# @bot.command(name='member_ids')
+# @commands.has_role('ADMIN')
+# async def get_member_id(ctx):
+#     for discord_handle in _QUALIFIED_HOLDERS['discord']:
+#         try:
+#             member = await commands.MemberConverter().convert(
+#                 ctx,
+#                 discord_handle
+#             )
+#             await ctx.author.send(f"{member.name} {member.id}")
+#         except Exception as e:
+#             member = discord_handle
+#          await ctx.author.send(member.id)
 
 @bot.command(name='load_users')
 async def load_users(ctx):
@@ -117,12 +139,11 @@ async def lookup_nfd(ctx, *args):
 
 @bot.command(name='register')
 async def register(ctx, *args):
+    # if str(ctx.author) != 'cauchy69.APE#8518':
+    #     await ctx.send(f'Holders airdrop registration is closed.')
+    #     return
 
-    if str(ctx.author) != 'cauchy69.APE#8518':
-        await ctx.send(f'Holders airdrop registration is closed.')
-        return
-
-    elif len(args) == 0:
+    if len(args) == 0:
         await register_help(ctx)
         return
     elif args[0] == 'help':
@@ -137,11 +158,12 @@ async def register(ctx, *args):
     if len(wallet) != 58:
         wallet = await lookup_nfd(ctx, wallet)
 
-    user_id = str(ctx.author)
+    member = ctx.author
+    user_id = member.id
     user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
     if os.path.exists(user_file):
         await ctx.author.send(
-            (f'{user_id} is already registered. '
+            (f'{member.mention} is already registered. '
             'Use #my_entries to check your registration.')
         )
         await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
@@ -200,9 +222,9 @@ async def add_aga_help(ctx):
 
 @bot.command('add_aga')
 async def add_aga(ctx, *args):
-    if str(ctx.author) != 'cauchy69.APE#8518':
-        await ctx.author.send(f'Command not available yet. Check back when registration opens!')
-        return
+    # if str(ctx.author) != 'cauchy69.APE#8518':
+    #     await ctx.author.send(f'Command not available yet. Check back when registration opens!')
+    #     return
     if args[0] == 'help':
         await add_aga_help(ctx)
         return
@@ -215,7 +237,8 @@ async def add_aga(ctx, *args):
     if aga_cut.empty:
         await ctx.author.send(f'User input does not correspond to AGA NFT.')
         return
-    user_id = str(ctx.author)
+    member = ctx.author
+    user_id = member.id
     user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
     with open(user_file,'r') as fobj:
         data = fobj.readlines()[0].split(',')
@@ -226,17 +249,19 @@ async def add_aga(ctx, *args):
     # check what NFTs this wallet holds to make sure they can register this AGA
     holder = _BURN_DATA.aga_holder_df.groupby('address').get_group(wallet)
     if aga in holder['unit_name'].tolist():
-        await ctx.author.send(f'{wallet_str} owns {aga} \u2705')
+        # await ctx.author.send(f'{wallet_str} owns {aga} \u2705')
+        await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
     else:
-        await ctx.author.send(f'{wallet_str} does not own {aga} \N{cross mark}')
-        await ctx.author.send('You can only register an AGA that you own')
+        await ctx.message.add_reaction('\N{CROSS MARK}')
+        # await ctx.author.send(f'{wallet_str} does not own {aga} \N{cross mark}')
+        # await ctx.author.send('You can only register an AGA that you own')
         return
 
     if aga in data[2:]:
         await ctx.author.send(f'{aga} already submitted for battle!')
         return
     else:
-        await ctx.author.send(f'Adding {aga} to {user_id} competitor list.')
+        await ctx.author.send(f'Adding {aga} to {member.mention} competitor list.')
         with open(user_file,'a+') as fobj:
             fobj.write(f',{aga}')
 
@@ -258,9 +283,6 @@ async def remove_aga_help(ctx):
 
 @bot.command('remove_aga')
 async def remove_aga(ctx, *args):
-    if str(ctx.author) != 'cauchy69.APE#8518':
-        await ctx.author.send(f'Command not available yet. Check back when registration opens!')
-        return
     if args[0] == 'help':
         await remove_aga_help(ctx)
         return
@@ -268,7 +290,9 @@ async def remove_aga(ctx, *args):
     aga = args[0]
     if 'AGA' not in aga:
         aga = f"AGA{aga}"
-    user_id = str(ctx.author)
+
+    member = ctx.author
+    user_id = member.id
     user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
     with open(user_file, 'r') as fobj:
         data = fobj.readlines()[0].split(',')
@@ -280,7 +304,6 @@ async def remove_aga(ctx, *args):
         # has been removed
         with open(user_file, 'w+') as fobj:
             fobj.write(','.join(data))
-
         await ctx.author.send(f'Removed {aga} from competitor list.')
     else:
         await ctx.author.send(f'{aga} is not registered.')
@@ -304,7 +327,8 @@ async def my_entries(ctx, *args):
         return
     if len(args) != 0:
         await my_entries_help(ctx)
-    user_id = str(ctx.author)
+    member = ctx.author
+    user_id = member.id
     user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
     with open(user_file, 'r') as fobj:
         data = fobj.readlines()[0].split(',')
@@ -452,7 +476,6 @@ async def load_burnament(ctx, *args):
     if str(ctx.author) != 'cauchy69.APE#8518':
         await ctx.author.send(f'{ctx.author} not authorized')
         return
-
     # _BURN_DATA.load_competitors(int(args[0]))
     _BURN_DATA.load_competitors()
     _BURN_DATA.initialize_bracket()
@@ -462,8 +485,18 @@ async def load_burnament(ctx, *args):
     for i, row in _BURN_DATA.entrants.iterrows():
         if j == 10 or j > _BURN_DATA.entrants.shape[0]:
             break
-        msg += (f"({row['seed']}) {row['name']}, "
-                f"**Rank:** {row['rank']}, **Holder:** {row['user']}\n")
+        try:
+            member = await bot.fetch_user(row["user"])
+        except Exception as e:
+            LOG.error(e)
+            member = 'Unregistered'
+
+        if isinstance(member, str):
+            msg += (f"({row['seed']}) {row['name']}, "
+                    f"**Rank:** {row['rank']}, **Holder:** {member}\n")
+        else:
+            msg += (f"({row['seed']}) {row['name']}, "
+                    f"**Rank:** {row['rank']}, **Holder:** {member.mention}\n")
         j+=1
     await ctx.send(msg)
     msg = ''
@@ -478,7 +511,7 @@ async def round_summary(ctx, *args):
         await ctx.send(f'{ctx.author} not authorized')
         return
     round_name = args[0]
-    messages = _BURN_DATA.print_round_summary(round_name)
+    messages = await _BURN_DATA.print_round_summary(round_name, bot)
     # print(messages)
     for msg in messages:
         await ctx.send(msg)
@@ -489,8 +522,6 @@ async def winners_giveaway(ctx, *args):
     if str(ctx.author) != 'cauchy69.APE#8518':
         await ctx.author.send(f'{ctx.author} not authorized')
         return
-
-
     round_name = args[0]
     N_winners = int(args[1])
     winner_list = _BURN_DATA.get_round_winners(round_name)
@@ -501,7 +532,8 @@ async def winners_giveaway(ctx, *args):
           '-'*10 +'\n'
     msg_length = 0
     for winner in winner_list:
-        msg += f"({winner['seed']}) {winner['name']}, {winner['user']}\n"
+        member = await bot.fetch_user(winner['user'])
+        msg += f"({winner['seed']}) {winner['name']}, {member.mention}\n"
         msg_length += len(msg)
         if len(msg) > 1000:
             messages.append(msg)
@@ -530,10 +562,15 @@ async def winners_giveaway(ctx, *args):
         )
         with open(winners_file, 'w+') as fobj:
             for w in giveaway_winners:
+                member = await bot.fetch_user(winner_list[w]['user'])
                 msg += (
-                    f"({winner_list[w]['seed']}) {winner_list[w]['name']}, "
-                    f"{winner_list[w]['user']}\n"
+                    f"({winner_list[w]['seed']}) {winner_list[w]['name']}\n"
                 )
+                # msg += (
+                #     f"({winner_list[w]['seed']}) {winner_list[w]['name']}, "
+                #     f"{member.mention}\n"
+                # )
+                msg += f"Congrats {member.mention}, you won {_ALGO_PRIZE_AMOUNT} ALGO!\n"
                 user_data = (
                     f"{winner_list[w]['name']},"
                     f"{winner_list[w]['user']},"
@@ -543,11 +580,12 @@ async def winners_giveaway(ctx, *args):
         # await ctx.send(msg)
     else:
         w = winner_list[giveaway_winners[0]]
+        member = await bot.fetch_user(w['user'])
         msg = '**Giveaway Winner:**\n'
         msg += (
-                f"({w['seed']}) {w['name']}, "
-                f"{w['user']}"
+                f"({w['seed']}) {w['name']}\n"
         )
+        msg += f"Congrats {member.mention}, you won {_ALGO_PRIZE_AMOUNT} ALGO!\n"
         winners_file = (
             f"{_BURN_DATA.giveaway_dir}/"
             f"{round_name.replace(' ', '_')}.txt"
@@ -559,7 +597,6 @@ async def winners_giveaway(ctx, *args):
                 f"{w['wallet']}\n"
             )
             fobj.write(user_data)
-
     await ctx.send(msg)
 
 
@@ -625,6 +662,7 @@ async def run_round(ctx, *args):
                     verbose=verbose
                 )
                 round_winners.append(w[-1])
+                asyncio.sleep(2)
             round_winners = [
                 _BURN_DATA.entrants[_BURN_DATA.entrants.unit_name == w].iloc[0]
                 for w in round_winners
@@ -710,7 +748,7 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
         return
 
     if verbose:
-        await ctx.send("-" * 40)
+        await ctx.send("-" * 10+'**FIGHT**'+'-'*10)
 
     if 'AGA' not in aga1 and 'BYE' not in aga1:
         aga1 = f'AGA{aga1}'
@@ -813,17 +851,39 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
     if winner == s1_name:
         winner_seed = s1_seed_msg
         w = s1_unit_name
-        user = s1_user
+        try:
+            member = await bot.fetch_user(
+                int(s1_user)
+            )
+            # user = member
+        except Exception as e:
+            user = s1_user
+        # user = s1_user
+        LOG.info(member)
     else:
         winner_seed = s2_seed_msg
         w = s2_unit_name
-        user = s2_user
+        try:
+            member = await bot.fetch_user(
+                int(s2_user)
+            )
+            # user = member
+        except Exception as e:
+            member = s2_user
+
+        # user = s2_user
+        LOG.info(member)
     if verbose:
-        await ctx.send(f"Draws\n {a}")
-        await ctx.send("-" * 40)
-        await ctx.send(
-            f"**Winner:** {winner_seed} {winner} **Holder:** {user}\n"
-        )
+        await ctx.send(f"**Draws**\n {a}")
+        # await ctx.send("-" * 40)
+        if isinstance(member, str):
+            await ctx.send(
+                f"**Winner:** {winner_seed} {winner} **Holder:** {member}\n"
+            )
+        else:
+            await ctx.send(
+                f"**Winner:** {winner_seed} {winner} **Holder:** {member.mention}\n"
+            )
         fname = await get_img(ctx, w)
         await ctx.send(file=discord.File(fname))
 

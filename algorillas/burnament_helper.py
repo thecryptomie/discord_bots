@@ -1,3 +1,4 @@
+
 from collections import defaultdict
 import glob
 import logging
@@ -464,7 +465,7 @@ class BurnamentData(object):
                 with open(f, 'rb') as fobj:
                     self.round_history[round_name][key] = pickle.load(fobj)
 
-    def print_round_summary(self, round_name):
+    async def print_round_summary(self, round_name, bot):
         msg = ''
         messages = []
         low_rounds = ["Quarterfinal", "Semifinal"]
@@ -518,18 +519,18 @@ class BurnamentData(object):
                     count = 0
                     msg_length = 0
                     for w in half['winners']:
-                        msg += (f"({w['seed']}) {w['name']} **{w['user']}**\n")
+                        member = await bot.fetch_user(w['user'])
+                        msg += (f"({w['seed']}) {w['name']} **{member.mention}**\n")
                         msg_length += len(msg)
                         current_length += len(msg)
                         if msg_length > 1000:
                             messages.append(msg)
                             msg = ''
                             msg_length = 0
-
                     msg_list_length = sum([len(val) for val in messages])
                     if msg_list_length < current_length:
                         messages.append(msg)
-                    messages.append('-'*40+'\n')
+                    # messages.append('-'*40+'\n')
                     msg = ''
 
         return messages
