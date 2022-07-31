@@ -249,12 +249,12 @@ async def add_aga(ctx, *args):
     # check what NFTs this wallet holds to make sure they can register this AGA
     holder = _BURN_DATA.aga_holder_df.groupby('address').get_group(wallet)
     if aga in holder['unit_name'].tolist():
-        # await ctx.author.send(f'{wallet_str} owns {aga} \u2705')
+        await ctx.author.send(f'{wallet_str} holds {aga} \u2705')
         await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
     else:
         await ctx.message.add_reaction('\N{CROSS MARK}')
-        # await ctx.author.send(f'{wallet_str} does not own {aga} \N{cross mark}')
-        # await ctx.author.send('You can only register an AGA that you own')
+        await ctx.author.send(f'{wallet_str} does not own {aga} \N{cross mark}')
+        await ctx.author.send('You can only register an AGA that you own')
         return
 
     if aga in data[2:]:
