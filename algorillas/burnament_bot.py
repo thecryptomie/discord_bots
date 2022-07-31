@@ -322,9 +322,9 @@ async def my_entries_help(ctx):
 
 @bot.command('my_entries')
 async def my_entries(ctx, *args):
-    if str(ctx.author) != 'cauchy69.APE#8518':
-        await ctx.author.send(f'Command not available yet. Check back when registration opens!')
-        return
+    # if str(ctx.author) != 'cauchy69.APE#8518':
+    #     await ctx.author.send(f'Command not available yet. Check back when registration opens!')
+    #     return
     if len(args) != 0:
         await my_entries_help(ctx)
     member = ctx.author
@@ -424,7 +424,6 @@ async def wallet_info_help(ctx):
 
 @bot.command(name='wallet_info')
 async def wallet_info(ctx, *args):
-
     if len(args) == 0:
         user_id, wallet, agas = await get_user_data(ctx)
     elif args[0] == 'help':
