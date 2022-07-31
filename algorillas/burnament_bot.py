@@ -201,7 +201,7 @@ async def unregister(ctx, *args):
         await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
         return
     else:
-        await ctx.author.send('User ration not found!')
+        await ctx.author.send('User not found!')
 
 
 async def add_aga_help(ctx):
@@ -305,6 +305,7 @@ async def remove_aga(ctx, *args):
         with open(user_file, 'w+') as fobj:
             fobj.write(','.join(data))
         await ctx.author.send(f'Removed {aga} from competitor list.')
+        await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
     else:
         await ctx.author.send(f'{aga} is not registered.')
 
@@ -344,6 +345,7 @@ async def my_entries(ctx, *args):
         aga_cut = _BURN_DATA.arc69_df[_BURN_DATA.arc69_df.unit_name == aga].iloc[0]
         msg += f"{aga_cut['name']}, Ranking: {aga_cut['rank']}/1000\n"
     await ctx.author.send(msg)
+    await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
 
 
 # @bot.command(name='showit')
@@ -408,6 +410,7 @@ async def aga_info(ctx, aga):
     fname = await get_img(ctx, aga['unit_name'])
     # LOG.info(fname)
     await ctx.author.send(file=discord.File(fname))
+    await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
 
 
 async def wallet_info_help(ctx):
@@ -469,6 +472,7 @@ async def wallet_info(ctx, *args):
 
     for msg in messages:
         await ctx.author.send(msg)
+    await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
 
 @bot.command(name='load_burnament')
 async def load_burnament(ctx, *args):
