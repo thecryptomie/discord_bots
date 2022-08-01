@@ -504,7 +504,7 @@ class BurnamentData(object):
                 msg += title
                 msg_length = 0
                 # start_length = sum([len(val) for val in messages])
-                print(title)
+
                 for m in half:
                     aga1 = m[0]
                     aga2 = m[1]
@@ -519,10 +519,11 @@ class BurnamentData(object):
                     else:
                         member2 = 'N/A'
                     msg += (
-                        f"({aga1['seed']}) {aga1['unit_name']}, "
+                        f"({aga1['seed']}) {aga1['unit_name']} "
+                        " vs "
+                        f"({aga2['seed']}) {aga2['unit_name']}\n"
                         f"{member1 if isinstance(member1, str) else member1.mention}"
                         " vs "
-                        f"({aga2['seed']}) {aga2['unit_name']}, "
                         f"{member2 if isinstance(member2, str) else member2.mention}\n"
 
                     )
