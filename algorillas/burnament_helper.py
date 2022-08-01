@@ -99,8 +99,8 @@ class BurnamentData(object):
         else:
             self._cache_df = None
         self.trait_rarities = {}
+        self._matchups = None
         self._round_winners = None
-        self._round_matchups = None
         self._round_history = None
         self._round_names = []
 
@@ -180,6 +180,13 @@ class BurnamentData(object):
     @holder_dir.setter
     def holder_dir(self, value):
         self._holder_dir = value
+    @property
+    def matchups(self):
+        return self._matchups
+
+    @matchups.setter
+    def matchups(self, value):
+        self._matchups = value
 
     @property
     def non_trait_cols(self):
@@ -205,6 +212,8 @@ class BurnamentData(object):
     @round_history.setter
     def round_history(self, value):
         self._round_history = value
+
+
 
     @property
     def round_names(self):
@@ -465,10 +474,80 @@ class BurnamentData(object):
                 with open(f, 'rb') as fobj:
                     self.round_history[round_name][key] = pickle.load(fobj)
 
+    async def print_round_matchups(self,round_name, bot):
+        msg = ''
+        messages = []
+
+        if round_name == 'Championship Round':
+            msg +='Championship Matchup'
+            matchup = self.matchups["Championship Round"]
+            member1 = await bot.fetch_user(matchup[0]['user'])
+            member2 = await bot.fetch_user(matchup[1]['user'])
+            msg += (
+                f"({matchup[0]['seed']}) {matchup[0]['name']}, "
+                f"{member1.mention} vs "
+                f"({matchup[1]['seed']}) {matchup[1]['name']}, "
+                f"{member2.mention}"
+            )
+            messages.append(msg)
+        else:
+            top_half = self.matchups[0]
+            bottom_half = self.matchups[1]
+            # LOG.info(top_half)
+            msg += f'**{round_name}**\n'
+            title_str = [
+                '**Top half of the draw**'.center(50, '-') + '\n',
+                '**Bottom half of the draw**'.center(50, '-') + '\n'
+            ]
+            current_length = 0
+            for half, title in zip([top_half, bottom_half], title_str):
+                msg += title
+                msg_length = 0
+                # start_length = sum([len(val) for val in messages])
+                print(title)
+                for m in half:
+                    aga1 = m[0]
+                    aga2 = m[1]
+                    # LOG.info(aga1)
+                    if aga1['user'] is not None:
+                        member1 = await bot.fetch_user(m[0]['user'])
+                    else:
+                        member1 = 'N/A'
+                    # LOG.info(aga2)
+                    if aga2['user'] is not None:
+                        member2 = await bot.fetch_user(m[1]['user'])
+                    else:
+                        member2 = 'N/A'
+                    msg += (
+                        f"({aga1['seed']}) {aga1['name']}, "
+                        f"{member1 if isinstance(member1, str) else member1.mention}"
+                        " vs "
+                        f"({aga2['seed']}) {aga2['name']}, "
+                        f"{member2 if isinstance(member2, str) else member2.mention}\n"
+
+                    )
+                    msg_length += len(msg)
+                    current_length += len(msg)
+                    if msg_length > 1000:
+                        messages.append(msg)
+                        msg = ''
+                        msg_length = 0
+
+                msg_list_length = sum([len(val) for val in messages])
+                if msg_list_length == 0:
+                    messages.append(msg)
+                    msg_list_length = sum(
+                        [len(val) for val in messages]
+                    )
+                elif msg_list_length < current_length:
+                    messages.append(msg)
+                msg = ''
+        # print(messages)
+        return messages
+
     async def print_round_summary(self, round_name, bot):
         msg = ''
         messages = []
-        low_rounds = ["Quarterfinal", "Semifinal"]
         if round_name in self.round_history.keys():
             msg += round_name + '\n'
             if round_name == 'Championship Round':

@@ -508,6 +508,18 @@ async def load_burnament(ctx, *args):
     msg += '\n'.join(_BURN_DATA.round_names)
     await ctx.send(msg)
 
+@bot.command(name='round_matchups')
+async def round_matchups(ctx, round_name, *args):
+    if str(ctx.author) != 'cauchy69.APE#8518':
+        await ctx.send(f'{ctx.author} not authorized')
+        return
+    messages = await _BURN_DATA.print_round_matchups(round_name, bot)
+    # print(messages)
+    for msg in messages:
+        try:
+            await ctx.send(msg)
+        except Exception as e:
+            pass
 
 @bot.command(name='round_summary')
 async def round_summary(ctx, *args):
@@ -893,5 +905,5 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
 
     return results, entries, w
 
-
-bot.run(_BOT_TOKEN)
+if __name__ == "__main__":
+    bot.run(_BOT_TOKEN)
