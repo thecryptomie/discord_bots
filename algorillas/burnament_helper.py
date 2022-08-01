@@ -519,10 +519,10 @@ class BurnamentData(object):
                     else:
                         member2 = 'N/A'
                     msg += (
-                        f"({aga1['seed']}) {aga1['name']}, "
+                        f"({aga1['seed']}) {aga1['unit_name']}, "
                         f"{member1 if isinstance(member1, str) else member1.mention}"
                         " vs "
-                        f"({aga2['seed']}) {aga2['name']}, "
+                        f"({aga2['seed']}) {aga2['unit_name']}, "
                         f"{member2 if isinstance(member2, str) else member2.mention}\n"
 
                     )
@@ -556,8 +556,8 @@ class BurnamentData(object):
                 winner = champ_round['winners']
                 msg += 'Championship Matchup\n'
                 msg += (
-                    f"({matchup[0]['seed']}) {matchup[0]['name']} vs "
-                    f"({matchup[1]['seed']}) {matchup[1]['name']}"
+                    f"({matchup[0]['seed']}) {matchup[0]['unit_name']} vs "
+                    f"({matchup[1]['seed']}) {matchup[1]['unit_name']}"
                 )
                 messages.append(msg)
             else:
@@ -575,8 +575,8 @@ class BurnamentData(object):
                     for m in half['matches']:
                         aga1 = m[0]
                         aga2 = m[1]
-                        msg += (f"({aga1['seed']}) {aga1['name']} vs "
-                                f"({aga2['seed']}) {aga2['name']}\n")
+                        msg += (f"({aga1['seed']}) {aga1['unit_name']} vs "
+                                f"({aga2['seed']}) {aga2['unit_name']}\n")
                         msg_length += len(msg)
                         current_length += len(msg)
                         if msg_length > 1000:
