@@ -762,15 +762,15 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
     try:
         aga1 = _BURN_DATA.entrants[_BURN_DATA.entrants.unit_name == aga1].iloc[0]
     except AttributeError as e:
-        aga1 = _BURN_DATA.aga_holder_df[
-            _BURN_DATA.aga_holder_df.unit_name == aga1
+        aga1 = _BURN_DATA.arc69_df[
+            _BURN_DATA.arc69_df.unit_name == aga1
         ].iloc[0]
 
     try:
         aga2 = _BURN_DATA.entrants[_BURN_DATA.entrants.unit_name == aga2].iloc[0]
     except AttributeError as e:
-        aga2 = _BURN_DATA.aga_holder_df[
-            _BURN_DATA.aga_holder_df.unit_name == aga2
+        aga2 = _BURN_DATA.arc69_df[
+            _BURN_DATA.arc69_df.unit_name == aga2
         ].iloc[0]
 
     s1_rs = aga1['rarity_score']
