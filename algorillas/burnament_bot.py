@@ -193,7 +193,8 @@ async def unregister(ctx, *args):
         await ctx.author.send('Invalid usage. Use #unregister help to see more details')
         return
 
-    user_id = str(ctx.author)
+    member = ctx.author
+    user_id = member.id
     user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
     if os.path.exists(user_file):
         await ctx.author.send(f'Removing registration for {user_id}...')
@@ -253,8 +254,8 @@ async def add_aga(ctx, *args):
         await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
     else:
         await ctx.message.add_reaction('\N{CROSS MARK}')
-        await ctx.author.send(f'{wallet_str} does not own {aga} \N{cross mark}')
-        await ctx.author.send('You can only register an AGA that you own')
+        await ctx.author.send(f'{wallet_str} does not hold {aga}')
+        await ctx.author.send('You can only register an AGA that you hold')
         return
 
     if aga in data[2:]:
