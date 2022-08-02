@@ -27,9 +27,9 @@ LOG = logging.getLogger()
 LOG.setLevel(logging.INFO)
 _ALGO_PRIZE_AMOUNT = 500
 
-# _BOT_TOKEN = os.environ['ALGORILLAS']
+_BOT_TOKEN = os.environ['ALGORILLAS']
 # _BOT_TOKEN = os.environ['ALIENTOURISM']
-_BOT_TOKEN = 'MTAwMzc3NjI2ODAyNzgzMDQyMw.Gk8MU7.bejfjgYowGrza9gAg9UeapElZrVOfB30TZZ_cY'
+
 
 _BOOSTED_TRAITS = {
     'Claymore':0.15,
