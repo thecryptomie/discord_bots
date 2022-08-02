@@ -27,7 +27,9 @@ LOG = logging.getLogger()
 LOG.setLevel(logging.INFO)
 _ALGO_PRIZE_AMOUNT = 500
 
-_BOT_TOKEN = os.environ['ALGORILLAS']
+# _BOT_TOKEN = os.environ['ALGORILLAS']
+# _BOT_TOKEN = os.environ['ALIENTOURISM']
+_BOT_TOKEN = 'MTAwMzc3NjI2ODAyNzgzMDQyMw.Gk8MU7.bejfjgYowGrza9gAg9UeapElZrVOfB30TZZ_cY'
 
 _BOOSTED_TRAITS = {
     'Claymore':0.15,
@@ -37,7 +39,7 @@ _BOOSTED_TRAITS = {
     'Blue Lasers':0.15,
     'Yellow Lasers':0.15
 }
-bot = commands.Bot(command_prefix='#')
+bot = commands.Bot(command_prefix='>')
 
 # initialize the burnament data class
 _BURN_DATA = BurnamentData()
@@ -142,39 +144,42 @@ async def register(ctx, *args):
     # if str(ctx.author) != 'cauchy69.APE#8518':
     #     await ctx.send(f'Holders airdrop registration is closed.')
     #     return
+    try:
+        if len(args) == 0:
+            await register_help(ctx)
+            return
+        elif args[0] == 'help':
+            await register_help(ctx)
+            return
+        elif len(args) > 1:
+            await ctx.author.send('Incorret number of arguments. Use the command'
+                           '#register help to see more info.')
+            return
 
-    if len(args) == 0:
-        await register_help(ctx)
-        return
-    elif args[0] == 'help':
-        await register_help(ctx)
-        return
-    elif len(args) > 1:
-        await ctx.author.send('Incorret number of arguments. Use the command'
-                       '#register help to see more info.')
-        return
+        wallet = args[0]
+        if len(wallet) != 58:
+            wallet = await lookup_nfd(ctx, wallet)
 
-    wallet = args[0]
-    if len(wallet) != 58:
-        wallet = await lookup_nfd(ctx, wallet)
-
-    member = ctx.author
-    user_id = member.id
-    user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
-    if os.path.exists(user_file):
-        await ctx.author.send(
-            (f'{member.mention} is already registered. '
-            'Use #my_entries to check your registration.')
-        )
-        await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
+        member = ctx.author
+        user_id = member.id
+        user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
+        if os.path.exists(user_file):
+            await ctx.author.send(
+                (f'{member.mention} is already registered. '
+                'Use #my_entries to check your registration.')
+            )
+            await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
+            return
+        if wallet == 'Not found':
+            return
+        else:
+            with open(user_file, 'w+') as fobj:
+                fobj.write(f'{user_id},{wallet}')
+            await ctx.author.send('Registration successful')
+            await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
+    except Exception as e:
+        await ctx.send('Open them DMs, yo!')
         return
-    if wallet == 'Not found':
-        return
-    else:
-        with open(user_file, 'w+') as fobj:
-            fobj.write(f'{user_id},{wallet}')
-        await ctx.author.send('Registration successful')
-        await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
 
 async def unregister_help(ctx):
     msg = 'Algorillas Burnament Bot Help: **#unregister**\n'
@@ -515,11 +520,20 @@ async def round_matchups(ctx, round_name, *args):
         return
     messages = await _BURN_DATA.print_round_matchups(round_name, bot)
     # print(messages)
-    for msg in messages:
-        try:
-            await ctx.send(msg)
-        except Exception as e:
-            pass
+    i = 1
+    for key, matchups in messages.items():
+        LOG.info(len(matchups))
+        for m in matchups:
+            embed = discord.Embed(title=f'{round_name}: Matchup #{i:0.0f}',
+                                  description=m,
+                                  color=discord.Color.blue())
+            await ctx.send(embed=embed)
+            i+=1
+    # for msg in messages:
+    #     try:
+    #         await ctx.send(msg)
+    #     except Exception as e:
+    #         pass
 
 @bot.command(name='round_summary')
 async def round_summary(ctx, *args):
@@ -650,6 +664,8 @@ async def run_round(ctx, *args):
             ctx,
             matches[0]['unit_name'],
             matches[1]['unit_name'],
+            round_name,
+            1,
             verbose=verbose
         )
         winner = _BURN_DATA.entrants[_BURN_DATA.entrants.unit_name == w[-1]].iloc[0]
@@ -664,6 +680,7 @@ async def run_round(ctx, *args):
         _BURN_DATA.round_history[round_name]['winner'] = winner
 
     else:
+        j = 1
         for k, draw in zip([0, 1], ['top', 'bottom']):
             matches = _BURN_DATA.matchups[k]
             _BURN_DATA.round_history[round_name][draw]['matches'] = matches
@@ -675,10 +692,13 @@ async def run_round(ctx, *args):
                     ctx,
                     m[0]['unit_name'],
                     m[1]['unit_name'],
+                    round_name,
+                    j,
                     verbose=verbose
                 )
                 round_winners.append(w[-1])
-                asyncio.sleep(2)
+                time.sleep(2)
+                j+=1
             round_winners = [
                 _BURN_DATA.entrants[_BURN_DATA.entrants.unit_name == w].iloc[0]
                 for w in round_winners
@@ -758,13 +778,14 @@ async def fight(ctx, *args):
     await ctx.send(f'Congrats {info["user"]}'.center(10, '\N{PARTY POPPER}'))
 
 @bot.command(name='battle')
-async def pick_winner(ctx, aga1, aga2, verbose=True):
+async def pick_winner(ctx, aga1, aga2, round_name, match_num, verbose=True):
     if str(ctx.author) != 'cauchy69.APE#8518':
         await ctx.send(f'{ctx.author} not authorized')
         return
 
     if verbose:
-        await ctx.send("-" * 10+'**FIGHT**'+'-'*10)
+        msg = ''
+        # await ctx.send("-" * 10+'**FIGHT**'+'-'*10)
 
     if 'AGA' not in aga1 and 'BYE' not in aga1:
         aga1 = f'AGA{aga1}'
@@ -803,14 +824,14 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
     s1_boost = 0
     if s1_item in _BOOSTED_TRAITS.keys():
         if verbose:
-            await ctx.send(f"{s1_item} is a boosted trait!")
-            await ctx.send(f"Modifying rarity score for {s1_name}")
+            msg += f"{s1_item} boosted {s1_name} performance\n"
+
         s1_boost += _BOOSTED_TRAITS[s1_item]
 
     if s1_accessory in _BOOSTED_TRAITS.keys():
         if verbose:
-            await ctx.send(f"{s1_accessory} is a boosted trait!")
-            await ctx.send(f"Modifying rarity score for {s1_name}")
+            msg += f"{s1_accessory} boosted {s1_name} performance\n"
+
         s1_boost += _BOOSTED_TRAITS[s1_accessory]
 
     s2_rs = aga2['rarity_score']
@@ -832,14 +853,12 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
     s2_boost = 0
     if s2_item in _BOOSTED_TRAITS.keys():
         if verbose:
-            await ctx.send(f"{s2_item} is a boosted trait!")
-            await ctx.send(f"Modifying rarity score for {s2_name}")
+            msg += f"{s2_item} boosted {s2_name} performance\n"
         s2_boost += _BOOSTED_TRAITS[s2_item]
 
     if s2_accessory in _BOOSTED_TRAITS.keys():
         if verbose:
-            await ctx.send(f"{s2_accessory} is a boosted trait!")
-            await ctx.send(f"Modifying rarity score for {s2_name}")
+            msg += f"{s2_accessory} boosted {s2_name} performance\n"
         s2_boost += _BOOSTED_TRAITS[s2_accessory]
 
     s1_score = np.round(s1_rs * (1 + s1_boost), 0)
@@ -853,12 +872,13 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
         s1_seed_msg = ''
         s2_seed_msg = ''
 
-    msg = (
-        f"{s1_seed_msg} {s1_name} with rank {s1_rank} has {p1_odds:.2%} of winning\n"
-        f"{s2_seed_msg} {s2_name} with rank {s2_rank} has {p2_odds:.2%} of winning\n"
+    msga = (
+        f"**{s1_seed_msg} {s1_name}** with rank {s1_rank} has {p1_odds:.2%} of winning\n"
+        f"**{s2_seed_msg} {s2_name}** with rank {s2_rank} has {p2_odds:.2%} of winning\n"
     )
-    if verbose:
-        await ctx.send(msg)
+    msg += msga
+    # if verbose:
+    #     await ctx.send(msg)
     entries = [s1_name] * int(s1_score) + [s2_name] * int(s2_score)
     results = np.random.choice(entries, 5)
     c = Counter(results)
@@ -890,18 +910,24 @@ async def pick_winner(ctx, aga1, aga2, verbose=True):
         # user = s2_user
         LOG.info(member)
     if verbose:
-        await ctx.send(f"**Draws**\n {a}")
-        # await ctx.send("-" * 40)
+        msg += f"**Draws**\n {a}"
         if isinstance(member, str):
-            await ctx.send(
-                f"**Winner:** {winner_seed} {winner} **Holder:** {member}\n"
-            )
+            msg += f"\n**Winner:** {winner_seed} {winner}\n**Holder:** {member}\n"
         else:
-            await ctx.send(
-                f"**Winner:** {winner_seed} {winner} **Holder:** {member.mention}\n"
-            )
+            msg += f"\n**Winner:** {winner_seed} {winner}\n**Holder:** {member.mention}\n"
         fname = await get_img(ctx, w)
-        await ctx.send(file=discord.File(fname))
+
+        if verbose:
+            embed = discord.Embed(title=f"{round_name}: Matchup #{match_num}",
+                                  description=msg,
+                                  color=discord.Color.blue()
+            )
+
+            embed.set_image(url=f"attachment://{fname.split('/')[-1]}")
+            file = discord.File(fname, filename=fname.split('/')[-1])
+
+            await ctx.send(embed=embed, file=file)
+
 
     return results, entries, w
 

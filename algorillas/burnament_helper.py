@@ -495,16 +495,21 @@ class BurnamentData(object):
             bottom_half = self.matchups[1]
             # LOG.info(top_half)
             msg += f'**{round_name}**\n'
+            # title_str = [
+            #     '**Top half of the draw**'.center(50, '-') + '\n',
+            #     '**Bottom half of the draw**'.center(50, '-') + '\n'
+            # ]
             title_str = [
-                '**Top half of the draw**'.center(50, '-') + '\n',
-                '**Bottom half of the draw**'.center(50, '-') + '\n'
+                '**Top half of the draw**',
+                '**Bottom half of the draw**'
             ]
             current_length = 0
+            matchups = defaultdict(list)
             for half, title in zip([top_half, bottom_half], title_str):
-                msg += title
+                # msg += title
                 msg_length = 0
                 # start_length = sum([len(val) for val in messages])
-
+                matchups[title]
                 for m in half:
                     aga1 = m[0]
                     aga2 = m[1]
@@ -518,7 +523,7 @@ class BurnamentData(object):
                         member2 = await bot.fetch_user(m[1]['user'])
                     else:
                         member2 = 'N/A'
-                    msg += (
+                    msg = (
                         f"({aga1['seed']}) {aga1['unit_name']} "
                         " vs "
                         f"({aga2['seed']}) {aga2['unit_name']}\n"
@@ -527,24 +532,25 @@ class BurnamentData(object):
                         f"{member2 if isinstance(member2, str) else member2.mention}\n"
 
                     )
-                    msg_length += len(msg)
-                    current_length += len(msg)
-                    if msg_length > 1000:
-                        messages.append(msg)
-                        msg = ''
-                        msg_length = 0
-
-                msg_list_length = sum([len(val) for val in messages])
-                if msg_list_length == 0:
-                    messages.append(msg)
-                    msg_list_length = sum(
-                        [len(val) for val in messages]
-                    )
-                elif msg_list_length < current_length:
-                    messages.append(msg)
-                msg = ''
+                    matchups[title].append(msg)
+                #     msg_length += len(msg)
+                #     current_length += len(msg)
+                #     if msg_length > 1000:
+                #         messages.append(msg)
+                #         msg = ''
+                #         msg_length = 0
+                #
+                # msg_list_length = sum([len(val) for val in messages])
+                # if msg_list_length == 0:
+                #     messages.append(msg)
+                #     msg_list_length = sum(
+                #         [len(val) for val in messages]
+                #     )
+                # elif msg_list_length < current_length:
+                #     messages.append(msg)
+                # msg = ''
         # print(messages)
-        return messages
+        return matchups
 
     async def print_round_summary(self, round_name, bot):
         msg = ''
@@ -612,5 +618,4 @@ class BurnamentData(object):
                         messages.append(msg)
                     # messages.append('-'*40+'\n')
                     msg = ''
-
         return messages
