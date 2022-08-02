@@ -144,42 +144,40 @@ async def register(ctx, *args):
     # if str(ctx.author) != 'cauchy69.APE#8518':
     #     await ctx.send(f'Holders airdrop registration is closed.')
     #     return
-    try:
-        if len(args) == 0:
-            await register_help(ctx)
-            return
-        elif args[0] == 'help':
-            await register_help(ctx)
-            return
-        elif len(args) > 1:
-            await ctx.author.send('Incorret number of arguments. Use the command'
-                           '#register help to see more info.')
-            return
 
-        wallet = args[0]
-        if len(wallet) != 58:
-            wallet = await lookup_nfd(ctx, wallet)
-
-        member = ctx.author
-        user_id = member.id
-        user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
-        if os.path.exists(user_file):
-            await ctx.author.send(
-                (f'{member.mention} is already registered. '
-                'Use #my_entries to check your registration.')
-            )
-            await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
-            return
-        if wallet == 'Not found':
-            return
-        else:
-            with open(user_file, 'w+') as fobj:
-                fobj.write(f'{user_id},{wallet}')
-            await ctx.author.send('Registration successful')
-            await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
-    except Exception as e:
-        await ctx.send('Open them DMs, yo!')
+    if len(args) == 0:
+        await register_help(ctx)
         return
+    elif args[0] == 'help':
+        await register_help(ctx)
+        return
+    elif len(args) > 1:
+        await ctx.author.send('Incorret number of arguments. Use the command'
+                       '#register help to see more info.')
+        return
+
+    wallet = args[0]
+    if len(wallet) != 58:
+        wallet = await lookup_nfd(ctx, wallet)
+
+    member = ctx.author
+    user_id = member.id
+    user_file = f'{_BURN_DATA.entrants_dir}/{user_id}.txt'
+    if os.path.exists(user_file):
+        await ctx.author.send(
+            (f'{member.mention} is already registered. '
+            'Use #my_entries to check your registration.')
+        )
+        await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
+        return
+    if wallet == 'Not found':
+        return
+    else:
+        with open(user_file, 'w+') as fobj:
+            fobj.write(f'{user_id},{wallet}')
+        await ctx.author.send('Registration successful')
+        await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
+
 
 async def unregister_help(ctx):
     msg = 'Algorillas Burnament Bot Help: **#unregister**\n'
